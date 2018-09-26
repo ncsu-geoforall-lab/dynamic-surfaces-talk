@@ -221,6 +221,12 @@ from crescentic dune to sand starved, fast moving  parabolic dune
     <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
 </section>
 
+
+<section data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
+<h3>DEM time series visualization</h3>
+
+</section>
+
 <section>
     <h3>Contours time series</h3>
 Contours capture the landform change but they are hard to read
@@ -535,8 +541,19 @@ Vasek vegetation index
 <h3>Space-time cube for pedestrian density</h3>
 mapping pedestrian density from public webcams using STC
 <p>
-<img height="300" src="img/surfaces/anna_amos_stc.jpg"></img>
+<img height="300" src="img/surfaces/webcam_georeferencing.jpg"></img>
 <p>Anna Petrasova ICC
+</section>
+
+<section data-camera="3760_2014_2012_people" data-slidenum="12,14">
+<h3>Change in pedestrian density (2014 minus 2012)</h3>
+     <p style="font-size: 90%">Positive values ~ increase in density in 2014<br>
+               Negative values ~ decrease in density in 2014</p>
+    <aside class="notes">
+    Since the Kernel Density is a continuous field, we can easily
+    subtract the density before and after and get a difference in pedestrian
+    density, where the positive values mean increase in density after the reconstruction.
+    </aside>
 </section>
 
 
@@ -560,16 +577,7 @@ that helped to bring the discipline to its current thriving state </p>
 </section>
 
 
-<section data-camera="3760_2014_2012_people" data-slidenum="12,14">
-<h3>Change in pedestrian density (2014 minus 2012)</h3>
-     <p style="font-size: 90%">Positive values ~ increase in density in 2014<br>
-               Negative values ~ decrease in density in 2014</p>
-    <aside class="notes">
-    Since the Kernel Density is a continuous field, we can easily
-    subtract the density before and after and get a difference in pedestrian
-    density, where the positive values mean increase in density after the reconstruction.
-    </aside>
-</section>
+
 
 <section>
     <h3>Visualization: GRASS GIS</h3>
@@ -717,17 +725,19 @@ done
 
         </script>
 <script src="js/nouislider.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
 <script>
 Reveal.addEventListener( 'ready', function( event ) {
 	var nSlides = Reveal.getTotalSlides();
+
     for (i = 0; i < nSlides; i++) {
-        createSliders(Reveal.getSlide(i))
+        createSlidersWebcam(Reveal.getSlide(i))
+        createSlidersAnim(Reveal.getSlide(i))
     }
     
 } );
 
-function createSliders(slide) {
+function createSlidersWebcam(slide) {
     if (!$(slide).attr('data-camera')) {
         return;
     }
@@ -777,8 +787,8 @@ function createSliders(slide) {
         slider2.noUiSlider.set(slidenums[1])
     }
     var animimage = slide.querySelector('#animimage')
-    
-    
+
+
     setImage()
     
     function setImage(){
@@ -795,12 +805,47 @@ function createSliders(slide) {
         var camera = $(slide).data('camera')
         $("#animimage", slide).attr("src", path + "map_points_points_" + camera + "." + pad(value1, 4) + "." + pad(value2, 4) +".jpg");
     }
+    function pad(n, width) {
+        z = '0';
+        n = n + '';
+        return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+    }
 }
 
-function pad(n, width) {
-  z = '0';
-  n = n + '';
-  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+function createSlidersAnim(slide) {
+
+    if (!$(slide).attr('data-animate')) {
+        return;
+    }
+    var slidenum = $(slide).data('animate')
+    var slidenums = slidenum.split(",")
+    slhtml = `<div class="slider" id="slider" style="background: #d2d2d2;width: 400px;margin: auto;margin-bottom: 15px"></div>`
+    slhtml += `<img id="animimage" width="100%" style="margin:auto">`
+
+    slide.innerHTML += slhtml
+        var slider = slide.querySelector('#slider');
+        noUiSlider.create(slider, {
+            start: [0],
+            step: 1,
+            connect: true,
+            range: {
+                'min': parseInt(slidenums[0]),
+                'max': parseInt(slidenums[1])
+            }
+        });
+        slider.noUiSlider.on('slide', setImage);
+        slider.noUiSlider.set(0)
+    var animimage = slide.querySelector('#animimage')
+
+    setImage()
+
+    function setImage(){
+        var value = 0
+        value = parseInt(slider.noUiSlider.get());
+
+        var path = $(slide).data('path')
+        $("#animimage", slide).attr("src", path + "_" + value + ".png");
+    }
 }
 </script>
     </body>
