@@ -90,7 +90,7 @@ http://hint.fm/wind/ realtime wind add to mea582 or gis714
 <section>
 <h3>Pioneering concept of dynamic spatial surfaces</h3>
 <p>Waldo Tobler:
-<p>geospatial phenomena as fields: scalar, vector and tensor
+<p>geospatial phenomena as fields - scalar, vector and tensor
 <p>
     <img height="330" src="img/surfaces/Tobler_govfiscal.jpg">
     <img height="330" src="img/surfaces/Tobler_pressuretomodesurface.jpg">
@@ -99,8 +99,8 @@ http://hint.fm/wind/ realtime wind add to mea582 or gis714
 
 <section>
 <h3>Theoretical foundations: terrain analysis</h3>
-<p>Terrain as continuous field, represented by isolines,
-graphical approach to deriving secondary fields
+<p>Terrain as continuous field <i>z=f(x,y)</i>, 
+<br>represented by isolines, manually deriving secondary fields
 <p>
     <img src="img/surfaces/Krcho_krivosti.jpg" height="380">
 <p> <small>Profle Curvature isolines (Krcho 1973), </small>
@@ -110,10 +110,10 @@ graphical approach to deriving secondary fields
 <h3>Computational foundations: digital terrain models</h3>
 <p>EuroCarto III Graz, 1984: Krcho,J., H.Mitasova, E.Micietova, Theoretical concept and data structures of complex digital terrain model and its interdisciplinary applications 
 <p>
-    <img src="img/surfaces/TINgrassnviz2.jpg" height="220">
-<br>    <img src="img/EurocartoGraz3.jpg" height="150">
-    <img src="img/EurocartoGraz2.jpg" height="150">
-<p><small>Thank you for supporting our participation 34 years ago</small>
+    <img src="img/surfaces/TINgrassnviz2.jpg" height="170">
+<br>    <img src="img/EurocartoGraz3.jpg" height="200">
+    <img src="img/EurocartoGraz2.jpg" height="200">
+<br><small>Thank you for supporting our participation 34 years ago</small>
 </section>
 
 <!-- <section>
@@ -124,7 +124,7 @@ graphical approach to deriving secondary fields
 
 <section>
 <h3>Digital terrain modeling with splines</h3>
-<p>Spatial interpolation by regularized spline with tension (RST) method: 
+<p>Spatial interpolation by Regularized Spline with Tension (RST) method: 
 from scattered points to regular grids, with simultaneous
 derivation of topographic parameters
 <p>
@@ -133,22 +133,22 @@ derivation of topographic parameters
 </section>
 
 <section>
-<h3>Implementation in GRASS GIS</h3>
+<h3>Implementation in open source GRASS GIS</h3>
 <p>Method became available to broad community,
 many developers improved the code 
 <p>Surface with changing tension animation: tension helps to control overshoots
 <p><img class="stretch" src="img/surfaces/tension.gif">
-<p><small>GRASS4.1 s.surf.tps, v.surf.tps, v.surf.rst; GRASS7.4; with contributions of 8+ developers</small>
+<p><small>25 years: GRASS4.1 s.surf.tps, v.surf.tps, v.surf.rst; GRASS7.4; contributions of 8+ developers</small>
 </section>
 
 <section>
-<h3>Implementation in GRASS GIS</h3>
+<h3>Implementation in open source GRASS GIS</h3>
 <p>Quadtree-based segmentation made it applicable to large point data sets
 <p>Simultaneous topographic analysis: slope, aspect, curvatures 
-<p><img height="300" src="img/surfaces/quadtrees.png">
+<p><img height="320" src="img/surfaces/quadtrees.png">
 &nbsp; &nbsp;
 &nbsp; &nbsp;
-<img height="320" src="img/surfaces/topoanalysiscerl9803crop.gif">
+<img height="330" src="img/surfaces/topoanalysiscerl9803crop.gif">
 </section>
 
 <section>
@@ -198,25 +198,25 @@ ADD GRAPHS linear loss of elevation since 1953, accelerating migration 3-6 m/yr,
 <section>
 <h3>GRASS temporal framework for DEM time series</h3>
 <ul>
-<li>Consistent DEM time series derived from data acquired by 
+<li>DEM time series for Jockey's Ridge dunes derived from data acquired by 
 <ul>
   <li>photogrammetry (1974-98), 
   <li>lidar (1999-2018), 
   <li>structure from motion from UAS imagery (2016-2018)
 </ul>
-<li>Managed and analyzed in TGRASS <small>(Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.)</small>
 </ul>
-<br>   <img height="100" src="img/surfaces/timeline.png"> 
+  <img height="100" src="img/surfaces/timeline.png"> 
    <img height="150" src="img/surfaces/timeline3D.png"> 
 <br>
    <img height="130" src="img/surfaces/temp_plot_leeward_pt.png"> 
    <img height="130" src="img/surfaces/temp_plot_windward_pt.png"> 
+<br><small>Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.</small>
 </section>
 
 <section>
     <h3>DEM time series visualization</h3>
-<p>Southward migration, landform transformation
-from crescentic dune to sand starved, fast moving  parabolic dune
+<p>Jockey's Ridge 1974 - 2017: southward migration, landform transformation
+from crescentic dune to sand starved, fast moving parabolic dune
 <!--    <img height="350" src="img/surfaces/jrseries.png"> -->
     <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
 </section>
@@ -388,18 +388,8 @@ Petrasova, A. et al. (2018). Tangible Modeling with Open Source GIS. Second edit
 
 <section>
 <h3>Interactions</h3>
-<p>Molding the polymeric sand model, using markers to define points and lines, outline polygons with colored clay or felt
-<p><img height="400" src="img/surfaces/tl_interactions_all.jpg">
+<p><img height="450" src="img/surfaces/tl_interactions_all.jpg">
 </section>
-
-<!--
-<section>
-    <h3>Coupling with 3D rendering</h3>
-<small>Collaborative environment for landscape design augmented with geospatial analyses.</small>
-<p><img height="230" src="img/surfaces/site.png">
-<p><img height="230" src="img/surfaces/process.png">
-</section>
--->
 
 <section>
     <h3>Coupling with 3D rendering</h3>
@@ -412,11 +402,6 @@ Petrasova, A. et al. (2018). Tangible Modeling with Open Source GIS. Second edit
 </section>
 
 <!--
-<section>
-    <h3>Tangible Landscape applications</h3>
-<p><img height="450" src="img/surfaces/tl_apps_composit.jpg">
-</section>
-
 <section>
     <h3>Tangible Landscape + Immersive Virtual Reality</h3>
 <img height="180" src="img/surfaces/coupling_case3.jpg">
@@ -436,10 +421,8 @@ dia" allowfullscreen></iframe>
 
 <section>
 <h3>Tangible Landscape for education</h3>
-Method to improve understanding of geospatial algorithms, processes and interactions.
-Video from CHI?
 <p>
-<img height="300px" src="img/surfaces/TL_outreach_fire.JPG">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6FurEeW28?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <img height="300px" src="img/surfaces/collaboration2.JPG">
 </section>
 
