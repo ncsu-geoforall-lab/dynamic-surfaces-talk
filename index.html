@@ -46,41 +46,43 @@
             <div class="slides">
 <section>
 <!--<h4 style="color: #707070">AAS 2018</h4>-->
-<h2 style="margin-top: 0.0em;color: #000"> Dynamic Surfaces and Geospatial Processes </h2>
+<h2 style="margin-top: 0.0em;color: #000"> 
+Dynamic Surfaces <br> and Geospatial Processes </h2>
 <p>
-<h4 style="color: #707070">Helena Mitasova</h4>
+<h3 style="color: #707070">Helena Mitasova</h3>
 <!--<img height="50px" style="margin-top: 2em" src="img/cgaBlack.png">
 <h5 style="color: #000">North Carolina State University</h5>-->
 <p>
-    <img src="img/hofierka.jpg" height="120">
-    <img src="img/petrasova.jpg" height="120">
-    <img src="img/vpetras.jpg" height="120">
-    <img src="img/baharmon.jpg" height="120">
-    <img src="img/payam.jpg" height="120">
+<!--    <img src="img/hofierka.jpg" height="120">-->
+    <img src="img/petrasova.jpg" height="120"> <img src="img/vpetras.jpg" height="120">
+    <img src="img/baharmon.jpg" height="120"> <img src="img/payam.jpg" height="120">
     <img src="img/Justyna_Jeziorska.jpg" height="120">
 </p>
-<p><small>J.Hofierka, A.Petrasova, V. Petras, B.Harmon, P.Tabrizian, J.Jeziorska</small>
-<p><img src="img/cgaBlack.png" height="40"> <img src="img/4x1white.jpg" height="25">
+<p><small>A. Petrasova, &nbsp; &nbsp; V. Petras, &nbsp; &nbsp; B. Harmon, 
+&nbsp; &nbsp; P. Tabrizian, &nbsp; &nbsp; J. Jeziorska</small>
+<p><img src="img/cgaBlack.png" height="40"> &nbsp; &nbsp; <img src="img/4x1white.jpg" height="25">
 </section>
 
 <section>
-<h3>Dynamic Digital Earth </h3>
+<h3>
+An incomplete tour through evolution of surface modeling in open source GIS 
+from its beginnings to current state and applications <h3>
+<!--
 <ul>
-<li class="fragment">Digital Earth vision is now a reality:
-Earth is mapped at many spatial and temporal scales from global by satellites to local microscale by drones
+<h2>Dynamic Digital Earth is now a reality</h2>
+Surface modeling  - helps to transform the digital earth data to support to improve disaster response, water and food security, everyday life and well being.
+<li>Earth is mapped at many spatial and temporal scales from global by satellites to local microscale by drones
 <li class="fragment">Only fraction of collected data is used to full potential
 <li class="fragment">Geospatial analytics and modeling is deployed to use these data
-to improve disaster response, water and food security, everyday life and well being
-<li class="fragment">Geospatial surface modeling  - foundation for many methods and tools
 </ul>
 <p class="fragment">
-We will take an incomplete tour through evolution of surface modeling from its beginnings to current state/applications
 <p class="fragment"><small><a href="https://earth.nullschool.net">Ocean Currents</a>2018 Cameron Beccario </small></p>
 <aside class="notes">
 https://www.nasa.gov/topics/earth/features/perpetual-ocean.html
 https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=3827 - high res
 http://hint.fm/wind/ realtime wind add to mea582 or gis714
 </aside>
+-->
 </section>
 
 <section>
@@ -90,10 +92,10 @@ http://hint.fm/wind/ realtime wind add to mea582 or gis714
 <section>
 <h3>Pioneering concept of dynamic spatial surfaces</h3>
 <p>Waldo Tobler:
-<p>geospatial phenomena as fields - scalar, vector and tensor
+<p>geospatial phenomena as continuous scalar and vector fields
 <p>
-    <img height="330" src="img/surfaces/Tobler_govfiscal.jpg">
     <img height="330" src="img/surfaces/Tobler_pressuretomodesurface.jpg">
+    <img height="330" src="img/surfaces/Tobler_govfiscal.jpg">
 <p><small>Images from Professor Tobler's slides</small></p>
 </section>
 
@@ -124,7 +126,7 @@ http://hint.fm/wind/ realtime wind add to mea582 or gis714
 
 <section>
 <h3>Digital terrain modeling with splines</h3>
-<p>Spatial interpolation by Regularized Spline with Tension (RST) method: 
+<p>Regularized Spline with Tension (RST) interpolation: 
 from scattered points to regular grids, with simultaneous
 derivation of topographic parameters
 <p>
@@ -204,13 +206,11 @@ ADD GRAPHS linear loss of elevation since 1953, accelerating migration 3-6 m/yr,
 -->
 <section>
 <h3>GRASS temporal framework for DEM time series</h3>
-<ul>
-<li>DEM time series for Jockey's Ridge dunes derived from data acquired by 
+DEM time series for Jockey's Ridge dunes derived from data acquired by 
 <ul>
   <li>photogrammetry (1974-98), 
   <li>lidar (1999-2018), 
   <li>structure from motion from UAS imagery (2016-2018)
-</ul>
 </ul>
   <img height="100" src="img/surfaces/timeline.png"> 
    <img height="150" src="img/surfaces/timeline3D.png"> 
@@ -229,7 +229,7 @@ from crescentic dune to sand starved, fast moving parabolic dune
 </section>
 
 
-<section data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
+<section class="stretch" data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
 <h3>DEM time series visualization</h3>
 
 </section>
@@ -437,10 +437,8 @@ Platform for decision-making and science communication
 
 <section>
 <h2>Students are making an impact</h2>
-<ul>
- <li> Integration of open source GIS in courses
- <li> Project-based graduate courses since 2008 
-</ul>
+ <p> Integration of open source GIS in courses
+ <p> Project-based graduate courses since 2008 
 </section>
 
 <section>
@@ -559,7 +557,7 @@ Mapping pedestrian density from public webcams using STC
 <h3>Open Science</h3>
 <p>Developing open source software and contributing to OSGeo projects:
 <p>GRASS GIS <a href="https://grass.osgeo.org/">https://grass.osgeo.org/</a>
-<p>Tangible Landscape  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a>
+<br>Tangible Landscape  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a>
 <p>Open access educational material:
 <p>NCSU GeoForAll Lab Courses and Workshops
 <a href="https://geospatial.ncsu.edu/geoforall/courses.html">https://geospatial.ncsu.edu/geoforall/courses.html</a>
