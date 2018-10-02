@@ -170,6 +170,7 @@ Lidar technology transformed topography mapping in 21st century
 Coastal surveys started in 1996, second statewide survey just finished.
 <br>Survey in 1999 included Jockey's Ridge dunes: dense, noisy scattered point cloud
 <p><img height="440" src="img/surfaces/lidstorast1m.jpg">
+<p><small>DEM: 1m resolution, binned</small>
 </section>
 
 <section>
@@ -177,6 +178,7 @@ Coastal surveys started in 1996, second statewide survey just finished.
 Coastal surveys started in 1996, second statewide survey just finished.
 <br>Survey in 1999 included Jockey's Ridge dunes: dense, noisy scattered point cloud
 <p><img height="440" src="img/surfaces/lidstorast.jpg">
+<p><small>DEM: 3m resolution, binned</small>
 </section>
 
 <section>
@@ -184,6 +186,7 @@ Coastal surveys started in 1996, second statewide survey just finished.
 RST smoothing properties and quadtree segmentation
 made it suitable for generating high resolution elevation models from millions of points
 <p><img height="450" src="img/surfaces/liddfdm1e.jpg">
+<p><small>DEM: 1m resolution, interpolated</small>
 </section>
 
 <section>
@@ -209,8 +212,8 @@ ADD GRAPHS linear loss of elevation since 1953, accelerating migration 3-6 m/yr,
 DEM time series for Jockey's Ridge dunes derived from data acquired by 
 <ul>
   <li>photogrammetry (1974-98), 
-  <li>lidar (1999-2018), 
-  <li>structure from motion from UAS imagery (2016-2018)
+  <li>lidar (1999-2015), 
+  <li>structure from motion from UAS imagery (2016-2017)
 </ul>
   <img height="100" src="img/surfaces/timeline.png"> 
    <img height="150" src="img/surfaces/timeline3D.png"> 
@@ -230,7 +233,7 @@ from crescentic dune to sand starved, fast moving parabolic dune
 
 
 <section class="stretch" data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
-<h3>DEM time series visualization</h3>
+<h3>DEM time series visualization 1997 - 2017</h3>
 
 </section>
 
@@ -258,7 +261,7 @@ is represented as isosurface: 16m and 20m </p>
   <li>linear trend in loss of peak elevation at 0.3m per year 
   <li>accelerating horizontal migration from 3m/yr to 6m/yr
   <li>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
-  <li>vegetation increased, but dune still kills trees on the leeward side
+<!--  <li>vegetation increased, but dune still kills trees on the leeward side-->
   <li>management challenges: dynamic feature confined to static park boundaries
 </ul>
 <p>
@@ -267,6 +270,7 @@ is represented as isosurface: 16m and 20m </p>
 <img height="200" src="img/surfaces/peakregression_1950_2017.png">
 </section>
 
+<!--
 <section>
 <h3>Jockey's Ridge story</h3>
 <p>The 43 m high dune was a transient landform 
@@ -276,10 +280,10 @@ is represented as isosurface: 16m and 20m </p>
 <img height="220" src="img/surfaces/JR_2017_burriedtrees.jpg">
 <p><small>Dune in early 1900 and in 2008, 2016</small>
 </section>
+-->
 
 <section>
 <h2>From observations to modeling of processes</h2>
-<!--<p><img height="180" src="img/surfaces/yakima_panorama_1s.jpg">-->
 </section>
 
 
@@ -356,10 +360,17 @@ and path sampling
 </section>
 
 <section>
-<h3>Ultra-high resolution water and erosion: UAS</h3>
- <p> Tilled fields
+<h3>Ultra-high resolution water flow: UAS mapping</h3>
+ <p>Modeling impact of tillage and rills on surface water flow using 0.2m DEM derived by SfM based on UAS imagery 
 <p>
     <img height="450" src="img/surfaces/agisoft_jan.gif">
+</section>
+
+<section>
+<h3>Updating lidar DSM using UAS based SfM</h3>
+<p>2015 lidar updated with 2018 UAS data: forested are replaced by a new school
+<p>
+    <img height="450" src="img/surfaces/uas_lidar_update.gif">
 </section>
 
 <section>
@@ -467,7 +478,6 @@ Platform for decision-making and science communication
 <p>William Ross for NC disaster management
 </p>
 </section>
--->
 
 <section>
 <h3>Coastal flooding</h3>
@@ -475,6 +485,7 @@ High resolution modeling is important
 <p><img height="300" src="img/surfaces/anim_storsurge.gif">
 <img height="300" src="img/surfaces/ncdot_cc_mirlo2012camp.jpg">
 </section>
+-->
 
 <section>
 <h3>Improving storm surge flooding predictions</h3>
@@ -509,13 +520,6 @@ to improve accuracy of viewscape analysis (Tabrizian et al. 2018)
 </section>
 
 <section>
-<h3>Beyond bare earth surface: urban topography</h3>
-Solar irradiation during summer solstice at NCSU Centennial Campus
-<p>
-<img height="430" src="img/surfaces/summer_solstice_centennial.gif">
-</section>
-
-<section>
 <h3>Beyond bare earth surface: vegetation voxel models</h3>
 Generalized Fragmentation Index derived from 3D grid point counts: 
 vertical slice of raw point cloud and slice of fragmentation index 3D raster
@@ -530,6 +534,13 @@ Slicing through fragmentation index 3D raster
 <p>
 <img height="400" src="img/surfaces/voxels_vegetation_anim.gif">
 <small>Petras, V., D. J. Newcomb, and H. Mitasova. 2017. Generalized 3D fragmentation index derived from lidar point clouds. In: Open Geospatial Data, Software and Standards 2(9). DOI 10.1186/s40965-017-0021-8 </small>
+</section>
+
+<section>
+<h3>Beyond bare earth surface: urban topography</h3>
+Solar irradiation during summer solstice at NCSU Centennial Campus
+<p>
+<img height="430" src="img/surfaces/summer_solstice_centennial.gif">
 </section>
 
 
