@@ -1,0 +1,567 @@
+<!doctype html> <html lang="en">
+<!-- This is a generated file. Do not edit. -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Smart and Connected Communities projects at NCSU CGA</title>
+
+        <meta name="description" content="Slides for Vienna 2018 presentation">
+        <meta name="author" content="Helena Mitasova">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ncsu-geoforall-lab.css" id="theme">
+        <link rel="stylesheet" href="css/nouislider.css" id="slide">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- For chalkboard plugin -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+<section>
+<!--<h4 style="color: #707070">AAS 2018</h4>-->
+<h2> Smart and Connected Communities Projects </h2>
+<p>
+<h3 style="color: #707070">Helena Mitasova and Ross Meentemeyer</h3>
+<!--<img height="50px" style="margin-top: 2em" src="img/cgaBlack.png">
+<h5 style="color: #000">North Carolina State University</h5>-->
+<p>
+    <img src="img/petrasova.jpg" height="120"> <img src="img/vpetras.jpg" height="120">
+     <img src="img/payam.jpg" height="120"> <img src="img/Justyna_Jeziorska.jpg" height="120">
+</p>
+<p><small>A. Petrasova, &nbsp; &nbsp; V. Petras, &nbsp; &nbsp;  
+&nbsp; &nbsp; P. Tabrizian, &nbsp; &nbsp; J. Jeziorska</small>
+<p><img src="img/cgaBlack.png" height="40"> &nbsp; &nbsp; <img src="img/4x1white.jpg" height="25">
+</section>
+
+<section>
+<h2>Outline</h2>
+<ul>
+  <li>Smart and Connected Communities RCN with TomorrowNow serious game 
+  <li>InVision Raleigh - Next generation cities (covered by Jim)
+  <li>Rapid 3DGIS updates with UAS (main focus)
+  <li>Street level stormwater runoff and flooding
+  <li>Viewscapes analysis
+  <li>Vegetation structure
+  <li>Urban growth simulations with FUTURES model
+  <li>Pedestrian movement pattern from webcams 
+  <li>Exploratory efforts with collaborators: biking patterns and emotions
+</ul>
+</section>
+
+<section>
+<h3>Smart and Connected Communities RCN</h3>
+Research coordination network to support "Smart civic engagement in rapidly urbanizing regions"</h3>
+<p>
+  <ul>
+  <li>Lead: NCSU, co-PIs from UNC-CH, NCCU
+  <li>Partners: cities and towns in the Triangle region 
+  <li>Workshops to design an on-nline engagement system (i.e., a serious game) to support urban planning and resource management 
+  </ul>
+    <img height="300" src="img/scc_rcn_map.jpg">
+</section>
+
+<section>
+<h3>InVision Raleigh</h3>
+Next generation cities project,
+developed by Makiko Shukunobe with Dr. Baran serving as PI
+<p>ESRI award
+<p>Presented by Jim
+</section>
+
+<section>
+<h3>Updating lidar DSM using UAS based SfM</h3>
+<p>Open source application for processing of UAS acquired imagery into DSM and fusion/update of existing lidar-based DSM
+to support planning with InVision Raleigh, storm water management and other activities
+<p>2015 lidar updated with 2018 UAS data: forested area is replaced by a new school in Apex
+<p>
+    <img height="350" src="img/surfaces/uas_lidar_update.gif">
+</section>
+
+<section>
+<h3>Updating lidar DSM using UAS based SfM</h3>
+<p>2015 lidar updated with 2018 UAS data for area on Centennial Campus hwere 2 new buildings were built, trees cut and
+stormwater control is being updated
+<p>
+    <img height="350" src="img/surfaces/centennial_uasupdate.gif">
+<p>2015 lidar, UAS-based DSm inserted, tilt identified and corrected
+</section>
+
+<section>
+<h3>High resolution water flow</h3>
+ <p> Street level modeling of surface runoff: lidar-based DEM and shallow water flow simulation using SIMWE model
+<p>
+    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
+    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+<small>Water depth over orthophoto and zoom-in image with property boundaries and storm water infrastructure</small>
+</section>
+
+<!--
+  <li>Pedestrian movement pattern from webcams with Space-time cube visualization
+  <li>Viewscapes analysis
+  <li>Vegetation structure
+
+<section>
+<h3>Example application</h3>
+<p>CC middle school? Germany field?
+<p>    <img width="25%" src="img/surfaces/water01dsmall.gif">
+    <img width="25%" src="img/surfaces/wrrwater01.jpg">
+    <img width="25%" src="img/surfaces/wrrwaterdc.jpg">
+</section>
+-->
+
+<section>
+<h3>Urban growth simulations with FUTURES model</h3>
+Open source model in GRASS GIS - paper
+Ashvin award winning version with web-based computer steering 
+ACm SIGSPATIAL award, ESRI award
+</section>
+
+<section>
+<h3>Individual tree detection from lidar</h3>
+Geomorphons (Jasiewicz, Stepinski 2013) applied to vegetation surface:
+peaks represent individual trees. Detected trees are replaced by modeled trunks
+to improve accuracy of viewscape analysis (Tabrizian et al. 2018)
+<br> <img height="260" src="img/surfaces/geomorphon.png">
+<img height="260" src="img/surfaces/trunk_replace.jpg">
+</section>
+
+<section>
+<h3>Beyond bare earth surface: vegetation voxel models</h3>
+Generalized Fragmentation Index derived from 3D grid point counts:
+vertical slice of raw point cloud and slice of fragmentation index 3D raster
+<p> <img height="350" src="img/surfaces/profiles_points_and_ff.png">
+</section>
+
+<section>
+<h3>Beyond bare earth surface: vegetation voxel models</h3>
+Slicing through fragmentation index 3D raster
+<p> <img height="400" src="img/surfaces/voxels_vegetation_anim.gif">
+<small>Petras, V., D. J. Newcomb, and H. Mitasova. 2017. Generalized 3D fragmentation index derived from lidar point clouds. In: Open Geospatial Data, Software and Standards 2(9). DOI 10.1186/s40965-017-0021-8 </small>
+</section>
+
+<section>
+<h3>Beyond bare earth surface: urban topography</h3>
+Solar irradiation during summer solstice at NCSU Centennial Campus
+<p> <img height="430" src="img/surfaces/summer_solstice_centennial.gif">
+</section>
+
+
+<section>
+<h3>Mapping pedestrian density from webcams</h3>
+Georeferencing location of pedestrians from public webcams
+<p> <img height="300" src="img/webcam_georeferencing.jpg"></img>
+<p> <small>Petrasova A., Hipp J. A., Mitasova H., Visualization and analysis of active transportation patterns derived from public webcams. FOSS4G 2017 - Boston, August 2017.</small>
+</section>
+
+<section>
+<h3>Space-time cube visualization of pedestrian density</h3>
+Time series of predestrian locations is transformed into
+continuous space-time model using kernel density function
+<p>
+<img height="300" src="img/surfaces/STC_density.png"></img>
+<img height="300" src="img/surfaces/GRASS_rendering.png"></img>
+<p>Selected density value visualized as isosurface in space-time cube
+</section>
+
+<section data-camera="3760_2014_2012_people" data-slidenum="12,14">
+<h3>Change in pedestrian density (2014 minus 2012)</h3>
+     <p style="font-size: 90%">Positive values ~ increase in density in 2014,
+               Negative values ~ decrease in density in 2014</p>
+    <aside class="notes">
+    Since the Kernel Density is a continuous field, we can easily
+    subtract the density before and after and get a difference in pedestrian
+    density, where the positive values mean increase in density after the reconstruction.
+    </aside>
+</section>
+
+
+
+<section>
+<h2>Tangible interface for surface analysis and process modeling</h2>
+</section>
+
+<section>
+<h3>Tangible Landscape</h3>
+<p> Bringing people together around GIS: Tangible user interface for GRASS GIS
+<p>Designed to make working with geospatial data and simulations engaging, and fun</p>
+<p>
+    <img height="180" src="img/surfaces/tangible_landscape_compcrop.jpg">
+<p>
+Petrasova, A. et al. (2018). Tangible Modeling with Open Source GIS. Second edition. Springer International Publishing.
+<a href="https://doi.org/10.1007/978-3-319-89303-7">https://doi.org/10.1007/978-3-319-89303-7</a>
+</section>
+
+<section>
+<h3>How does it work?</h3>
+<iframe data-autoplay width="50%" height="330" src="https://www.youtube.com/embed/Cd3cCQTGer4?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Cd3cCQTGer4" frameborder="0" allowfullscreen></iframe>
+&nbsp; &nbsp;<img height=380 src="img/surfaces/rendered_diagram_2.png">
+<p>Tangible Landscape couples a digital and a physical model through a continuous cycle of 3D scanning, geospatial modeling, and projection</p>
+</section>
+
+<section>
+<h3>Interactions</h3>
+<p><img height="450" src="img/surfaces/tl_interactions_all.jpg">
+</section>
+
+<section>
+    <h3>Coupling with 3D rendering</h3>
+<p><img height="450" src="img/surfaces/process4.png">
+</section>
+
+<section>
+    <h3>Design scenario analysis</h3>
+<p><img height="480" src="img/surfaces/process7.png">
+</section>
+
+<!--
+<section>
+<h3>Tangible Landscape for designers and researchers</h3>
+<p>
+<img height="300px" src="img/surfaces/tl_planting_3.jpg">
+<img height="300px" src="img/surfaces/TL_scientists.jpg">
+</section>
+
+<section>
+<h3>Tangible Landscape for education</h3>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6FurEeW28?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<img height="260" src="img/surfaces/collaboration2.JPG">
+</section>
+-->
+
+<section>
+<h3>Tangible Landscape for communities</h3>
+Platform for decision-making and science communication
+    where people of different backgrounds can interact.
+<p>
+<img height="220px" src="img/surfaces/bhigames_composite.jpg">
+<br>Tangible Landscape website: 
+<a href="tangible-landscape.github.io">tangible-landscape.github.io</a>
+<br>TL wiki: github.com/tangible-landscape/grass-tangible-landscape/wiki
+</section>
+
+
+<section>
+<h3>Open Science</h3>
+<p>Developing open source software and contributing to OSGeo projects:
+<p>GRASS GIS <a href="https://grass.osgeo.org/">https://grass.osgeo.org/</a>
+<br>Tangible Landscape  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a>
+<p>Open access educational material:
+<p>NCSU GeoForAll Lab Courses and Workshops
+<a href="https://geospatial.ncsu.edu/geoforall/courses.html">https://geospatial.ncsu.edu/geoforall/courses.html</a>
+<p><img height="280" src="img/surfaces/geovizlab_people2018.jpg">
+</section>
+
+<section>
+    <h3>Summary</h3>
+<p>USIgnite
+<p>Closely related
+<p>Other
+</section>
+
+<section>
+<h3>Thank You!</h3>
+<p>Thank you all for your contributions to the field - data, methods, algorithms and tools,
+that helped to bring the discipline to its current thriving state </p>
+<p>
+<iframe data-autoplay width="700" height="350" src="https://www.youtube.com/embed/Uje8ORyhBaQ?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Uje8ORyhBaQ" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section>
+    <h3>Appendix</h3>
+Links to related talks:
+TL webinar, GRASS7, Lidar, ICC talk etc.
+</section>
+
+<!-- 
+<section>
+    <h3>Visualization: Blend4Web</h3>
+<iframe class="stretch" src="./blend4web.html?autorotate"></iframe>
+</section>
+
+for I in `ls *9706*`
+do
+scp $I akratoc@fatra.cnr.ncsu.edu:/var/www/html/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/
+done
+
+for I in `ls *10823*`
+do
+scp $I akratoc@fatra.cnr.ncsu.edu:/var/www/html/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/
+done
+-->
+
+
+
+<!-- This is a generated file. Do not edit. -->
+        </div>  <!-- slides -->
+
+    </div>  <!-- reveal -->
+    <!--
+        Home button or link to a parent page
+        If you want this to be unique for every page (slide deck),
+        then remove it from here and put it at the end of each
+        file (or series of files) creating one page
+        (the position will be little different)
+        TODO: some JS is needed to move it to the right position
+    -->
+    <div class="parent-page">
+        <!-- alternative symbol: &#x1f3e0; -->
+        <a href="https://github.com/petrasovaa/amos-STC-presentation" title="Go to the repository">
+        <img width="15px" src="img/home.svg"></a>
+    </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+                
+                center: true,
+                showNotes: false,
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                // width: 960,
+                // height: 700,
+                
+                // Factor of the display size that should remain empty around the content
+                margin: 0.05,  // increase?
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.5,
+                maxScale: 5.0,
+
+                theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true }
+                ]
+            });
+
+        </script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script>
+Reveal.addEventListener( 'ready', function( event ) {
+	var nSlides = Reveal.getTotalSlides();
+
+    for (i = 0; i < nSlides; i++) {
+        createSlidersWebcam(Reveal.getSlide(i))
+        createSlidersAnim(Reveal.getSlide(i))
+    }
+    
+} );
+
+function createSlidersWebcam(slide) {
+    if (!$(slide).attr('data-camera')) {
+        return;
+    }
+    var cam_number = $(slide).data('camera').split("_")[0]
+    var slidenum = $(slide).data('slidenum')
+    var slidenums = slidenum.split(",")
+    slhtml = `<div  style="float:left; max-width:80%">
+    <img id="animimage" width="100%" style="margin:auto"></div>
+    <div style="float:right; max-width:20%">
+    <img src="img/legend.png" width="200px">`
+    if (slidenums[0] != -1) {
+        slhtml += `<div style="font-size:70%">Isosurface <span style="font-size:50%">(people per 100 m<sup><span style="font-size:70%">2</span></sup>h)</span></div>
+                   <div class="slider" id="slider1" style="background: #d2d2d2;width: 200px;margin: auto;margin-bottom: 15px"></div>`
+    }
+    if (slidenums[1] != -1) {
+        slhtml += `<div style="font-size:70%">Rotate</div>
+                   <div class="slider" id="slider2" style="background: #d2d2d2;width: 200px;margin: auto;margin-bottom: 15px"></div>`
+    }
+    slhtml += '</div>'
+    slide.innerHTML += slhtml
+    if (slidenums[0] != -1) {
+        var slider1 = slide.querySelector('#slider1');
+        noUiSlider.create(slider1, {
+        	start: [12],
+            step: 1,
+        	connect: true,
+        	range: {
+        		'min': 0,
+        		'max': 19
+        	}
+        });
+        slider1.noUiSlider.on('slide', setImage);
+        slider1.noUiSlider.set(slidenums[0])
+    }
+    if (slidenums[1] != -1) {
+        var slider2 = slide.querySelector('#slider2');
+        noUiSlider.create(slider2, {
+            start: [0],
+            step: 1,
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 19
+            }
+        });
+        slider2.noUiSlider.on('slide', setImage);
+        slider2.noUiSlider.set(slidenums[1])
+    }
+    var animimage = slide.querySelector('#animimage')
+
+
+    setImage()
+    
+    function setImage(){
+        var value1 = 0
+        var value2 = 0
+        if (slidenums[0] != -1) {
+            value1 = parseInt(slider1.noUiSlider.get());
+        }
+        if (slidenums[1] != -1) {
+            value2 = parseInt(slider2.noUiSlider.get());
+        }
+        //var path = "/media/anna/Data/Projects/webcams/renderings/"
+        var path = "http://fatra.cnr.ncsu.edu/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/"
+        var camera = $(slide).data('camera')
+        $("#animimage", slide).attr("src", path + "map_points_points_" + camera + "." + pad(value1, 4) + "." + pad(value2, 4) +".jpg");
+    }
+    function pad(n, width) {
+        z = '0';
+        n = n + '';
+        return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+    }
+}
+
+function createSlidersAnim(slide) {
+
+    if (!$(slide).attr('data-animate')) {
+        return;
+    }
+    var slidenum = $(slide).data('animate')
+    var slidenums = slidenum.split(",")
+    slhtml = `<div class="slider" id="slider" style="background: #d2d2d2;width: 400px;margin: auto;margin-bottom: 15px"></div>`
+    slhtml += `<img id="animimage" width="100%" style="margin:auto">`
+
+    slide.innerHTML += slhtml
+        var slider = slide.querySelector('#slider');
+        noUiSlider.create(slider, {
+            start: [0],
+            step: 1,
+            connect: true,
+            range: {
+                'min': parseInt(slidenums[0]),
+                'max': parseInt(slidenums[1])
+            }
+        });
+        slider.noUiSlider.on('slide', setImage);
+        slider.noUiSlider.set(0)
+    var animimage = slide.querySelector('#animimage')
+
+    setImage()
+
+    function setImage(){
+        var value = 0
+        value = parseInt(slider.noUiSlider.get());
+
+        var path = $(slide).data('path')
+        $("#animimage", slide).attr("src", path + "_" + value + ".png");
+    }
+}
+</script>
+    </body>
+</html>
