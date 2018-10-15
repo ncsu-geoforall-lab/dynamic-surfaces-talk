@@ -66,13 +66,13 @@ Exploring changing landscapes <br>with dynamic visualizations and
 </section>
 
 <section>
-<h3>Modern mapping technologies</h3>
+<h3>Modern 3D mapping technologies</h3>
 <ul>
  <li>from 2D images to 3D digital models
  <li>Lidar technology transformed topography mapping in 21st century
  <li>UAS and SfM made 3D mapping accessible to everybody and any time
- <li>beyond bare earth
- <li>3D data are now uniquitous so we need easy to use tools to work with them: TL
+ <li>Beyond bare earth
+ <li>3D data are now ubiquitous so we need easy to use tools to work with them: TL
 </ul>
 </section>
 
@@ -87,7 +87,6 @@ Exploring changing landscapes <br>with dynamic visualizations and
  <li>Surface runoff: microtopography
  <li>Vegetation: geomorphons and 3D fragmentation index
 <li>what is TL and how it works
-<li>
 </ul>
 </section>
 
@@ -101,10 +100,10 @@ Exploring changing landscapes <br>with dynamic visualizations and
 
 <section>
 <h3>North Carolina lidar surveys</h3>
-Coastal surveys started in 1996, second statewide survey just finished.
-show when they were done and how the spatial and temporal sampling evolved
-<p>icapture dynamics of dunes, shorelines, vegetation and development
-<p>two examples
+<ul>
+ <li>Coastal surveys started in 1996, multiple agencies, USGS, NASA, USACE, no systematic mapping - project driven or post hurricanes, capture dynamics of dunes, shorelines, vegetation and development
+ <li>Statewide survey: first in US 2001-2005, second survey 2015-2018? funded by FEMA for flood insurance mapping, applications were much broader (e.g. statewide map of canopy height, etc.)
+</ul>
 <!--
 <br>Survey in 1999 included Jockey's Ridge dunes: dense, noisy scattered point cloud
 <p><img height="440" src="img/surfaces/lidstorast1m.jpg">
@@ -129,10 +128,9 @@ ADD GRAPHS linear loss of elevation since 1953, accelerating migration 3-6 m/yr,
 </section>
 -->
 <section>
-<h3>JR DEM time series</h3>
+<h3>Jockey's Ridge DEM time series</h3>
 <p>
-1m resolution DEM time series for Jockey's Ridge dunes derived (interpolated) from point data acquired by 
-<p>
+DEMs interpolated at 1m resolution from diverse point data acquired by 
 <ul>
   <li>photogrammetry (1974-98), 
   <li>lidar (1999-2015), 
@@ -151,7 +149,6 @@ GRASS GIS temporal framework for managing and analysis of the time series
 <p>add map with location of queried points, difference 1974 - 2015
    <img height="130" src="img/surfaces/temp_plot_leeward_pt.png">
    <img height="130" src="img/surfaces/temp_plot_windward_pt.png">
-<br><small>Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.</small>
 </section>
 
 <section>
@@ -169,21 +166,19 @@ from crescentic dune to sand starved, fast moving parabolic dune
 </section>
 
 <section>
-<h3>Peak elevation and migration</h3>
-<p>DEM time series: evolution quantified using TGRASS and surface analysis tools
+<h3>Peak elevation and horizontal migration</h3>
 <ul>
-  <li>linear trend in loss of peak elevation at 0.3m per year
+  <li>linear trend in loss of peak elevation at 0.3m per year, from 43m to 20m
   <li>accelerating horizontal migration from 3m/yr to 6m/yr
   <li>management challenges: dynamic feature confined to static park boundaries
 </ul>
 <p>
-<img height="200" src="img/surfaces/peakregression_1950_2017.png">
-add horizontal migration graph
+<img height="280" src="img/surfaces/peakregression_1950_2017.png">
+<p>add horizontal migration graph or image of JR within boundaries in 74 and now
 </section>
 
 <section>
 <h3>Volume and vegetation</h3>
-<p>DEM time series: evolution quantified using TGRASS and surface analysis tools
 <ul>
   <li>vegetation increased, but dune still kills trees on the leeward side
   <li>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
@@ -219,7 +214,7 @@ is represented as isosurface: 16m and 20m </p>
 <br>
 <img height="220" src="img/surfaces/Kittytrees1900.jpg">
 <img height="220" src="img/surfaces/JR_2017_burriedtrees.jpg">
-<p><small>Dune in early 1900 and in 2008, 2016</small>
+<br><small>Dune in early 1900 and in 2008, 2016</small>
 </section>
 
 <section>
@@ -227,28 +222,101 @@ is represented as isosurface: 16m and 20m </p>
 </section>
 
 <section>
-<h2>NH or Rodanthe</h2>
+<h3>NH or Rodanthe</h3>
 r.series analysis, core and envelope, shoreline migration band, home lost and constructed
 </section>
 
 <section>
-<h2>NH or Rodanthe</h2>
+<h3>NH or Rodanthe</h3>
 maybe Eric's dune ridge line, check Doug's workshop on geomorphons
 </section>
 
 <section>
-<h2>Students are making an impact</h2>
- <p> Integration of open source GIS in courses
+<h2>From observations to modeling of processes</h2>
+</section>
+
+<section>
+<h3>Surface water flow, storm surge</h3>
+<p>Land surface controls water flow across landscapes
+<p>Critical processes and impacts: surface runoff, flooding, storm surge
+<p><img height="220" src="img/surfaces/secrefstorm2006Alberto.jpg">
+<img height="220" src="img/surfaces/secref8-8-03ditch.jpg">
+<img height="220" src="img/surfaces/IreneRodanthe.jpg">
+</section>
+
+<section>
+<h3>Challenges of modeling water at high resolution</h3>
+Complex, noisy surfaces, capture real depressions 
+</section>
+
+<section>
+<h3>Path sampling of continuous fields</h3>
+<p>robust solution of shallow water flow equations and process-based sediment transport
+<p>
+    <img width="45%" src="img/surfaces/fanimwalk.gif">
+     &nbsp; &nbsp;
+    <img width="45%" src="img/surfaces/fanimhhcolp.gif">
+<p>Solver based on duality of particles and fields works for noisy surfaces, captures ponding in depressions
+</section>
+
+<section>
+<h3>Neighborhood DEM </h3>
+ <p>2013 lidar-based DEM - add images
+<p>
+    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
+    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+</section>
+
+<section>
+<h3>High resolution water flow</h3>
+ <p> Street level modeling of surface runoff using path sampling method 
+<p>
+    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
+    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+<p><small> storm drains and stormwater pipes are in the map, only surface water flow is shown,
+izy model is coupled with SWM, but harder to run</small>
+</section>
+
+<section>
+<h3>High resolution water flow</h3>
+<p>add animation with culvert free and clogged
+<p>
+    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
+    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+<p><small> storm drains and stormwater pipes are in the map, only surface water flow is shown,
+izy model is coupled with SWM, but harder to run</small>
+</section>
+
+<section>
+<h3>Ultra-high resolution water flow: UAS mapping</h3>
+ <p>Modeling impact of tillage and rills on surface water flow using 0.2m DEM derived by SfM based on UAS imagery 
+<p>
+    <img height="450" src="img/surfaces/agisoft_jan.gif">
+</section>
+
+<section>
+<h2>Modeling flooding extent</h2>
+<h3> Students are making an impact</h3>
  <p> Project-based graduate courses since 2008
+ <p> Integration of open source GIS in courses
 </section>
 
 <section>
 <h3>Onset of bridge flooding</h3>
-<p><small>William Ross for NC disaster management</small>
-<p><img height="120" src="img/surfaces/bridges_ortho.jpg">
-<img height="120" src="img/surfaces/bridges_dry.jpg">
-<img height="120" src="img/surfaces/bridges_10yr.jpg">
-<img height="120" src="img/surfaces/bridges_500yr.jpg">
+<p><small>William Ross for NC disaster management </small>
+<p>Bridges are cut out in lidar DEM to facilitate water routing, bridge deck polygon data
+were used to restore/add bridges to lidar DEM 
+<p><img height="220" src="img/surfaces/bridges_ortho.jpg">
+<p><img height="180" src="img/surfaces/bridges_dry.jpg">
+</p>
+</section>
+
+<section>
+<h3>Onset of bridge flooding</h3>
+<p><small>William Ross for NC disaster management </small>
+<p>Flood level was modeled using floodplain mapping data for 10, 100, 500 year storm
+<img height="200" src="img/surfaces/bridges_10yr.jpg">
+<img height="200" src="img/surfaces/bridges_500yr.jpg">
 <img height="130" src="img/surfaces/floodedI40_swinefac.jpg">
 </p>
 <small> <a href="https://www.youtube.com/watch?v=jTXa4sIxQvI">I-40 as a river in NCDOT drone video</a></small>
@@ -291,75 +359,57 @@ October 2017. (American Shore and Beach Preservation Association)
 </section>
 
 <section>
-<h2>From observations to modeling of processes</h2>
-</section>
-
-
-<section>
-<h3>Water flow, soil erosion, storm surge</h3>
-<p>Land surface controls water and sediment flow across landscapes
-<p>Critical processes and impacts: surface runoff, flooding, storm surge, soil erosion
-<p><img height="220" src="img/surfaces/secrefstorm2006Alberto.jpg">
-<img height="220" src="img/surfaces/secref8-8-03ditch.jpg">
-<img height="220" src="img/surfaces/IreneRodanthe.jpg">
+<h2>Beyond bare earth surface</h2>
 </section>
 
 <section>
-<h3>Challenges of modeling water at high resolution</h3>
-Complex, noisy surfaces, capture real depressions 
+<h3>Individual tree detection from lidar</h3>
+Geomorphons (Jasiewicz, Stepinski 2013) applied to vegetation surface:
+peaks represent individual trees. Detected trees are replaced by modeled trunks
+to improve accuracy of viewscape analysis (Tabrizian et al. 2018)
+<br>
+<img height="260" src="img/surfaces/geomorphon.png">
+<img height="260" src="img/surfaces/trunk_replace.jpg">
 </section>
 
 <section>
-<h3>Path sampling of continuous fields</h3>
-<p>robust solution of shallow water flow equations and process-based sediment transport
+<h3>Individual tree detection from lidar</h3>
+to improve accuracy of viewscape analysis (Tabrizian et al. 2018)
+<br>
+<img height="260" src="img/surfaces/geomorphon.png">
+<img height="260" src="img/surfaces/trunk_replace.jpg">
+</section>
+
+<section>
+<h3>Vegetation voxel models</h3>
+Generalized Fragmentation Index derived from 3D grid point counts:
+vertical slice of raw point cloud and slice of fragmentation index 3D raster
 <p>
-    <img width="45%" src="img/surfaces/fanimwalk.gif">
-     &nbsp; &nbsp;
-    <img width="45%" src="img/surfaces/fanimhhcolp.gif">
-<p>Solver based on duality of particles and fields works for noisy surfaces, captures ponding in depressions
+<img height="350" src="img/surfaces/profiles_points_and_ff.png">
 </section>
 
 <section>
-<h3>neighborhood DEM </h3>
- <p>2013 lidar-based DEM - add images
+<h3>Vegetation voxel models</h3>
+Slicing through fragmentation index 3D raster
 <p>
-    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
-    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+<img height="400" src="img/surfaces/voxels_vegetation_anim.gif">
+<small>Petras, V., D. J. Newcomb, and H. Mitasova. 2017. Generalized 3D fragmentation index derived from lidar point clouds. In: Open Geospatial Data, Software and Standards 2(9). DOI 10.1186/s40965-017-0021-8 </small>
 </section>
 
 <section>
-<h3>High resolution water flow</h3>
- <p> Street level modeling of surface runoff using path sampling  (r.sim.water in GRASS GIS)
+<h3>Urban topography</h3>
+Solar irradiation during summer solstice at NCSU Centennial Campus
 <p>
-    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
-    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
-<p><small> storm drains and stormwater pipes are in the map, only surface water flow is shown,
-izy model is coupled with SWM, but harder to run</small>
+<img height="430" src="img/surfaces/summer_solstice_centennial.gif">
 </section>
 
 <section>
-<h3>High resolution water flow</h3>
-<p>add animation with culvert free and clogged
-<p>
-    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
-    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
-<p><small> storm drains and stormwater pipes are in the map, only surface water flow is shown,
-izy model is coupled with SWM, but harder to run</small>
-</section>
-
-<section>
-<h3>Ultra-high resolution water flow: UAS mapping</h3>
- <p>Modeling impact of tillage and rills on surface water flow using 0.2m DEM derived by SfM based on UAS imagery 
-<p>
-    <img height="450" src="img/surfaces/agisoft_jan.gif">
-</section>
-
-<section>
-<h3>Updating lidar DSM using UAS based SfM</h3>
+<h3>Urban topography: UAS updates</h3>
 <p>2015 lidar updated with 2018 UAS data: forested are replaced by a new school
 <p>
     <img height="450" src="img/surfaces/uas_lidar_update.gif">
 </section>
+
 
 <section>
 <h2>Tangible interface for surface analysis and process modeling</h2>
@@ -432,139 +482,6 @@ Platform for decision-making and science communication
 <br>Tangible Landscape website: 
 <a href="tangible-landscape.github.io">tangible-landscape.github.io</a>
 <br>TL wiki: github.com/tangible-landscape/grass-tangible-landscape/wiki
-</section>
-
-<section>
-<h2>Students are making an impact</h2>
- <p> Integration of open source GIS in courses
- <p> Project-based graduate courses since 2008 
-</section>
-
-<section>
-<h3>Onset of bridge flooding</h3>
-<p><small>William Ross for NC disaster management</small>
-<p><img height="120" src="img/surfaces/bridges_ortho.jpg">
-<img height="120" src="img/surfaces/bridges_dry.jpg">
-<img height="120" src="img/surfaces/bridges_10yr.jpg">
-<img height="120" src="img/surfaces/bridges_500yr.jpg">
-<img height="130" src="img/surfaces/floodedI40_swinefac.jpg">
-</p>
-<small> <a href="https://www.youtube.com/watch?v=jTXa4sIxQvI">I-40 as a river in NCDOT drone video</a></small>
-</section>
-
-<section>
-<h3>County map of flooded bridges</h3>
-<p><small>William Ross for NC disaster management</small>
-<p>Flooded bridges mapped based on lidar, bridge and inundation data for 100 yr storm
-<br><img height="400" src="img/surfaces/bridgesall.jpg">
-<img height="420" src="img/surfaces/bridgesall100yr.jpg">
-</section>
-
-<section>
-<h3>Drones for floodwater depth</h3>
-<p>William Ross for NC disaster management
-</p>
-</section>
-
-<section>
-<h3>Coastal flooding</h3>
-High resolution modeling is important
-<p><img height="300" src="img/surfaces/anim_storsurge.gif">
-<img height="300" src="img/surfaces/ncdot_cc_mirlo2012camp.jpg">
-</section>
-
-<section>
-<h3>Improving storm surge flooding predictions</h3>
-<p>Nelson Tull for operational storm surge prediction using ADCIRC
-<br> Hurricane Matthew Hindcast - number of buildings flooded: before enhancement: 2435; 
-after: 3886, a 60 percent increase.
-<p><img height="350" src="img/surfaces/stormsurge_refined.png">
-</p>
-<p class="credit">N. Tull, J.C. Dietrich, T.E. Langan, H. Mitasova, B.O. Blanton, J.G. Fleming, R.A. Luettich
-2018, Improving Accuracy of Real-Time Storm Surge Inundation Predictions Using GRASS GIS, Poster at ASBPA conference,
-October 2017. (American Shore and Beach Preservation Association)
-</p>
-</section>
-
-<section>
-<h2>Beyond bare earth surface</h2>
-</section>
-
-<section>
-<h3>Individual tree detection from lidar</h3>
-Geomorphons (Jasiewicz, Stepinski 2013) applied to vegetation surface: 
-peaks represent individual trees. Detected trees are replaced by modeled trunks 
-to improve accuracy of viewscape analysis (Tabrizian et al. 2018)
-<br>
-<img height="260" src="img/surfaces/geomorphon.png">
-<img height="260" src="img/surfaces/trunk_replace.jpg">
-<!--
-<br> <small>row crop growth analysis</small>
-<br>
-<img height="170" src="img/surfaces/geomorph_cropsurface_zoom.jpg">
--->
-</section>
-
-<section>
-<h3>Crop growth and health</h3>
-Geomorphons (Jasiewicz, Stepinski 2013) applied to vegetation surface:
-<br> <small>row crop growth analysis</small>
-<br>
-<img height="170" src="img/surfaces/geomorph_cropsurface_zoom.jpg">
-</section>
-
-<section>
-<h3>Beyond bare earth surface: vegetation voxel models</h3>
-Generalized Fragmentation Index derived from 3D grid point counts: 
-vertical slice of raw point cloud and slice of fragmentation index 3D raster
-<p>
-<img height="350" src="img/surfaces/profiles_points_and_ff.png">
-</section>
-
-<section>
-<h3>Beyond bare earth surface: vegetation voxel models</h3>
-Slicing through fragmentation index 3D raster
-<p>
-<img height="400" src="img/surfaces/voxels_vegetation_anim.gif">
-<small>Petras, V., D. J. Newcomb, and H. Mitasova. 2017. Generalized 3D fragmentation index derived from lidar point clouds. In: Open Geospatial Data, Software and Standards 2(9). DOI 10.1186/s40965-017-0021-8 </small>
-</section>
-
-<section>
-<h3>Beyond bare earth surface: urban topography</h3>
-Solar irradiation during summer solstice at NCSU Centennial Campus
-<p>
-<img height="430" src="img/surfaces/summer_solstice_centennial.gif">
-</section>
-
-
-<section>
-<h3>Mapping pedestrian density from webcams</h3>
-Georeferencing location of pedestrians from public webcams 
-<p>
-<img height="300" src="img/webcam_georeferencing.jpg"></img>
-<p>
-<small>Petrasova A., Hipp J. A., Mitasova H., Visualization and analysis of active transportation patterns derived from public webcams. FOSS4G 2017 - Boston, August 2017.</small>
-</section>
-
-<section>
-<h3>Space-time cube visualization of pedestrian density</h3>
-Time series of predestrian locations is transformed into
-continuous space-time model using kernel density function
-<p>
-<img height="300" src="img/surfaces/STC_density.png"></img>
-<img height="300" src="img/surfaces/GRASS_rendering.png"></img>
-<p>Selected density value visualized as isosurface in space-time cube
-</section>
-
-<section data-camera="3760_2014_2012_people" data-slidenum="12,14">
-<h3>Change in pedestrian density (2014 minus 2012)</h3>
-     <p style="font-size: 90%">Positive values ~ increase in density in 2014,
-               Negative values ~ decrease in density in 2014</p>
-    <aside class="notes">
-    Since the Kernel Density is a continuous field, we can easily
-    subtract the density before and after and get a difference in pedestrian
-    density, where the positive values mean increase in density after the reconstruction.
-    </aside>
 </section>
 
 
