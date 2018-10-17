@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Austrian Academy of Sciences 2018 presentation</title>
+        <title>Texas A&M Corpus Christi 2018 presentation</title>
 
         <meta name="description" content="Slides for Vienna 2018 presentation">
         <meta name="author" content="Helena Mitasova">
@@ -66,52 +66,51 @@ Exploring changing landscapes <br>with dynamic visualizations and
 </section>
 
 <section>
-<h3>Modern 3D mapping technologies</h3>
+<h3>From 2D images to 3D digital models</h3>
+<p>
 <ul>
- <li>from 2D images to 3D digital models
- <li>Lidar technology transformed topography mapping in 21st century
- <li>UAS and SfM made 3D mapping accessible to everybody and any time
- <li>Beyond bare earth
- <li>3D data are now ubiquitous so we need easy to use tools to work with them: TL
+ <li><b>Lidar</b> technology transformed topography mapping in 21st century
+ <li><b>UAS and SfM</b> made 3D mapping accessible to everybody and any time
+ <li>Beyond bare earth: multitemporal mapping vegetation and structures 
+ <li>3D data are now ubiquitous so we need easy to use tools to work with them
 </ul>
+<p>Tour of 3D data applications
+<p><img height="200" src="img/surfaces/centennial_panorama_1-2.jpg"> 
 </section>
 
 <section>
-<h3>Case studies tour and TL examples</h3>
+<h2>North Carolina lidar surveys</h2>
 <ul>
- <li>NC coast: Jockey's Ridge multitemporal 3D data analysis and dynamic visualizations
- <li>NC coast: Nags Head, Rodanthe  - fast extraction of structures history, shoreline band
- <li>Hurricane impacts: students work - bridge flooding from lidar, rapid refining ADCIRC flooding extent predictions
- <li>Surface runoff: streel level modeling and field microtopography
- <li>Vegetation: geomorphons and 3D fragmentation index
-<li>what is TL and how it works
-</ul>
-</section>
-
-<!--
-<section>
-<h3>From digitized contours to lidar point clouds</h3>
-<p><img height="400" src="img/surfaces/digitized_cont2d_jr1999zoom.png">
-<img height="400" src="img/surfaces/pointcloud2d_jr2009zoom.png">
-</section>
--->
-
-<section>
-<h3>North Carolina lidar surveys</h3>
-<ul>
- <li>Coastal surveys started in 1996, multiple agencies, USGS, NASA, USACE, no systematic mapping - project driven or post hurricanes, capture dynamics of dunes, shorelines, vegetation and development
- <li>Statewide survey: first in US 2001-2005, second survey 2015-2018? funded by FEMA for flood insurance mapping, applications were much broader (e.g. statewide map of canopy height, etc.)
+ <li>Coastal surveys 
+  <ul>
+  <li>since 1996, but no systematic long term mapping 
+  <li>multiple agencies, USGS, NASA, USACE, 
+  <li> project driven, often post hurricanes
+  </ul>
+ <li>Statewide surveys
+  <ul>
+  <li>first in nation: 2001-2005, 
+  <li>second survey 2015-2018 
+  <li>funded by FEMA for flood insurance mapping, 
+  </ul>
+ <li>Local government and research surveys (NCALM)
+  <ul>
+  <li>limited spatial extent 
+  </ul>
 </ul>
 <!--
-<br>Survey in 1999 included Jockey's Ridge dunes: dense, noisy scattered point cloud
-<p><img height="440" src="img/surfaces/lidstorast1m.jpg">
-<p><small>DEM: 1m resolution, binned</small>
+<p><img height="140" src="img/surfaces/lidar_points98_08.jpg">
+<img height="140" src="img/surfaces/lidar_homes98_08.jpg">
+<p><small>increased point densities and level of detail between 1998 - 2008</small>
 -->
 </section>
 
 <section>
-<h2>Jockey's Ridge sand dunes</h2>
-Where is JR, state park
+<h3>Jockey's Ridge sand dunes</h3>
+Largest active system on the East coast, located within static state park boundaries
+<p>
+<img height="360" src="img/surfaces/NHstudyarea_geoinf09c.jpg">
+<img height="360" src="img/surfaces/JR_parkboundary.jpg">
 </section>
 
 <!--
@@ -137,10 +136,11 @@ DEMs interpolated at 1m resolution from diverse point data acquired by
 <p>
 GRASS GIS temporal framework for managing and analysis of the time series
   <img height="100" src="img/surfaces/timeline.png"> 
-   <img height="150" src="img/surfaces/timeline3D.png"> 
+   <img height="150" src="img/surfaces/jr_timeline3D.jpg"> 
 <br><small>Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.</small>
 </section>
 
+<!--
 <section>
 <h3>Exploring DEMs time series</h3>
 <p>Complex pattern of changes -  loss and increase in elevation 
@@ -148,6 +148,7 @@ GRASS GIS temporal framework for managing and analysis of the time series
    <img height="130" src="img/surfaces/temp_plot_leeward_pt.png">
    <img height="130" src="img/surfaces/temp_plot_windward_pt.png">
 </section>
+-->
 
 <section>
     <h3>DEM time series visualization</h3>
@@ -164,6 +165,15 @@ from crescentic dune to sand starved, fast moving parabolic dune
 </section>
 
 <section>
+ <h3>Annual dynamics from Planet imagery</h3>
+<p>
+Satellite imagery at 3m resolution, September 2017 - July 2018, captures impact of  
+storm in March 2018 with large ripples similar to those observed post Mathews
+<p>
+<iframe data-autoplay width="580" height="360" src="img/surfaces/sep17_july18.mp4" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section>
 <h3>Peak elevation and horizontal migration</h3>
 <ul>
   <li>linear trend in loss of peak elevation at 0.3m per year, from 43m to 20m
@@ -171,8 +181,8 @@ from crescentic dune to sand starved, fast moving parabolic dune
   <li>management challenges: dynamic feature confined to static park boundaries
 </ul>
 <p>
-<img height="280" src="img/surfaces/peakregression_1950_2017.png">
-<p>add horizontal migration graph or image of JR within boundaries in 74 and now
+<img height="250" src="img/surfaces/peakregression_1950_2017.png">
+<img height="250" src="img/surfaces/peakregression_1995_2017.png">
 </section>
 
 <section>
@@ -182,9 +192,8 @@ from crescentic dune to sand starved, fast moving parabolic dune
   <li>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
 </ul>
 <p>
-<img height="150" src="img/surfaces/core_2017_cut6.jpg">
+<img height="200" src="img/surfaces/jr_peakchange.png">
 <img height="200" src="img/surfaces/jr_74_17_cut3.jpg">
-<p>add vegetation gain/loss map, Katies vegetation evolution map?
 </section>
 
 <section>
@@ -302,10 +311,10 @@ izy model is coupled with SWM, but harder to run</small>
 <section>
 <h3>Onset of bridge flooding</h3>
 <p><small>William Ross for NC disaster management </small>
-<p>Bridges are cut out in lidar DEM to facilitate water routing, bridge deck polygon data
-were used to restore/add bridges to lidar DEM 
-<p><img height="220" src="img/surfaces/bridges_ortho.jpg">
-<p><img height="180" src="img/surfaces/bridges_dry.jpg">
+<p>Bridges are cut out in lidar DEM to facilitate water routing, 
+<br>bridge deck polygon data were used to add bridges back to lidar DEM 
+<p><img height="200" src="img/surfaces/bridges_ortho.jpg">
+<br><img height="180" src="img/surfaces/bridges_dry.jpg">
 </p>
 </section>
 
@@ -313,19 +322,23 @@ were used to restore/add bridges to lidar DEM
 <h3>Onset of bridge flooding</h3>
 <p><small>William Ross for NC disaster management </small>
 <p>Flood level was modeled using floodplain mapping data for 10, 100, 500 year storm
-<img height="200" src="img/surfaces/bridges_10yr.jpg">
-<img height="200" src="img/surfaces/bridges_500yr.jpg">
-<img height="130" src="img/surfaces/floodedI40_swinefac.jpg">
+<img height="180" src="img/surfaces/bridges_10yr.jpg">
+<img height="180" src="img/surfaces/bridges_500yr.jpg">
 </p>
-<small> <a href="https://www.youtube.com/watch?v=jTXa4sIxQvI">I-40 as a river in NCDOT drone video</a></small>
 </section>
 
 <section>
 <h3>County map of flooded bridges</h3>
-<p><small>William Ross for NC disaster management</small>
 <p>Flooded bridges mapped based on lidar, bridge and inundation data for 100 yr storm
-<br><img height="400" src="img/surfaces/bridgesall.jpg">
-<img height="420" src="img/surfaces/bridgesall100yr.jpg">
+<br><img height="420" src="img/surfaces/bridgesall.jpg">
+<img height="440" src="img/surfaces/bridgesall100yr.jpg">
+<p><small>Lumberton river at Lumberton in Robeson county, at intersection of I-95 and I-74</small>
+</section>
+
+<section>
+<h3>Flooded I-40 after Florence</h3>
+<img height="300" src="img/surfaces/floodedI40_swinefac.jpg">
+<p> <a href="https://www.youtube.com/watch?v=jTXa4sIxQvI">I-40 as a river in NCDOT drone video</a></p>
 </section>
 
 <section>
@@ -477,9 +490,21 @@ Platform for decision-making and science communication
     where people of different backgrounds can interact.
 <p>
 <img height="220px" src="img/surfaces/bhigames_composite.jpg">
-<br>Tangible Landscape website: 
-<a href="tangible-landscape.github.io">tangible-landscape.github.io</a>
-<br>TL wiki: github.com/tangible-landscape/grass-tangible-landscape/wiki
+</section>
+
+<section>
+<h3>Tangible Landscape for communities</h3>
+Storm surge defenses serious game
+<p>
+<img height="220px" src="img/surfaces/bhigames_composite.jpg">
+</section>
+
+<section>
+<h3>Actual coastal flooding</h3>
+Post Florence imagery from the area used for the serious game
+<p>
+<img height="420px" src="img/surfaces/Florence_flooding_BHedit.jpg">
+<!--<img height="220px" src="img/surfaces/BHIpostflorenceedit.jpg">-->
 </section>
 
 
@@ -496,10 +521,11 @@ Platform for decision-making and science communication
 
 <section>
 <h3>Thank You!</h3>
-<p>Thank you all for your contributions to the field - data, methods, algorithms and tools,
-that helped to bring the discipline to its current thriving state </p>
 <p>
 <iframe data-autoplay width="700" height="350" src="https://www.youtube.com/embed/Uje8ORyhBaQ?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Uje8ORyhBaQ" frameborder="0" allowfullscreen></iframe>
+<p>Tangible Landscape website:
+<a href="tangible-landscape.github.io">tangible-landscape.github.io</a>
+<br>TL wiki: github.com/tangible-landscape/grass-tangible-landscape/wiki
 </section>
 
 <section>
