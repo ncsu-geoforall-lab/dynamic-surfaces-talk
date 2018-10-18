@@ -74,10 +74,11 @@ Exploring changing landscapes <br>with dynamic visualizations and
  <li>Beyond bare earth: multitemporal mapping vegetation and structures 
  <li>3D data are now ubiquitous so we need easy to use tools to work with them
 </ul>
-<p>Tour of 3D data applications
+<p><b>Tour of elevation data applications</b>
 <p><img height="200" src="img/surfaces/centennial_panorama_1-2.jpg"> 
 </section>
 
+<!--
 <section>
 <h2>North Carolina lidar surveys</h2>
 <ul>
@@ -98,7 +99,6 @@ Exploring changing landscapes <br>with dynamic visualizations and
   <li>limited spatial extent 
   </ul>
 </ul>
-<!--
 <p><img height="140" src="img/surfaces/lidar_points98_08.jpg">
 <img height="140" src="img/surfaces/lidar_homes98_08.jpg">
 <p><small>increased point densities and level of detail between 1998 - 2008</small>
@@ -106,26 +106,15 @@ Exploring changing landscapes <br>with dynamic visualizations and
 </section>
 
 <section>
-<h3>Jockey's Ridge sand dunes</h3>
+<h2>Jockey's Ridge sand dunes</h2>
 Largest active system on the East coast, located within static state park boundaries
 <p>
 <img height="360" src="img/surfaces/NHstudyarea_geoinf09c.jpg">
 <img height="360" src="img/surfaces/JR_parkboundary.jpg">
 </section>
 
-<!--
 <section>
-    <h3>DEM feature extraction</h3>
-<p> Dune crests were extracted from profile curvatures of DEMs spanning 44 years 
-<br>to quantify dune migration rates and direction
-<p>
-<img height="350" src="img/surfaces/rfpfig4pcurv.jpg"> 
-<img height="350" src="img/surfaces/rfpfig4crestevol.jpg"> 
-ADD GRAPHS linear loss of elevation since 1953, accelerating migration 3-6 m/yr, 
-</section>
--->
-<section>
-<h3>Jockey's Ridge DEM time series</h3>
+<h3>Digital Elevation Model time series</h3>
 <p>
 DEMs interpolated at 1m resolution from diverse point data acquired by 
 <ul>
@@ -134,8 +123,8 @@ DEMs interpolated at 1m resolution from diverse point data acquired by
   <li>structure from motion from UAS imagery (2016-2017)
 </ul>
 <p>
-GRASS GIS temporal framework for managing and analysis of the time series
-  <img height="100" src="img/surfaces/timeline.png"> 
+<strong>GRASS GIS temporal framework</strong> for managing and analysis of the time series
+  <img height="110" src="img/surfaces/timeline.png"> 
    <img height="150" src="img/surfaces/jr_timeline3D.jpg"> 
 <br><small>Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.</small>
 </section>
@@ -171,29 +160,24 @@ Satellite imagery at 3m resolution, September 2017 - July 2018, captures impact 
 storm in March 2018 with large ripples similar to those observed post Mathews
 <p>
 <iframe data-autoplay width="580" height="360" src="img/surfaces/sep17_july18.mp4" frameborder="0" allowfullscreen></iframe>
+<p><small>Planet: world’s largest constellation of Earth-imaging (micro) satellites providing daily observations 
+for entire Earth at 3m resolution</small>
 </section>
 
 <section>
-<h3>Peak elevation and horizontal migration</h3>
-<ul>
-  <li>linear trend in loss of peak elevation at 0.3m per year, from 43m to 20m
-  <li>accelerating horizontal migration from 3m/yr to 6m/yr
-  <li>management challenges: dynamic feature confined to static park boundaries
-</ul>
+<h3>Vegetation</h3>
+<p>Vegetation has spread, but dune still kills trees on the leeward side
 <p>
-<img height="250" src="img/surfaces/peakregression_1950_2017.png">
-<img height="250" src="img/surfaces/peakregression_1995_2017.png">
+<img height="400" src="img/surfaces/jr_vegetation45_09.jpg">
+&nbsp; &nbsp;
+<img height="350" src="img/surfaces/veglost98_07.jpg">
 </section>
 
 <section>
-<h3>Volume and vegetation</h3>
-<ul>
-  <li>vegetation increased, but dune still kills trees on the leeward side
-  <li>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
-</ul>
+<h3>Sand volume</h3>
+  <p>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
 <p>
-<img height="200" src="img/surfaces/jr_peakchange.png">
-<img height="200" src="img/surfaces/jr_74_17_cut3.jpg">
+<img height="380" src="img/surfaces/jr_74_17_cut3.jpg">
 </section>
 
 <section>
@@ -214,6 +198,18 @@ is represented as isosurface: 16m and 20m </p>
 </section>
 
 <section>
+<h3>Peak elevation change </h3>
+<ul>
+  <li>linear trend in loss of peak elevation at 0.3 m/yr, from 43 m to 20 m
+  <li>accelerating horizontal migration from 3 m/yr to 6 m/yr
+</ul>
+<p>
+<img height="220" src="img/surfaces/jr_peakchange.jpg">
+<img height="200" src="img/surfaces/peakregression_1950_2017.png">
+<img height="200" src="img/surfaces/peakregression_1995_2017.png">
+</section>
+
+<section>
 <h3>Jockey's Ridge story</h3>
 <p>The 43 m high dune was a transient landform, 
 <br>transitioned between forest and active dunes over the past 2000 years 
@@ -224,6 +220,7 @@ is represented as isosurface: 16m and 20m </p>
 <br><small>Dune in early 1900 and in 2008, 2016</small>
 </section>
 
+<!--
 <section>
 <h2>Beaches, shorelines and development</h2>
 </section>
@@ -237,6 +234,7 @@ r.series analysis, core and envelope, shoreline migration band, home lost and co
 <h3>NH or Rodanthe</h3>
 maybe Eric's dune ridge line, check Doug's workshop on geomorphons
 </section>
+-->
 
 <section>
 <h2>From observations to modeling of processes</h2>
@@ -244,28 +242,33 @@ maybe Eric's dune ridge line, check Doug's workshop on geomorphons
 
 <section>
 <h3>Surface water flow, storm surge</h3>
-<p>Land surface controls water flow across landscapes
+<p>Elevation surface controls water flow across landscapes
 <p>Critical processes and impacts: surface runoff, flooding, storm surge
 <p><img height="220" src="img/surfaces/secrefstorm2006Alberto.jpg">
 <img height="220" src="img/surfaces/secref8-8-03ditch.jpg">
 <img height="220" src="img/surfaces/IreneRodanthe.jpg">
 </section>
 
+<!--
 <section>
 <h3>Challenges of modeling water at high resolution</h3>
-Complex, noisy surfaces, capture real depressions 
 </section>
+-->
 
 <section>
-<h3>Path sampling of continuous fields</h3>
-<p>robust solution of shallow water flow equations and process-based sediment transport
+<h3>Modeling surface water flow at high resolutions</h3>
+<ul>
+  <li>Challenging problem: complex, noisy surfaces, many real nested depressions 
+  <li>Path sampling: stochastic method based on duality of particles and fields
+</ul>
 <p>
     <img width="45%" src="img/surfaces/fanimwalk.gif">
      &nbsp; &nbsp;
     <img width="45%" src="img/surfaces/fanimhhcolp.gif">
-<p>Solver based on duality of particles and fields works for noisy surfaces, captures ponding in depressions
+<p class="credit">Mitasova, H., Thaxton, C., Hofierka, J., McLaughlin, R., Moore, A., Mitas L., 2005, Path sampling method for modeling overland water flow, sediment transport and short term terrain evolution in Open Source GIS. In: C.T. Miller, M.W. Farthing, V.G. Gray, G.F. Pinder eds., Proceedings of the XVth International Conference on Computational Methods in Water Resources (CMWR XV), June 13-17 2004, Chapel Hill, NC, USA, Elsevier, pp. 1479-1490. </p>
 </section>
 
+<!--
 <section>
 <h3>Neighborhood DEM </h3>
  <p>2013 lidar-based DEM - add images
@@ -273,6 +276,7 @@ Complex, noisy surfaces, capture real depressions
     <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
     <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
 </section>
+-->
 
 <section>
 <h3>High resolution water flow</h3>
@@ -284,6 +288,7 @@ Complex, noisy surfaces, capture real depressions
 izy model is coupled with SWM, but harder to run</small>
 </section>
 
+<!--
 <section>
 <h3>High resolution water flow</h3>
 <p>add animation with culvert free and clogged
@@ -293,6 +298,7 @@ izy model is coupled with SWM, but harder to run</small>
 <p><small> storm drains and stormwater pipes are in the map, only surface water flow is shown,
 izy model is coupled with SWM, but harder to run</small>
 </section>
+-->
 
 <section>
 <h3>Ultra-high resolution water flow: UAS mapping</h3>
@@ -336,24 +342,19 @@ izy model is coupled with SWM, but harder to run</small>
 </section>
 
 <section>
-<h3>Flooded I-40 after Florence</h3>
+<h3>Flooded I-40 after hurricane Florence</h3>
 <img height="300" src="img/surfaces/floodedI40_swinefac.jpg">
 <p> <a href="https://www.youtube.com/watch?v=jTXa4sIxQvI">I-40 as a river in NCDOT drone video</a></p>
+<p>2016 hurricane Mathews - use of drones was exploratory
+<p>2018 hurricane Frances - drones were in full servicei: assess flood conditions and structural damage, look for trapped people
 </section>
 
 <section>
-<h3>Drones for floodwater depth</h3>
-<p>William Ross for NC disaster management
-<p>2016 mathews - use of drones was exploratory
-<p>2018 Frances - drones in full service
-</p>
-</section>
-
-<section>
-<h3>Coastal flooding</h3>
-High resolution modeling is important
-<p><img height="300" src="img/surfaces/anim_storsurge.gif">
-<img height="300" src="img/surfaces/ncdot_cc_mirlo2012camp.jpg">
+<h3>Storm surge coastal flooding</h3>
+High resolution data capture the vulnerable terrain features
+<p><img height="320" src="img/surfaces/anim_storsurge.gif">
+<img height="320" src="img/surfaces/ncdot_cc_mirlo2012camp.jpg">
+<p><small>Simplified, geometry-based approach spreads water level from process-based model prediction at high resolution</small>
 </section>
 
 <section>
@@ -374,11 +375,12 @@ October 2017. (American Shore and Beach Preservation Association)
 </section>
 
 <section>
-<h3>Vegetation voxel models</h3>
-Generalized Fragmentation Index derived from 3D grid point counts:
+<h3>Vegetation structure from multiple return lidar</h3>
+<p><small>Vaclav Petras PhD research project</small>
+<p>Generalized Fragmentation Index derived from 3D grid point counts:
 vertical slice of raw point cloud and slice of fragmentation index 3D raster
 <p>
-<img height="350" src="img/surfaces/profiles_points_and_ff.png">
+<img height="360" src="img/surfaces/profiles_points_and_ff.png">
 </section>
 
 <section>
@@ -391,27 +393,42 @@ Slicing through fragmentation index 3D raster
 
 <section>
 <h3>Individual tree detection from lidar</h3>
-Geomorphons (Jasiewicz, Stepinski 2013) applied to vegetation surface:
-peaks represent individual trees. Detected trees are replaced by modeled trunks
-to improve accuracy of viewscape analysis (Tabrizian et al. 2018)
-<br>
+<p><small>Payam Tabrizian PhD research project</small>
+<ul>
+<li>Geomorphons (Jasiewicz, Stepinski 2013) applied to vegetation surface:
+summits represent individual trees. 
+<li>Detected deciduous trees are replaced by modeled trunks to improve accuracy of viewscape analysis 
+</ul>
+<p>
 <img height="260" src="img/surfaces/geomorphon.png">
 <img height="260" src="img/surfaces/trunk_replace.jpg">
 </section>
 
 <section>
-<h3>Individual tree detection from lidar</h3>
-to improve accuracy of viewscape analysis (Tabrizian et al. 2018)
-<br>
-<img height="260" src="img/surfaces/geomorphon.png">
-<img height="260" src="img/surfaces/trunk_replace.jpg">
+<h3>Improved viewshed extent</h3>
+<p><small>Payam Tabrizian PhD research project</small>
+<p>Viewshed based on bare ground DEM, lidar DSM, and modeled trunks
+<p>
+<!--<img height="160" src="img/surfaces/viewscape_DSM.jpg">-->
+<img height="180" src="img/surfaces/viewscape_DEM.jpg">
+<img height="180" src="img/surfaces/thick_view.jpg">
+<img height="180" src="img/surfaces/thin_view.jpg">
+<img height="180" src="img/surfaces/view_photos.png">
 </section>
 
 <section>
 <h3>Urban topography</h3>
-Solar irradiation during summer solstice at NCSU Centennial Campus
+Solar irradiation during summer solstice at NCSU Centennial Campus, derived 
+from lidar-based 0.5 m resolution DSM
 <p>
-<img height="430" src="img/surfaces/summer_solstice_centennial.gif">
+<img height="450" src="img/surfaces/summer_solstice_centennial.gif">
+</section>
+
+<section>
+<h3>Urban topography: UAS updates</h3>
+<p>2015 lidar updated with 2018 UAS data: two buildings added, some trees removed
+<p>
+    <img height="450" src="img/surfaces/centennial_uasupdate.gif">
 </section>
 
 <section>
