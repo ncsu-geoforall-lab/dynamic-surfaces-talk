@@ -6,7 +6,7 @@
 
         <title>AGU 2018 presentation</title>
 
-        <meta name="description" content="Slides for Vienna 2018 presentation">
+        <meta name="description" content="Slides for AGU 2018 presentation">
         <meta name="author" content="Helena Mitasova">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,59 +59,92 @@ Integration and Analysis of Lidar and UAS Surveys
 </section>
 
 <section>
-<h3>From 2D images to 3D digital models</h3>
+<h3>Multitemporal elevation data challenges</h3>
 <p>
 <ul>
  <li><b>Lidar</b> technology transformed topography mapping in 21st century
  <li><b>UAS and SfM</b> made 3D mapping accessible to everybody and any time
- <li>Multitemporal mapping of evolving landforms brings new insights into landscape dynamics
+ <li>monitoring dynamic landscapes is now possible at increasingly finer spatial and temporal resolutions (or scales?)
+ <li>rapid evolution of technology leads to data with varied properties: 
+often we have to work with multitemporal data rather than time-series
 </ul>
-<p><img height="200" src="img/surfaces/centennial_panorama_1-2.jpg"> 
-</section>
-
-<section>
-<h2>Jockey's Ridge sand dunes</h2>
-Largest active system on the East coast, located within static state park boundaries
-<p>
-<img height="360" src="img/surfaces/NHstudyarea_geoinf09c.jpg">
-<img height="360" src="img/surfaces/JR_parkboundary.jpg">
-</section>
-
-<section>
-<h3>Multitemporal Elevation Data</h3>
-<p>
-Diverse point data acquired by 
-<ul>
-  <li>photogrammetry (1974-98), 
-  <li>lidar (1999-2015), 
-  <li>structure from motion from UAS imagery (2016-2017)
-</ul>
- <p>  <img height="250" src="img/surfaces/pointclouds.jpg"> 
+<!--<p><img height="200" src="img/surfaces/centennial_panorama_1-2.jpg"> -->
+ <p> image showing old and new lidar DSM 
 </section>
 
 <section>
 <h3>GRASS GIS temporal framework</h3>
 <p>
-Managing and analysis of raster and vector time series
+Efficient management and basic analysis of raster and vector time series and multitemporal data
+<p>
   <img height="110" src="img/surfaces/timeline.png"> 
    <img height="150" src="img/surfaces/jr_timeline3D.jpg"> 
+<p>image with thumb images in the time series? is this supported by t* commands? e.g. using d.frame or is this in data catalog
 <br><small>Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.</small>
 </section>
 
 <section>
+<h3>Case studies</h3>
+<p>
+Jockey's Ridge sand dunes on the coast of North Carolina
+<p>
+NCSU agricultural field
+<p>
+<p>image of NC with the locations and imagery?
+<!--
+  <img height="110" src="img/surfaces/timeline.png">
+   <img height="150" src="img/surfaces/jr_timeline3D.jpg">
+-->
+</section>
+
+<section>
+<h2>Jockey's Ridge sand dunes</h2>
+<ul>
+<li> Largest active system on the East coast, located within static state park boundaries
+<li> Wind blown sand covers structures and roads outside the park, dune has been losing elevation
+</ul>
+<p>
+<img height="380" src="img/surfaces/NHstudyarea_geoinf09c.jpg">
+<img height="380" src="img/surfaces/JR_parkboundary.jpg">
+</section>
+
+<section>
+<h3>Multitemporal elevation data</h3>
+<p>
+To understand dune system evolution and inform management, diverse point data sets were acquired 
+Survey technologies included:
+<ul>
+  <li>photogrammetry (1974, 1995, 1998), 
+  <li>lidar (1999, 2001,2007,2008,2009,2012,2014,2015), 2018 surveyed, not yet available 
+  <li>structure from motion from UAS imagery (2016,2017)
+</ul>
+<p>sample point clouds to show diversity<img height="250" src="img/surfaces/pointclouds.jpg"> 
+</section>
+
+<section>
 <h3>Processing DEMs</h3>
-<p> Point cloud properties and accuracy, show graph along the road
-<p> Correcting systematic error
-<p> UAS survey issues
-<p> What accuracy and resolution do we need?
-<p> Interpolation by RST
+<ul>
+<li>data georeferenced to nc_nsm
+<li>point densities were analyzed and 1m resolution was selected for analysis
+<li>common spatial extent was mapped  using tgrass
+<li> Interpolation by RST, manually adjusted parameters 
+<li> Correcting systematic error, UAS survey issues
+<li> Accuracy sufficient to capture dune avolution
+</ul> 
+<p>common spatial extent, profile along road showing systematic errors (from Katie or make new)
+</section>
+
+<section>
+<h3>Processing DEMs: interpolation</h3>
+<p>Impact of RST tension on surface slope and curvatures
+<p>Parameters selected to reduce noise but preserve dune features (dune crests, slip faces, burried fences)
+<img height="380" src="img/surfaces/lidar_tension_curv.gif">
 </section>
 
 <section>
 <h3>Exploring DEMs time series</h3>
 <p>Complex pattern of changes -  loss and increase in elevation 
-<p>ADD map with location of queried points, difference 1974 - 2015
-<p>ADD evaluation of accuracy - systematic errors in lidar, UAS challenges for dune mapping
+<p>ADD map with location of queried points, difference map 1974 - 2015
    <img height="130" src="img/surfaces/temp_plot_leeward_pt.png">
    <img height="130" src="img/surfaces/temp_plot_windward_pt.png">
 </section>
@@ -120,7 +153,7 @@ Managing and analysis of raster and vector time series
     <h3>DEM time series visualization</h3>
 <p>Jockey's Ridge 1974 - 2017: southward migration, landform transformation
 from crescentic dune to sand starved, fast moving parabolic dune
-<p>ADD YEARS, LEGEND, SCALE
+<p><small>ADD YEARS, LEGEND, SCALE</small>
 <!--    <img height="350" src="img/surfaces/jrseries.png"> -->
     <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
 </section>
@@ -131,6 +164,7 @@ from crescentic dune to sand starved, fast moving parabolic dune
 
 </section>
 
+<!--
 <section>
  <h3>Annual dynamics from Planet imagery</h3>
 <p>
@@ -144,27 +178,23 @@ for entire Earth at 3m resolution</small>
 
 <section>
 <h3>Vegetation</h3>
-<p>Vegetation has spread, but dune still kills trees on the leeward side
+<ul>
+<li>burried vegetation extent was estimated using DEM and DSM (more details?)
+<li>Vegetation has spread, but dune still kills trees on the leeward side
+</ul>
 <p>
 <img height="400" src="img/surfaces/jr_vegetation45_09.jpg">
 &nbsp; &nbsp;
 <img height="350" src="img/surfaces/veglost98_07.jpg">
 </section>
-
-<section>
-<h3>Sand volume and redistribution</h3>
-  <p>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
-<p>EXPLAIN core/envelope here and show shrinking of core
-<p>
-<img height="380" src="img/surfaces/jr_74_17_cut3.jpg">
-</section>
+-->
 
 <section>
     <h3>Landform change: Contours time series</h3>
 Contours capture the landform change but they are hard to read
 <br>   <img height="260" src="img/surfaces/jr_74_2017_16mcontour.png"> 16m
 <br>   <img height="230" src="img/surfaces/jr_74_2017_20mcontour.jpg"> 20m
-<!--   <img height="130" src="img/surfaces/jr16/legend.png"> -->
+   <img height="130" src="img/surfaces/jr16/legend.png"> 
 </section>
 
 <section >
@@ -174,6 +204,14 @@ is represented as isosurface: 16m and 20m </p>
   <img height="400" src="img/surfaces/jr16/animation.gif"> 
 <!--<img src="img/jr18/animation.gif"> -->
 <img height="400" src="img/surfaces/jr20/animation.gif"> 
+</section>
+
+<section>
+<h3>Sand volume and redistribution, dune core</h3>
+  <p>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
+<p>EXPLAIN core/envelope here and show shrinking of core
+<p>
+<img height="380" src="img/surfaces/jr_74_17_cut3.jpg">
 </section>
 
 <section>
@@ -220,8 +258,18 @@ is represented as isosurface: 16m and 20m </p>
 
 <section>
 <h3>References</h3>
-<p>Papers JR, new in preparation
-<p>papers methods (Eric book) 
+<ul>
+<li>integration of lidar and UAS to monitor dune field evolution ESPL, in preparation
+<li>Petrasova, A., Mitasova, H., Petras, V., Jeziorska, J. 2017. Fusion of high-resolution DEMs for water flow modeling. In: Open Geospatial Data, Software and Standards. 2:6 https://opengeospatialdata.springeropen.com/articles/10.1186/s40965-017-0019-2
+<li> Hardin, E., Mitasova, H., Tateosian, L., Overton, M., 2014, GIS-based Analysis of Coastal Lidar Time-Series, Springer Briefs in Computer Science, Springer, New York, 84 p.  https://www.springer.com/us/book/9781493918348
+<li>Papers JR, new in preparationo
+<li>Mitas, O., Mitasova, H.; Brothers, G., Weaver, K., 2013, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.
+<li>Mitasova H., Harmon R.S., Weaver K.J., Lyons, N.J. and Overton, M.F., 2012, Scientific visualization of landscapes and landforms, Geomorphology 137(1), p. 122-137. (doi: 10.1016/j.geomorph.2010.09.033)
+<li><small>Mitasova, H., Overton, M., Harmon, R.S., 2005, Geospatial analysis of a coastal sand dune field evolution: Jockey's Ridge, North Carolina, Geomorphology 72, pp 204-221.
+</small>
+<li><small>H.Mitasova, H., Mitas, L. and Harmon, R.S., 2005, Simultaneous spline interpolation and topographic analysis for lidar elevation data: methods for Open source GIS, IEEE GRSL 2(4), pp. 375- 379.[pdf]
+</small>
+</ul>
 </section>
 
 <section>
@@ -233,10 +281,16 @@ is represented as isosurface: 16m and 20m </p>
 </section>
 
 <section>
-<h3>Urban topography: UAS updates</h3>
+<h3> Conclusion</h3>
+<ul>
+ <li>Multitemporal mapping of evolving landforms brings new insights into landscape dynamics
+ <li>next step - evolution of urban topography
+</ul>
+<p>
 <p>2015 lidar updated with 2018 UAS data: forested are replaced by a new school
 <p>
     <img height="450" src="img/surfaces/uas_lidar_update.gif">
+<br><a href="https://geospatial.ncsu.edu/geoforall/publications.html">NCSU GeoForAll Lab</a>
 </section>
 
 <section>
@@ -248,16 +302,6 @@ is represented as isosurface: 16m and 20m </p>
 <p>NCSU GeoForAll Lab Courses and Workshops
 <a href="https://geospatial.ncsu.edu/geoforall/courses.html">https://geospatial.ncsu.edu/geoforall/courses.html</a>
 <p><img height="280" src="img/surfaces/geovizlab_people2018.jpg">
-</section>
-
-<section>
-<h3>Thank You!</h3>
-<p>
-<iframe data-autoplay width="700" height="350" src="https://www.youtube.com/embed/Uje8ORyhBaQ?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Uje8ORyhBaQ" frameborder="0" allowfullscreen></iframe>
-<p>Tangible Landscape website:
-<a href="tangible-landscape.github.io">tangible-landscape.github.io</a>
-<br>TL wiki: github.com/tangible-landscape/grass-tangible-landscape/wiki
-<br><a href="https://geospatial.ncsu.edu/geoforall/publications.html">NCSU GeoForAll Lab</a>
 </section>
 
 <section>
