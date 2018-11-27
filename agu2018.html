@@ -84,11 +84,11 @@ Efficient management and basic analysis of raster and vector time series and mul
 </section>
 
 <section>
-<h3>Case studies</h3>
+<h2>Case studies</h2>
 <p>
 Jockey's Ridge sand dunes on the coast of North Carolina
 <p>
-NCSU agricultural field
+Microtopography of tilled field and crop surface 
 <p>
 <p>image of NC with the locations and imagery?
 <!--
@@ -98,10 +98,10 @@ NCSU agricultural field
 </section>
 
 <section>
-<h2>Jockey's Ridge sand dunes</h2>
+<h3>Jockey's Ridge sand dunes</h3>
 <ul>
-<li> Largest active system on the East coast, located within static state park boundaries
-<li> Wind blown sand covers structures and roads outside the park, dune has been losing elevation
+<li> Largest active dunes on the East coast, state park with static boundaries
+<li> Management challenges: wind blown sand covers structures and roads outside the park, dune lost elevation
 </ul>
 <p>
 <img height="380" src="img/surfaces/NHstudyarea_geoinf09c.jpg">
@@ -111,8 +111,8 @@ NCSU agricultural field
 <section>
 <h3>Multitemporal elevation data</h3>
 <p>
-To understand dune system evolution and inform management, diverse point data sets were acquired 
-Survey technologies included:
+To understand dune system evolution and inform the park management, elevation data sets
+acquired by the following survey technologies were used:
 <ul>
   <li>photogrammetry (1974, 1995, 1998), 
   <li>lidar (1999, 2001,2007,2008,2009,2012,2014,2015), 2018 surveyed, not yet available 
@@ -129,7 +129,7 @@ Survey technologies included:
 <li>common spatial extent was mapped  using tgrass
 <li> Interpolation by RST, manually adjusted parameters 
 <li> Correcting systematic error, UAS survey issues
-<li> Accuracy sufficient to capture dune avolution
+<li> Accuracy sufficient to capture dune evolution
 </ul> 
 <p>common spatial extent, profile along road showing systematic errors (from Katie or make new)
 </section>
@@ -137,8 +137,9 @@ Survey technologies included:
 <section>
 <h3>Processing DEMs: interpolation</h3>
 <p>Impact of RST tension on surface slope and curvatures
-<p>Parameters selected to reduce noise but preserve dune features (dune crests, slip faces, burried fences)
+<p>Parameters were selected to reduce noise but preserve dune features
 <img height="380" src="img/surfaces/lidar_tension_curv.gif">
+<p><small>H.Mitasova, H., Mitas, L. and Harmon, R.S., 2005, Simultaneous spline interpolation and topographic analysis for lidar elevation data: methods for Open source GIS, IEEE GRSL 2(4), pp. 375- 379.</small>
 </section>
 
 <section>
@@ -164,7 +165,6 @@ from crescentic dune to sand starved, fast moving parabolic dune
 
 </section>
 
-<!--
 <section>
  <h3>Annual dynamics from Planet imagery</h3>
 <p>
@@ -176,6 +176,7 @@ storm in March 2018 with large ripples similar to those observed post Mathews
 for entire Earth at 3m resolution</small>
 </section>
 
+<!--
 <section>
 <h3>Vegetation</h3>
 <ul>
@@ -190,11 +191,11 @@ for entire Earth at 3m resolution</small>
 -->
 
 <section>
-    <h3>Landform change: Contours time series</h3>
+    <h3>Landform change: contours time series</h3>
 Contours capture the landform change but they are hard to read
-<br>   <img height="260" src="img/surfaces/jr_74_2017_16mcontour.png"> 16m
+<br>   <img height="250" src="img/surfaces/jr_74_2017_16mcontour.png"> 16m
 <br>   <img height="230" src="img/surfaces/jr_74_2017_20mcontour.jpg"> 20m
-   <img height="130" src="img/surfaces/jr16/legend.png"> 
+&nbsp; &nbsp; &nbsp; &nbsp;  <img height="160" src="img/surfaces/jr_years_lg.png"> 
 </section>
 
 <section >
@@ -214,18 +215,20 @@ is represented as isosurface: 16m and 20m </p>
 <img height="380" src="img/surfaces/jr_74_17_cut3.jpg">
 </section>
 
+<!--
 <section>
     <h3>horizontal migration gradients</h3>
 <p>acceleration?
 <p>try gradients for the latest 10 year series?
 <p>try cloud to cloud or meshlab gradients
+  <p>accelerating horizontal migration from 3 m/yr to 6 m/yr
 </section>
+-->
 
 <section>
 <h3>Peak elevation change </h3>
 <ul>
   <li>linear trend in loss of peak elevation at 0.3 m/yr, from 43 m to 20 m
-  <li>accelerating horizontal migration from 3 m/yr to 6 m/yr
 </ul>
 <p>
 <img height="220" src="img/surfaces/jr_peakchange2.jpg">
@@ -236,8 +239,7 @@ is represented as isosurface: 16m and 20m </p>
 <section>
 <h3>Peak elevation change </h3>
 <ul>
-  <li>linear trend in loss of peak elevation at 0.3 m/yr, from 43 m to 20 m
-  <li>accelerating horizontal migration from 3 m/yr to 6 m/yr
+  <li>growth between 1917 - 1949, reconstruct DEM from 1949 and 60s imagery
 </ul>
 <p>
 <img height="220" src="img/surfaces/jr_peakchange.jpg">
@@ -253,23 +255,33 @@ is represented as isosurface: 16m and 20m </p>
 <br>
 <img height="220" src="img/surfaces/Kittytrees1900.jpg">
 <img height="220" src="img/surfaces/JR_2017_burriedtrees.jpg">
-<br><small>Dune in early 1900 and in 2008, 2016</small>
+<br><small>Dune in early 1900 and in 2008, 2016 ADD BULDOZER IMG HERE</small>
 </section>
 
+<!--
 <section>
-<h3>References</h3>
+<h3>Management and References</h3>
 <ul>
+<li>Understanding and quantification of dune migration informed dune management : relocation of sand leaving the park
+to the windward side to "feed" the dune
+<small>
 <li>integration of lidar and UAS to monitor dune field evolution ESPL, in preparation
+<li>Mitas, O., Mitasova, H.; Brothers, G., Weaver, K., 2013, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.
+<li>Mitasova, H., Overton, M., Harmon, R.S., 2005, Geospatial analysis of a coastal sand dune field evolution: Jockey's Ridge, North Carolina, Geomorphology 72, pp 204-221.
 <li>Petrasova, A., Mitasova, H., Petras, V., Jeziorska, J. 2017. Fusion of high-resolution DEMs for water flow modeling. In: Open Geospatial Data, Software and Standards. 2:6 https://opengeospatialdata.springeropen.com/articles/10.1186/s40965-017-0019-2
 <li> Hardin, E., Mitasova, H., Tateosian, L., Overton, M., 2014, GIS-based Analysis of Coastal Lidar Time-Series, Springer Briefs in Computer Science, Springer, New York, 84 p.  https://www.springer.com/us/book/9781493918348
-<li>Papers JR, new in preparationo
-<li>Mitas, O., Mitasova, H.; Brothers, G., Weaver, K., 2013, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.
 <li>Mitasova H., Harmon R.S., Weaver K.J., Lyons, N.J. and Overton, M.F., 2012, Scientific visualization of landscapes and landforms, Geomorphology 137(1), p. 122-137. (doi: 10.1016/j.geomorph.2010.09.033)
-<li><small>Mitasova, H., Overton, M., Harmon, R.S., 2005, Geospatial analysis of a coastal sand dune field evolution: Jockey's Ridge, North Carolina, Geomorphology 72, pp 204-221.
-</small>
-<li><small>H.Mitasova, H., Mitas, L. and Harmon, R.S., 2005, Simultaneous spline interpolation and topographic analysis for lidar elevation data: methods for Open source GIS, IEEE GRSL 2(4), pp. 375- 379.[pdf]
 </small>
 </ul>
+</section>
+-->
+
+<section>
+<h3>Agricultural field monitoring</h3>
+ <p>UAS based monitoring of field microtopography and crop topography
+<p>
+    <img height="450" src="img/surfaces/uas_03_depth.gif">
+<!--    <img height="350" src="img/surfaces/agisoft_jan.gif">-->
 </section>
 
 <section>
