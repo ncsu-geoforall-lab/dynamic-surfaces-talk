@@ -56,6 +56,7 @@ Integration and Analysis of Lidar and UAS Surveys
 <h4 style="color: #707070">Helena Mitasova
 <br>A. Petrasova, V. Petras, J. Jeziorska, C. Kling</h4>
 <p><img src="img/cgaBlack.png" height="40"> &nbsp; &nbsp; <img src="img/4x1white.jpg" height="25">
+<p><small>Data acknowledgment: NOAA digital coast, NC Floodplain mapping, USGA/NASA/NOAA coastal mapping, NC NGAT UAS mapping</small>
 </section>
 
 <section>
@@ -74,28 +75,23 @@ often we have to work with multitemporal data rather than time-series
 
 <section>
 <h3>GRASS GIS temporal framework</h3>
-<p> Efficient management and basic analysis of multitemporal raster and vector data
+<p> Efficient management and analysis of multitemporal 2D/3D raster and vector data
 <p>Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.
 <p>
   <img height="110" src="img/surfaces/timeline.png"> 
    <img height="160" src="img/surfaces/jr_timeline3D.jpg"> 
-<p>image with thumb images in the time series? is this supported by t* commands? e.g. using d.frame or is this in data catalog
+<br><img height="120" src="img/surfaces/series2.jpg">
 </section>
 
+<!--
 <section>
 <h2>Case studies</h2>
-<h3>
-Jockey's Ridge sand dunes on the coast of North Carolina</h3>
+<h3> Jockey's Ridge sand dunes on the coast of North Carolina</h3>
 <p>
-<h3>
-Microtopography of tilled field and crop surface 
-</h3>
+<h3> Microtopography of tilled field and crop surface </h3>
 <p>image of NC with the locations and imagery?
-<!--
-  <img height="110" src="img/surfaces/timeline.png">
-   <img height="150" src="img/surfaces/jr_timeline3D.jpg">
--->
 </section>
+-->
 
 <section>
 <h3>Jockey's Ridge sand dunes</h3>
@@ -103,40 +99,43 @@ Microtopography of tilled field and crop surface
 <li> Largest active dunes on the East coast, state park with static boundaries
 <li> Management challenges: wind blown sand covers structures and roads outside the park, dune lost elevation
 </ul>
-<p>
-<img height="380" src="img/surfaces/NHstudyarea_geoinf09c.jpg">
-<img height="380" src="img/surfaces/JR_parkboundary.jpg">
+<br>
+<img height="370" src="img/surfaces/NHstudyarea_geoinf09c.jpg">
+<img height="370" src="img/surfaces/JR_parkboundary.jpg">
+<br><small>Mitas, O., Mitasova, H.; Brothers, G., Weaver, K., 2014, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.</small>
 </section>
 
 <section>
-<h3>Multitemporal elevation data</h3>
+<h3>Coastal multitemporal elevation data</h3>
 <ul>
   <li>photogrammetry: 1974, 1995, 1998 
   <li>lidar: 1999, 2001,2007,2008,2009,2012,2014,2015
   <li>structure from motion from UAS imagery: 2016,2017
 </ul>
 <br>
-<img height="160" src="img/surfaces/points_1974.png"> 
-<img height="160" src="img/surfaces/points_1998.png"> 
-<img height="160" src="img/surfaces/points_1999.png"> 
-<br>1974, 1998, 1999
-<br><img height="160" src="img/surfaces/points_2001.png"> 
-<img height="160" src="img/surfaces/points_2009.png"> 
-<img height="160" src="img/surfaces/points_2015.png"> 
-<br>2001, 2009, 2015
+<img height="155" src="img/surfaces/points_1974.png"> 
+<img height="155" src="img/surfaces/points_1998.png"> 
+<img height="155" src="img/surfaces/points_1999.png"> 
+<br>1974 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    1998 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1999
+<br>
+<img height="155" src="img/surfaces/points_2001.png"> 
+<img height="155" src="img/surfaces/points_2009.png"> 
+<img height="155" src="img/surfaces/points_2015.png"> 
+<br>2001 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    2009 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2015
 </section>
 
 <section>
 <h3>Processing DEMs</h3>
 <ul>
-<li>data georeferenced to nc_nsm
-<li>point densities were analyzed and 1m resolution was selected for analysis
-<li>common spatial extent was mapped  using tgrass
-<li> Interpolation by RST, manually adjusted parameters 
-<li> Correcting systematic error, UAS survey issues
+<li>data georeferenced to nc_nsm, point densities were analyzed and 1m resolution was selected for analysis
+<li> Interpolation by RST, manually adjusted parameters, Correcting systematic error, UAS survey issues
 <li> Accuracy sufficient to capture dune evolution
 </ul> 
-<p>common spatial extent, profile along road showing systematic errors (from Katie or make new)
+<p>common spatial extent, 
+<br>profile along road showing systematic errors (from Katie or make new)
+<br><img height="200" src="img/surfaces/surveycount13.jpg"> 
 </section>
 
 <section>
@@ -159,7 +158,6 @@ Microtopography of tilled field and crop surface
     <h3>DEM time series visualization</h3>
 <p>Jockey's Ridge 1974 - 2017: southward migration, landform transformation
 from crescentic dune to sand starved, fast moving parabolic dune
-<p><small>ADD YEARS, LEGEND, SCALE</small>
 <!--    <img height="350" src="img/surfaces/jrseries.png"> -->
     <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
 </section>
@@ -258,9 +256,11 @@ is represented as isosurface: 16m and 20m </p>
 <br>transitioned between forest and active dunes over the past 2000 years 
 <p><img height="200" src="img/surfaces/JR_photosevol_17_50_08.jpg">
 <br>
-<img height="220" src="img/surfaces/Kittytrees1900.jpg">
-<img height="220" src="img/surfaces/JR_2017_burriedtrees.jpg">
-<br><small>Dune in early 1900 and in 2008, 2016 ADD BULDOZER IMG HERE</small>
+<img height="180" src="img/surfaces/Kittytrees1900.jpg">
+<img height="180" src="img/surfaces/JR_2017_burriedtrees.jpg">
+&nbsp;&nbsp;
+<img height="180" src="img/surfaces/buldoz1_s.jpg">
+<br><small>Dune in early 1900 and in 2016, sand removal at the park boundary in 2003</small>
 </section>
 
 <!--
@@ -271,7 +271,7 @@ is represented as isosurface: 16m and 20m </p>
 to the windward side to "feed" the dune
 <small>
 <li>integration of lidar and UAS to monitor dune field evolution ESPL, in preparation
-<li>Mitas, O., Mitasova, H.; Brothers, G., Weaver, K., 2013, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.
+<li>Mitas, O., Mitasova, H.; Brothers, G., Weaver, K., 2014, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.
 <li>Mitasova, H., Overton, M., Harmon, R.S., 2005, Geospatial analysis of a coastal sand dune field evolution: Jockey's Ridge, North Carolina, Geomorphology 72, pp 204-221.
 <li>Petrasova, A., Mitasova, H., Petras, V., Jeziorska, J. 2017. Fusion of high-resolution DEMs for water flow modeling. In: Open Geospatial Data, Software and Standards. 2:6 https://opengeospatialdata.springeropen.com/articles/10.1186/s40965-017-0019-2
 <li> Hardin, E., Mitasova, H., Tateosian, L., Overton, M., 2014, GIS-based Analysis of Coastal Lidar Time-Series, Springer Briefs in Computer Science, Springer, New York, 84 p.  https://www.springer.com/us/book/9781493918348
@@ -306,9 +306,11 @@ to the windward side to "feed" the dune
 <p>
 <p>2015 lidar updated with 2018 UAS data: forested are replaced by a new school
 <p>
-    <img height="400" src="img/surfaces/uas_lidar_update.gif">
+    <img height="380" src="img/surfaces/uas_lidar_update.gif">
 <br><a href="https://geospatial.ncsu.edu/geoforall/publications.html">NCSU GeoForAll Lab</a>
 </section>
+
+
 
 <section>
 <h3>Open Science</h3>
