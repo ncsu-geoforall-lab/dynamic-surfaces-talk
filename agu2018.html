@@ -56,7 +56,7 @@ Integration and Analysis of Lidar and UAS Surveys
 <h4 style="color: #707070">Helena Mitasova
 <br>A. Petrasova, V. Petras, J. Jeziorska, C. Kling</h4>
 <p><img src="img/cgaBlack.png" height="40"> &nbsp; &nbsp; <img src="img/4x1white.jpg" height="25">
-<p><small>Data acknowledgment: NOAA digital coast, NC Floodplain mapping, USGA/NASA/NOAA coastal mapping, NC NGAT UAS mapping</small>
+<p><small>Data acknowledgment: NOAA digital coast, NC Floodplain mapping, NCALM, USGA/NASA/NOAA coastal mapping, NC NGAT UAS mapping</small>
 </section>
 
 <section>
@@ -108,7 +108,7 @@ often we have to work with multitemporal data rather than time-series
 <section>
 <h3>Coastal multitemporal elevation data</h3>
 <ul>
-  <li>photogrammetry: 1974, 1995, 1998 
+  <li>photogrammetry: 1974, 1995, 1998
   <li>lidar: 1999, 2001,2007,2008,2009,2012,2014,2015
   <li>structure from motion from UAS imagery: 2016,2017
 </ul>
@@ -124,18 +124,33 @@ often we have to work with multitemporal data rather than time-series
 <img height="155" src="img/surfaces/points_2015.png"> 
 <br>2001 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     2009 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2015
+<br><small>vertical / horiz. accuracy: 0.7 / 0.4 m photogrammetry, 0.15 / 0.2 - 0.8 m lidar</small>
 </section>
 
 <section>
 <h3>Processing DEMs</h3>
 <ul>
-<li>data georeferenced to nc_nsm, point densities were analyzed and 1m resolution was selected for analysis
-<li> Interpolation by RST, manually adjusted parameters, Correcting systematic error, UAS survey issues
-<li> Accuracy sufficient to capture dune evolution
+<li>1m resolution DEMs: interpolated with regularized spline with tension
+<li>Elevations along I-158 were extracted to evaluate systematic errors
+<li>UAS survey did not cover the road, GCPs on dune were used
 </ul> 
-<p>common spatial extent, 
-<br>profile along road showing systematic errors (from Katie or make new)
-<br><img height="200" src="img/surfaces/surveycount13.jpg"> 
+<p><img height="200" src="img/surfaces/surveycount13.jpg"> 
+<img height="205" src="img/surfaces/profile_i158_99_15southb.jpg"> 
+<p><small>number of surveys per grid cell &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+profiles along I-158 road section from lidar DEMs 1999-2015 </small>
+</section>
+
+<section>
+<h3>Processing DEMs</h3>
+<ul>
+<li>1m resolution DEMs: interpolated with regularized spline with tension
+<li>Elevations along I-158 were extracted to evaluate systematic errors
+<li>UAS survey did not cover the road, GCPs on dune were used
+</ul>
+<p><img height="200" src="img/surfaces/surveycount13.jpg">
+<img height="208" src="img/surfaces/profile_i158_99_15corr2.jpg">
+<p><small>number of surveys per grid cell &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+profiles along I-158 section: corrected lidar DEMs 1999-2015 </small>     
 </section>
 
 <section>
@@ -147,16 +162,19 @@ often we have to work with multitemporal data rather than time-series
 </section>
 
 <section>
-<h3>Exploring DEMs time series</h3>
-<p>Complex pattern of changes -  loss and increase in elevation 
-<p>ADD map with location of queried points, difference map 1974 - 2015
+<h3>Complex pattern of changes</h3>
+<p>DEM differences show both loss and increase in elevation 
+<p>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
+<p>EXPLAIN core/envelope here and show shrinking of core
+<p>
+<img height="300" src="img/surfaces/jr_74_17_cut3.jpg">
+<br>   <img height="130" src="img/surfaces/temp_plot_windward_pt.png">
    <img height="130" src="img/surfaces/temp_plot_leeward_pt.png">
-   <img height="130" src="img/surfaces/temp_plot_windward_pt.png">
 </section>
 
 <section>
     <h3>DEM time series visualization</h3>
-<p>Jockey's Ridge 1974 - 2017: southward migration, landform transformation
+<p>Jockey's Ridge 1974 - 2017: southward migration at 3-6 m/yr, landform transformation
 from crescentic dune to sand starved, fast moving parabolic dune
 <!--    <img height="350" src="img/surfaces/jrseries.png"> -->
     <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
@@ -210,14 +228,6 @@ is represented as isosurface: 16m and 20m </p>
 <img height="400" src="img/surfaces/jr20/animation.gif"> 
 </section>
 
-<section>
-<h3>Sand volume and redistribution, dune core</h3>
-  <p>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
-<p>EXPLAIN core/envelope here and show shrinking of core
-<p>
-<img height="380" src="img/surfaces/jr_74_17_cut3.jpg">
-</section>
-
 <!--
 <section>
     <h3>horizontal migration gradients</h3>
@@ -237,6 +247,7 @@ is represented as isosurface: 16m and 20m </p>
 <img height="220" src="img/surfaces/jr_peakchange2.jpg">
 <img height="200" src="img/surfaces/peakregression_1950_2017.png">
 <img height="200" src="img/surfaces/peakregression_1995_2017.png">
+<br>Location of peak migrates following dune transformation
 </section>
 
 <section>
@@ -248,6 +259,7 @@ is represented as isosurface: 16m and 20m </p>
 <img height="220" src="img/surfaces/jr_peakchange.jpg">
 <img height="200" src="img/surfaces/peakregression_1950_2017.png">
 <img height="200" src="img/surfaces/peakregression_1995_2017.png">
+<br>Location of peak migrates following dune transformation
 </section>
 
 <section>
