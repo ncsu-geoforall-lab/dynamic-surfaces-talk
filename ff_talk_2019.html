@@ -148,7 +148,7 @@ from crescentic dune to sand starved, fast moving parabolic dune
 </section>
 
 
-<section class="stretch" data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
+<section data-img-style="style='stretch''" data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
 <h3>DEM time series visualization 1974 - 2017</h3>
 
 </section>
@@ -812,7 +812,14 @@ function createSlidersAnim(slide) {
     var slidenum = $(slide).data('animate')
     var slidenums = slidenum.split(",")
     slhtml = `<div class="slider" id="slider" style="background: #d2d2d2;width: 400px;margin: auto;margin-bottom: 15px"></div>`
-    slhtml += `<img id="animimage" width="100%" style="margin:auto">`
+
+    var style = $(slide).data('img-style')
+    if (!style) {
+        style = `width="100%" style="margin:auto"`
+    }
+    slhtml += `<img id="animimage" `
+    slhtml += style
+    slhtml += `>`
 
     slide.innerHTML += slhtml
         var slider = slide.querySelector('#slider');
