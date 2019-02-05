@@ -1,0 +1,844 @@
+<!doctype html> <html lang="en">
+<!-- This is a generated file. Do not edit. -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Texas A&M Corpus Christi 2018 presentation</title>
+
+        <meta name="description" content="Slides for Vienna 2018 presentation">
+        <meta name="author" content="Helena Mitasova">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ncsu-geoforall-lab.css" id="theme">
+        <link rel="stylesheet" href="css/nouislider.css" id="slide">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- For chalkboard plugin -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+<section>
+<!--<h4 style="color: #707070">AAS 2018</h4>-->
+<h2 style="margin-top: 0.0em;color: #000"> 
+Exploring changing landscapes <br>with dynamic visualizations and 
+<br>tangible interaction
+</h2>
+<p>
+<h3 style="color: #707070">Helena Mitasova</h3>
+<!--<img height="50px" style="margin-top: 2em" src="img/cgaBlack.png">
+<h5 style="color: #000">North Carolina State University</h5>-->
+<p>
+<!--    <img src="img/hofierka.jpg" height="120">-->
+    <img src="img/petrasova.jpg" height="120"> <img src="img/vpetras.jpg" height="120">
+    <img src="img/baharmon.jpg" height="120"> <img src="img/payam.jpg" height="120">
+    <img src="img/Justyna_Jeziorska.jpg" height="120">
+</p>
+<p><small>A. Petrasova, &nbsp; &nbsp; V. Petras, &nbsp; &nbsp; B. Harmon, 
+&nbsp; &nbsp; P. Tabrizian, &nbsp; &nbsp; J. Jeziorska</small>
+<p><img src="img/cgaBlack.png" height="40"> &nbsp; &nbsp; <img src="img/4x1white.jpg" height="25">
+</section>
+
+<section>
+<h3>From 2D images to 3D digital models</h3>
+<p>
+<ul>
+ <li><b>Lidar</b> technology transformed topography mapping in 21st century
+ <li><b>UAS and SfM</b> made 3D mapping accessible to everybody and any time
+ <li>Beyond bare earth: multitemporal mapping vegetation and structures 
+ <li>3D data are now ubiquitous so we need easy to use tools to work with them
+</ul>
+<p><b>Tour of elevation data applications</b>
+<p><img height="200" src="img/surfaces/centennial_panorama_1-2.jpg"> 
+</section>
+
+<!--
+<section>
+<h2>North Carolina lidar surveys</h2>
+<ul>
+ <li>Coastal surveys 
+  <ul>
+  <li>since 1996, but no systematic long term mapping 
+  <li>multiple agencies, USGS, NASA, USACE, 
+  <li> project driven, often post hurricanes
+  </ul>
+ <li>Statewide surveys
+  <ul>
+  <li>first in nation: 2001-2005, 
+  <li>second survey 2015-2018 
+  <li>funded by FEMA for flood insurance mapping, 
+  </ul>
+ <li>Local government and research surveys (NCALM)
+  <ul>
+  <li>limited spatial extent 
+  </ul>
+</ul>
+<p><img height="140" src="img/surfaces/lidar_points98_08.jpg">
+<img height="140" src="img/surfaces/lidar_homes98_08.jpg">
+<p><small>increased point densities and level of detail between 1998 - 2008</small>
+-->
+</section>
+
+<section>
+<h2>Jockey's Ridge sand dunes</h2>
+Largest active system on the East coast, located within static state park boundaries
+<p>
+<img height="360" src="img/surfaces/NHstudyarea_geoinf09c.jpg">
+<img height="360" src="img/surfaces/JR_parkboundary.jpg">
+</section>
+
+<section>
+<h3>Digital Elevation Model time series</h3>
+<p>
+DEMs interpolated at 1m resolution from diverse point data acquired by 
+<ul>
+  <li>photogrammetry (1974-98), 
+  <li>lidar (1999-2015), 
+  <li>structure from motion from UAS imagery (2016-2017)
+</ul>
+<p>
+<strong>GRASS GIS temporal framework</strong> for managing and analysis of the time series
+  <img height="110" src="img/surfaces/timeline.png"> 
+   <img height="150" src="img/surfaces/jr_timeline3D.jpg"> 
+<br><small>Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.</small>
+</section>
+
+<!--
+<section>
+<h3>Exploring DEMs time series</h3>
+<p>Complex pattern of changes -  loss and increase in elevation 
+<p>add map with location of queried points, difference 1974 - 2015
+   <img height="130" src="img/surfaces/temp_plot_leeward_pt.png">
+   <img height="130" src="img/surfaces/temp_plot_windward_pt.png">
+</section>
+-->
+
+<section>
+    <h3>DEM time series visualization</h3>
+<p>Jockey's Ridge 1974 - 2017: southward migration, landform transformation
+from crescentic dune to sand starved, fast moving parabolic dune
+<!--    <img height="350" src="img/surfaces/jrseries.png"> -->
+    <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
+</section>
+
+
+<section class="stretch" data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
+<h3>DEM time series visualization 1974 - 2017</h3>
+
+</section>
+
+<section>
+ <h3>Annual dynamics from Planet imagery</h3>
+<p>
+Satellite imagery at 3m resolution, September 2017 - July 2018, captures impact of  
+storm in March 2018 with large ripples similar to those observed post Mathews
+<p>
+<iframe data-autoplay width="580" height="360" src="img/surfaces/sep17_july18.mp4" frameborder="0" allowfullscreen></iframe>
+<p><small>Planet: world’s largest constellation of Earth-imaging (micro) satellites providing daily observations 
+for entire Earth at 3m resolution</small>
+</section>
+
+<section>
+<h3>Vegetation</h3>
+<p>Vegetation has spread, but dune still kills trees on the leeward side
+<p>
+<img height="400" src="img/surfaces/jr_vegetation45_09.jpg">
+&nbsp; &nbsp;
+<img height="350" src="img/surfaces/veglost98_07.jpg">
+</section>
+
+<section>
+<h3>Sand volume</h3>
+  <p>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
+<p>
+<img height="380" src="img/surfaces/jr_74_17_cut3.jpg">
+</section>
+
+<section>
+    <h3>Contours time series</h3>
+Contours capture the landform change but they are hard to read
+<br>   <img height="260" src="img/surfaces/jr_74_2017_16mcontour.png"> 16m
+<br>   <img height="230" src="img/surfaces/jr_74_2017_20mcontour.jpg"> 20m
+<!--   <img height="130" src="img/surfaces/jr16/legend.png"> -->
+</section>
+
+<section >
+    <h3>Space-Time cube visualization</h3>
+<p>DEM time series is converted into space-time voxel model in TGRASS and evolution of a contour 
+is represented as isosurface: 16m and 20m </p>
+  <img height="400" src="img/surfaces/jr16/animation.gif"> 
+<!--<img src="img/jr18/animation.gif"> -->
+<img height="400" src="img/surfaces/jr20/animation.gif"> 
+</section>
+
+<section>
+<h3>Peak elevation change </h3>
+<ul>
+  <li>linear trend in loss of peak elevation at 0.3 m/yr, from 43 m to 20 m
+  <li>accelerating horizontal migration from 3 m/yr to 6 m/yr
+</ul>
+<p>
+<img height="220" src="img/surfaces/jr_peakchange2.jpg">
+<img height="200" src="img/surfaces/peakregression_1950_2017.png">
+<img height="200" src="img/surfaces/peakregression_1995_2017.png">
+</section>
+
+<section>
+<h3>Peak elevation change </h3>
+<ul>
+  <li>linear trend in loss of peak elevation at 0.3 m/yr, from 43 m to 20 m
+  <li>accelerating horizontal migration from 3 m/yr to 6 m/yr
+</ul>
+<p>
+<img height="220" src="img/surfaces/jr_peakchange.jpg">
+<img height="200" src="img/surfaces/peakregression_1950_2017.png">
+<img height="200" src="img/surfaces/peakregression_1995_2017.png">
+</section>
+
+<section>
+<h3>Jockey's Ridge story</h3>
+<p>The 43 m high dune was a transient landform, 
+<br>transitioned between forest and active dunes over the past 2000 years 
+<p><img height="200" src="img/surfaces/JR_photosevol_17_50_08.jpg">
+<br>
+<img height="220" src="img/surfaces/Kittytrees1900.jpg">
+<img height="220" src="img/surfaces/JR_2017_burriedtrees.jpg">
+<br><small>Dune in early 1900 and in 2008, 2016</small>
+</section>
+
+<!--
+<section>
+<h2>Beaches, shorelines and development</h2>
+</section>
+
+<section>
+<h3>NH or Rodanthe</h3>
+r.series analysis, core and envelope, shoreline migration band, home lost and constructed
+</section>
+
+<section>
+<h3>NH or Rodanthe</h3>
+maybe Eric's dune ridge line, check Doug's workshop on geomorphons
+</section>
+-->
+
+<section>
+<h2>From observations to modeling of processes</h2>
+</section>
+
+<section>
+<h3>Surface water flow, storm surge</h3>
+<p>Elevation surface controls water flow across landscapes
+<p>Critical processes and impacts: surface runoff, flooding, storm surge
+<p><img height="220" src="img/surfaces/secrefstorm2006Alberto.jpg">
+<img height="220" src="img/surfaces/secref8-8-03ditch.jpg">
+<img height="220" src="img/surfaces/IreneRodanthe.jpg">
+</section>
+
+<!--
+<section>
+<h3>Challenges of modeling water at high resolution</h3>
+</section>
+-->
+
+<section>
+<h3>Modeling surface water flow at high resolutions</h3>
+<ul>
+  <li>Challenging problem: complex, noisy surfaces, many real nested depressions 
+  <li>Path sampling: stochastic method based on duality of particles and fields
+</ul>
+<p>
+    <img width="45%" src="img/surfaces/fanimwalk.gif">
+     &nbsp; &nbsp;
+    <img width="45%" src="img/surfaces/fanimhhcolp.gif">
+<p class="credit">Mitasova, H., Thaxton, C., Hofierka, J., McLaughlin, R., Moore, A., Mitas L., 2005, Path sampling method for modeling overland water flow, sediment transport and short term terrain evolution in Open Source GIS. In: C.T. Miller, M.W. Farthing, V.G. Gray, G.F. Pinder eds., Proceedings of the XVth International Conference on Computational Methods in Water Resources (CMWR XV), June 13-17 2004, Chapel Hill, NC, USA, Elsevier, pp. 1479-1490. </p>
+</section>
+
+<!--
+<section>
+<h3>Neighborhood DEM </h3>
+ <p>2013 lidar-based DEM - add images
+<p>
+    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
+    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+</section>
+-->
+
+<section>
+<h3>High resolution water flow</h3>
+ <p> Street level modeling of surface runoff using path sampling method 
+<p>
+    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
+    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+<p><small> storm drains and stormwater pipes are in the map, only surface water flow is shown,
+izy model is coupled with SWM, but harder to run</small>
+</section>
+
+<!--
+<section>
+<h3>High resolution water flow</h3>
+<p>add animation with culvert free and clogged
+<p>
+    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
+    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+<p><small> storm drains and stormwater pipes are in the map, only surface water flow is shown,
+izy model is coupled with SWM, but harder to run</small>
+</section>
+-->
+
+<section>
+<h3>Ultra-high resolution water flow: UAS mapping</h3>
+ <p>Modeling impact of tillage and rills on surface water flow using 0.2m DEM derived by SfM based on UAS imagery 
+<p>
+    <img height="450" src="img/surfaces/uas_03_depth.gif">
+<!--    <img height="350" src="img/surfaces/agisoft_jan.gif">-->
+</section>
+
+<section>
+<h2>Modeling flooding extent</h2>
+<h3> Students are making an impact</h3>
+ <p> Project-based graduate courses since 2008
+ <p> Integration of open source GIS in courses
+</section>
+
+<section>
+<h3>Onset of bridge flooding</h3>
+<p><small>William Ross for NC disaster management </small>
+<p>Bridges are cut out in lidar DEM to facilitate water routing, 
+<br>bridge deck polygon data were used to add bridges back to lidar DEM 
+<p><img height="200" src="img/surfaces/bridges_ortho.jpg">
+<br><img height="180" src="img/surfaces/bridges_dry.jpg">
+</p>
+</section>
+
+<section>
+<h3>Onset of bridge flooding</h3>
+<p><small>William Ross for NC disaster management </small>
+<p>Flood level was modeled using floodplain mapping data for 10, 100, 500 year storm
+<img height="180" src="img/surfaces/bridges_10yr.jpg">
+<img height="180" src="img/surfaces/bridges_500yr.jpg">
+</p>
+</section>
+
+<section>
+<h3>County map of flooded bridges</h3>
+<p>Flooded bridges mapped based on lidar, bridge and inundation data for 100 yr storm
+<br><img height="420" src="img/surfaces/bridgesall.jpg">
+<img height="440" src="img/surfaces/bridgesall100yr.jpg">
+<p><small>Lumberton river at Lumberton in Robeson county, at intersection of I-95 and I-74</small>
+</section>
+
+<section>
+<h3>Flooded I-40 after hurricane Florence</h3>
+<img height="300" src="img/surfaces/floodedI40_swinefac.jpg">
+<p> <a href="https://www.youtube.com/watch?v=jTXa4sIxQvI">I-40 as a river in NCDOT drone video</a></p>
+<p>2016 hurricane Mathews - use of drones was exploratory
+<p>2018 hurricane Frances - drones were in full servicei: assess flood conditions and structural damage, look for trapped people
+</section>
+
+<section>
+<h3>Storm surge coastal flooding</h3>
+High resolution data capture the vulnerable terrain features
+<p><img height="320" src="img/surfaces/anim_storsurge.gif">
+<img height="320" src="img/surfaces/ncdot_cc_mirlo2012camp.jpg">
+<p><small>Simplified, geometry-based approach spreads water level from process-based model prediction at high resolution</small>
+</section>
+
+<section>
+<h3>Improving storm surge flooding predictions</h3>
+<p>Nelson Tull for operational storm surge prediction using ADCIRC
+<br> Hurricane Matthew Hindcast - number of buildings flooded: before enhancement: 2435;
+after: 3886, a 60 percent increase.
+<p><img height="350" src="img/surfaces/stormsurge_refined.png">
+</p>
+<p class="credit">N. Tull, J.C. Dietrich, T.E. Langan, H. Mitasova, B.O. Blanton, J.G. Fleming, R.A. Luettich
+2018, Improving Accuracy of Real-Time Storm Surge Inundation Predictions Using GRASS GIS, Poster at ASBPA conference,
+October 2017. (American Shore and Beach Preservation Association)
+</p>
+</section>
+
+<section>
+<h2>Beyond bare earth surface</h2>
+</section>
+
+<section>
+<h3>Vegetation structure from multiple return lidar</h3>
+<p><small>Vaclav Petras PhD research project</small>
+<p>Generalized Fragmentation Index derived from 3D grid point counts:
+vertical slice of raw point cloud and slice of fragmentation index 3D raster
+<p>
+<img height="360" src="img/surfaces/profiles_points_and_ff.png">
+</section>
+
+<section>
+<h3>Vegetation voxel models</h3>
+Slicing through fragmentation index 3D raster
+<p>
+<img height="400" src="img/surfaces/voxels_vegetation_anim.gif">
+<small>Petras, V., D. J. Newcomb, and H. Mitasova. 2017. Generalized 3D fragmentation index derived from lidar point clouds. In: Open Geospatial Data, Software and Standards 2(9). DOI 10.1186/s40965-017-0021-8 </small>
+</section>
+
+<section>
+<h3>Individual tree detection from lidar</h3>
+<p><small>Payam Tabrizian PhD research project</small>
+<ul>
+<li>Geomorphons (Jasiewicz, Stepinski 2013) applied to vegetation surface:
+summits represent individual trees. 
+<li>Detected deciduous trees are replaced by modeled trunks to improve accuracy of viewscape analysis 
+</ul>
+<p>
+<img height="260" src="img/surfaces/geomorphon.png">
+<img height="260" src="img/surfaces/trunk_replace.jpg">
+</section>
+
+<section>
+<h3>Improved viewshed extent</h3>
+<p><small>Payam Tabrizian PhD research project</small>
+<p>Viewshed based on bare ground DEM, lidar DSM, and modeled trunks
+<p>
+<!--<img height="160" src="img/surfaces/viewscape_DSM.jpg">-->
+<img height="180" src="img/surfaces/viewscape_DEM.jpg">
+<img height="180" src="img/surfaces/thick_view.jpg">
+<img height="180" src="img/surfaces/thin_view.jpg">
+<img height="180" src="img/surfaces/view_photos.png">
+</section>
+
+<section>
+<h3>Urban topography</h3>
+Solar irradiation during summer solstice at NCSU Centennial Campus, derived 
+from lidar-based 0.5 m resolution DSM
+<p>
+<img height="450" src="img/surfaces/summer_solstice_centennial.gif">
+</section>
+
+<section>
+<h3>Urban topography: UAS updates</h3>
+<p>3D model of area with new buildings and removed trees
+<p>
+    <img height="450" src="img/surfaces/CC_uas2018_full3D.jpg">
+</section>
+
+<section>
+<h3>Urban topography: UAS updates</h3>
+<p>2015 lidar-based DSM updated with UAS acquired data 
+<p>
+    <img height="450" src="img/surfaces/centennial_uasupdate.gif">
+</section>
+
+<section>
+<h3>Urban topography: UAS updates</h3>
+<p>2015 lidar-based DSM in rapidly urbanizing area
+<p>
+    <img height="450" src="img/surfaces/apex_dsm_ortho.png">
+</section>
+
+<section>
+<h3>Urban topography: UAS updates</h3>
+<p>2015 lidar updated with 2018 UAS data: forested are replaced by a new school
+<p>
+    <img height="450" src="img/surfaces/uas_lidar_update.gif">
+</section>
+
+
+<section>
+<h2>Tangible interface for surface analysis and process modeling</h2>
+</section>
+
+<section>
+<h3>Tangible Landscape</h3>
+<p> Bringing people together around GIS: Tangible user interface for GRASS GIS
+<p>Designed to make working with geospatial data and simulations engaging, and fun</p>
+<p>
+    <img height="180" src="img/surfaces/tangible_landscape_compcrop.jpg">
+<p>
+Petrasova, A. et al. (2018). Tangible Modeling with Open Source GIS. Second edition. Springer International Publishing.
+<a href="https://doi.org/10.1007/978-3-319-89303-7">https://doi.org/10.1007/978-3-319-89303-7</a>
+</section>
+
+<section>
+<h3>How does it work?</h3>
+<iframe data-autoplay width="50%" height="330" src="https://www.youtube.com/embed/Cd3cCQTGer4?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Cd3cCQTGer4" frameborder="0" allowfullscreen></iframe>
+&nbsp; &nbsp;<img height=380 src="img/surfaces/rendered_diagram_2.png">
+<p>Tangible Landscape couples a digital and a physical model through a continuous cycle of 3D scanning, geospatial modeling, and projection</p>
+</section>
+
+<section>
+<h3>Interactions</h3>
+<p><img height="450" src="img/surfaces/tl_interactions_all.jpg">
+</section>
+
+<section>
+    <h3>Coupling with 3D rendering</h3>
+<p><img height="450" src="img/surfaces/process4.png">
+</section>
+
+<section>
+    <h3>Design scenario analysis</h3>
+<p><img height="480" src="img/surfaces/process7.png">
+</section>
+
+<!--
+<section>
+    <h3>Tangible Landscape + Immersive Virtual Reality</h3>
+<img height="180" src="img/surfaces/coupling_case3.jpg">
+  <iframe data-autoplay width="853" height="480"  src="https://www.youtube.com/embed/pYbpEMjME1Y?rel=0&amp;showinfo=0" frameborder="0" allo
+wfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/akCTeknStmQ?rel=0&amp;start=32" frameborder="0" allow="autoplay; encrypted-me
+dia" allowfullscreen></iframe>
+</section>
+-->
+
+<section>
+<h3>Tangible Landscape for designers and researchers</h3>
+<p>
+<img height="300px" src="img/surfaces/tl_planting_3.jpg">
+<img height="300px" src="img/surfaces/TL_scientists.jpg">
+</section>
+
+<section>
+<h3>Tangible Landscape for education</h3>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6FurEeW28?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<img height="260" src="img/surfaces/collaboration2.JPG">
+</section>
+
+<section>
+<h3>Tangible Landscape for communities</h3>
+Platform for decision-making and science communication
+    where people of different backgrounds can interact.
+<p>
+<img height="220px" src="img/surfaces/bhigames_composite.jpg">
+<p>Storm surge defenses serious game
+</section>
+
+<section>
+<h3>Actual coastal flooding post Florence</h3>
+<p>
+<img height="450px" src="img/surfaces/Florence_flooding_BHedit.jpg">
+<!--<img height="220px" src="img/surfaces/BHIpostflorenceedit.jpg">-->
+</section>
+
+
+<section>
+<h3>Open Science</h3>
+<p>Developing open source software and contributing to OSGeo projects:
+<p>GRASS GIS <a href="https://grass.osgeo.org/">https://grass.osgeo.org/</a>
+<br>Tangible Landscape  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a>
+<p>Open access educational material:
+<p>NCSU GeoForAll Lab Courses and Workshops
+<a href="https://geospatial.ncsu.edu/geoforall/courses.html">https://geospatial.ncsu.edu/geoforall/courses.html</a>
+<p><img height="280" src="img/surfaces/geovizlab_people2018.jpg">
+</section>
+
+<section>
+<h3>Thank You!</h3>
+<p>
+<iframe data-autoplay width="700" height="350" src="https://www.youtube.com/embed/Uje8ORyhBaQ?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Uje8ORyhBaQ" frameborder="0" allowfullscreen></iframe>
+<p>Tangible Landscape website:
+<a href="tangible-landscape.github.io">tangible-landscape.github.io</a>
+<br>TL wiki: github.com/tangible-landscape/grass-tangible-landscape/wiki
+<br><a href="https://geospatial.ncsu.edu/geoforall/publications.html">NCSU GeoForAll Lab</a>
+</section>
+
+<section>
+    <h3>Appendix</h3>
+<ul>
+ <li><a href="https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/worldbank-webinar.html#/">Tangible Landscape</a>
+ <li><a href="https://petrasovaa.github.io/amos-STC-presentation/foss4g_presentation.html#/">Pedestrian patterns from webcams</a>
+ <li><a href="https://wenzeslaus.github.io/grass-gis-talks/#/">GRASS GIS 7.2</a>
+ <li><a href="https://wenzeslaus.github.io/raster3d/#/">3D rasters</a>
+</ul>
+
+</section>
+
+<!-- 
+<section>
+    <h3>Visualization: Blend4Web</h3>
+<iframe class="stretch" src="./blend4web.html?autorotate"></iframe>
+</section>
+
+for I in `ls *9706*`
+do
+scp $I akratoc@fatra.cnr.ncsu.edu:/var/www/html/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/
+done
+
+for I in `ls *10823*`
+do
+scp $I akratoc@fatra.cnr.ncsu.edu:/var/www/html/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/
+done
+-->
+
+
+
+<!-- This is a generated file. Do not edit. -->
+        </div>  <!-- slides -->
+
+    </div>  <!-- reveal -->
+    <!--
+        Home button or link to a parent page
+        If you want this to be unique for every page (slide deck),
+        then remove it from here and put it at the end of each
+        file (or series of files) creating one page
+        (the position will be little different)
+        TODO: some JS is needed to move it to the right position
+    -->
+    <div class="parent-page">
+        <!-- alternative symbol: &#x1f3e0; -->
+        <a href="https://github.com/petrasovaa/amos-STC-presentation" title="Go to the repository">
+        <img width="15px" src="img/home.svg"></a>
+    </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+                
+                center: true,
+                showNotes: false,
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                width: 3500,
+                height: 600,
+                
+                // Factor of the display size that should remain empty around the content
+                margin: 0.05,  // increase?
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.5,
+                maxScale: 5.0,
+
+                theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true }
+                ]
+            });
+
+        </script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script>
+Reveal.addEventListener( 'ready', function( event ) {
+	var nSlides = Reveal.getTotalSlides();
+
+    for (i = 0; i < nSlides; i++) {
+        createSlidersWebcam(Reveal.getSlide(i))
+        createSlidersAnim(Reveal.getSlide(i))
+    }
+    
+} );
+
+function createSlidersWebcam(slide) {
+    if (!$(slide).attr('data-camera')) {
+        return;
+    }
+    var cam_number = $(slide).data('camera').split("_")[0]
+    var slidenum = $(slide).data('slidenum')
+    var slidenums = slidenum.split(",")
+    slhtml = `<div  style="float:left; max-width:80%">
+    <img id="animimage" width="100%" style="margin:auto"></div>
+    <div style="float:right; max-width:20%">
+    <img src="img/legend.png" width="200px">`
+    if (slidenums[0] != -1) {
+        slhtml += `<div style="font-size:70%">Isosurface <span style="font-size:50%">(people per 100 m<sup><span style="font-size:70%">2</span></sup>h)</span></div>
+                   <div class="slider" id="slider1" style="background: #d2d2d2;width: 200px;margin: auto;margin-bottom: 15px"></div>`
+    }
+    if (slidenums[1] != -1) {
+        slhtml += `<div style="font-size:70%">Rotate</div>
+                   <div class="slider" id="slider2" style="background: #d2d2d2;width: 200px;margin: auto;margin-bottom: 15px"></div>`
+    }
+    slhtml += '</div>'
+    slide.innerHTML += slhtml
+    if (slidenums[0] != -1) {
+        var slider1 = slide.querySelector('#slider1');
+        noUiSlider.create(slider1, {
+        	start: [12],
+            step: 1,
+        	connect: true,
+        	range: {
+        		'min': 0,
+        		'max': 19
+        	}
+        });
+        slider1.noUiSlider.on('slide', setImage);
+        slider1.noUiSlider.set(slidenums[0])
+    }
+    if (slidenums[1] != -1) {
+        var slider2 = slide.querySelector('#slider2');
+        noUiSlider.create(slider2, {
+            start: [0],
+            step: 1,
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 19
+            }
+        });
+        slider2.noUiSlider.on('slide', setImage);
+        slider2.noUiSlider.set(slidenums[1])
+    }
+    var animimage = slide.querySelector('#animimage')
+
+
+    setImage()
+    
+    function setImage(){
+        var value1 = 0
+        var value2 = 0
+        if (slidenums[0] != -1) {
+            value1 = parseInt(slider1.noUiSlider.get());
+        }
+        if (slidenums[1] != -1) {
+            value2 = parseInt(slider2.noUiSlider.get());
+        }
+        //var path = "/media/anna/Data/Projects/webcams/renderings/"
+        var path = "http://fatra.cnr.ncsu.edu/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/"
+        var camera = $(slide).data('camera')
+        $("#animimage", slide).attr("src", path + "map_points_points_" + camera + "." + pad(value1, 4) + "." + pad(value2, 4) +".jpg");
+    }
+    function pad(n, width) {
+        z = '0';
+        n = n + '';
+        return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+    }
+}
+
+function createSlidersAnim(slide) {
+
+    if (!$(slide).attr('data-animate')) {
+        return;
+    }
+    var slidenum = $(slide).data('animate')
+    var slidenums = slidenum.split(",")
+    slhtml = `<div class="slider" id="slider" style="background: #d2d2d2;width: 400px;margin: auto;margin-bottom: 15px"></div>`
+    slhtml += `<img id="animimage" width="100%" style="margin:auto">`
+
+    slide.innerHTML += slhtml
+        var slider = slide.querySelector('#slider');
+        noUiSlider.create(slider, {
+            start: [0],
+            step: 1,
+            connect: true,
+            range: {
+                'min': parseInt(slidenums[0]),
+                'max': parseInt(slidenums[1])
+            }
+        });
+        slider.noUiSlider.on('slide', setImage);
+        slider.noUiSlider.set(0)
+    var animimage = slide.querySelector('#animimage')
+
+    setImage()
+
+    function setImage(){
+        var value = 0
+        value = parseInt(slider.noUiSlider.get());
+
+        var path = $(slide).data('path')
+        $("#animimage", slide).attr("src", path + "_" + value + ".png");
+    }
+}
+</script>
+    </body>
+</html>
