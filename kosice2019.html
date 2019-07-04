@@ -1,0 +1,847 @@
+<!doctype html> <html lang="en">
+<!-- This is a generated file. Do not edit. -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Kosice 2019 Summer School Lecture</title>
+
+        <meta name="description" content="Slides for Vienna 2018 presentation">
+        <meta name="author" content="Helena Mitasova">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ncsu-geoforall-lab.css" id="theme">
+        <link rel="stylesheet" href="css/nouislider.css" id="slide">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- For chalkboard plugin -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+<section>
+<!--<h4 style="color: #707070">AAS 2018</h4>-->
+<h2 style="margin-top: 0.0em;color: #000"> Dynamic Surfaces and Geospatial Processes </h2>
+<p>
+<h4 style="color: #707070">Helena Mitasova</h4>
+<!--<img height="50px" style="margin-top: 2em" src="img/cgaBlack.png">
+<h5 style="color: #000">North Carolina State University</h5>-->
+<p>
+    <img src="img/hofierka.jpg" height="120">
+    <img src="img/petrasova.jpg" height="120">
+    <img src="img/vpetras.jpg" height="120">
+    <img src="img/baharmon.jpg" height="120">
+    <img src="img/payam.jpg" height="120">
+    <img src="img/Justyna_Jeziorska.jpg" height="120">
+</p>
+<p><small>J.Hofierka, A.Petrasova, V. Petras, B.Harmon, P.Tabrizian, J.Jeziorska</small>
+<p><img src="img/cgaBlack.png" height="40"> <img src="img/4x1white.jpg" height="25">
+</section>
+
+<section>
+<h3>Dynamic Digital Earth </h3>
+<ul>
+<li class="fragment">Digital Earth vision is now a reality:
+Earth is mapped at many spatial and temporal scales from global by satellites to local microscale by drones
+<li class="fragment">Only fraction of collected data is used to full potential
+<li class="fragment">Geospatial analytics and modeling is deployed to use these data
+to improve disaster response, water and food security, everyday life and well being
+<li class="fragment">Geospatial surface modeling  - foundation for many methods and tools
+</ul>
+<p class="fragment">
+We will take an incomplete tour through evolution of surface modeling from its beginnings to current state/applications
+<p class="fragment"><small><a href="https://earth.nullschool.net">Ocean Currents</a>2018 Cameron Beccario </small></p>
+<aside class="notes">
+https://www.nasa.gov/topics/earth/features/perpetual-ocean.html
+https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=3827 - high res
+http://hint.fm/wind/ realtime wind add to mea582 or gis714
+</aside>
+</section>
+
+<section>
+<h2>The beginnings</h2>
+</section>
+
+<section>
+<h3>Pioneering concept of dynamic spatial surfaces</h3>
+<p>Waldo Tobler:
+<p>geospatial phenomena as fields - scalar, vector and tensor
+<p>
+    <img height="330" src="img/surfaces/Tobler_govfiscal.jpg">
+    <img height="330" src="img/surfaces/Tobler_pressuretomodesurface.jpg">
+<p><small>Images from Professor Tobler's slides</small></p>
+</section>
+
+<section>
+<h3>Theoretical foundations: terrain analysis</h3>
+<p>Terrain as continuous field <i>z=f(x,y)</i>, 
+<br>represented by isolines, manually deriving secondary fields
+<p>
+    <img src="img/surfaces/Krcho_krivosti.jpg" height="380">
+<p> <small>Profle Curvature isolines (Krcho 1973), </small>
+</section>
+
+<!-- <section>
+<section>
+<h3>Computational foundations: digital terrain models</h3>
+<p>EuroCarto III Graz, 1984: Krcho,J., H.Mitasova, E.Micietova, Theoretical concept and data structures of complex digital terrain model and its interdisciplinary applications 
+<p>
+    <img src="img/surfaces/TINgrassnviz2.jpg" height="170">
+<br>    <img src="img/EurocartoGraz3.jpg" height="200">
+    <img src="img/EurocartoGraz2.jpg" height="200">
+<br><small>Thank you for supporting our participation 34 years ago</small>
+</section>
+
+<h3>Pioneering dynamic geospatial surfaces</h3>
+<p> <img height="300" src="img/surfaces/Tobler_MapMachine.jpg">
+    <img height="300" src="img/surfaces/Tobler_thankyou.jpg">
+</section> -->
+
+<section>
+<h3>Digital terrain modeling with splines</h3>
+<p>Spatial interpolation by Regularized Spline with Tension (RST) method: 
+from scattered points to regular grids, with simultaneous
+derivation of topographic parameters
+<p>
+    <img src="img/surfaces/curvature1993.jpg" height="400">
+<br> <small>Profle Curvature draped over mesh surface, (Mitasova, Mitas, Hofierka 1993)</small>
+</section>
+
+<section>
+<h3>Implementation in open source GRASS GIS</h3>
+<p>Method became available to broad community,
+many developers improved the code 
+<p>Surface with changing tension animation: tension helps to control overshoots
+<p><img class="stretch" src="img/surfaces/tension.gif">
+<p><small>25 years: GRASS4.1 s.surf.tps, v.surf.tps, v.surf.rst; GRASS7.4; contributions of 8+ developers</small>
+</section>
+
+<section>
+<h3>Implementation in open source GRASS GIS</h3>
+<p>Quadtree-based segmentation made it applicable to large point data sets
+<p>Simultaneous topographic analysis: slope, aspect, curvatures 
+<p><img height="320" src="img/surfaces/quadtrees.png">
+&nbsp; &nbsp;
+&nbsp; &nbsp;
+<img height="330" src="img/surfaces/topoanalysiscerl9803crop.gif">
+</section>
+
+<section>
+<h2>Modeling and analysis of surfaces from multitemporal observations</h2>
+</section>
+
+<section>
+<h3>From digitized contours to lidar point clouds</h3>
+Lidar technology transformed topography mapping in 21st century
+<p><img height="400" src="img/surfaces/digitized_cont2d_jr1999zoom.png">
+<img height="400" src="img/surfaces/pointcloud2d_jr2009zoom.png">
+<p>Do we still need interpolation?</p>
+</section>
+
+<section>
+<h3>North Carolina lidar surveys</h3>
+Coastal surveys started in 1996, second statewide survey just finished.
+<br>Survey in 1999 included Jockey's Ridge dunes: dense, noisy scattered point cloud
+<p><img height="440" src="img/surfaces/lidstorast1m.jpg">
+</section>
+
+<section>
+<h3>North Carolina lidar surveys</h3>
+Coastal surveys started in 1996, second statewide survey just finished.
+<br>Survey in 1999 included Jockey's Ridge dunes: dense, noisy scattered point cloud
+<p><img height="440" src="img/surfaces/lidstorast.jpg">
+</section>
+
+<section>
+<h3>Regularized spline with tension for lidar</h3>
+RST smoothing properties and quadtree segmentation
+made it suitable for generating high resolution elevation models from millions of points
+<p><img height="450" src="img/surfaces/liddfdm1e.jpg">
+</section>
+
+<section>
+<h3>Regularized spline with tension for lidar</h3>
+By tuning the tension coupled with smoothing, we remove noise and derive topographic parameters at a desired level of detail:
+<br>profile curvature and slope draped over surface with changing tension
+<p><img class="stretch" src="img/surfaces/lidar_tension_curv.gif">
+</section>
+
+<!--
+<section>
+    <h3>DEM feature extraction</h3>
+<p> Dune crests were extracted from profile curvatures of DEMs spanning 44 years 
+<br>to quantify dune migration rates and direction
+<p>
+<img height="350" src="img/surfaces/rfpfig4pcurv.jpg"> 
+<img height="350" src="img/surfaces/rfpfig4crestevol.jpg"> 
+ADD GRAPHS linear loss of elevation since 1953, accelerating migration 3-6 m/yr, 
+</section>
+-->
+<section>
+<h3>GRASS temporal framework for DEM time series</h3>
+<ul>
+<li>DEM time series for Jockey's Ridge dunes derived from data acquired by 
+<ul>
+  <li>photogrammetry (1974-98), 
+  <li>lidar (1999-2018), 
+  <li>structure from motion from UAS imagery (2016-2018)
+</ul>
+</ul>
+  <img height="100" src="img/surfaces/timeline.png"> 
+   <img height="150" src="img/surfaces/timeline3D.png"> 
+<br>
+   <img height="130" src="img/surfaces/temp_plot_leeward_pt.png"> 
+   <img height="130" src="img/surfaces/temp_plot_windward_pt.png"> 
+<br><small>Gebbert, S., Pebesma, E., 2014. A temporal GIS for field based environmental modeling. Environmental Modelling and Software 53, 1-12.</small>
+</section>
+
+<section>
+    <h3>DEM time series visualization</h3>
+<p>Jockey's Ridge 1974 - 2017: southward migration, landform transformation
+from crescentic dune to sand starved, fast moving parabolic dune
+<!--    <img height="350" src="img/surfaces/jrseries.png"> -->
+    <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
+</section>
+
+
+<section data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
+<h3>DEM time series visualization</h3>
+
+</section>
+
+<section>
+    <h3>Contours time series</h3>
+Contours capture the landform change but they are hard to read
+<br>   <img height="260" src="img/surfaces/jr_74_2017_16mcontour.png"> 16m
+<br>   <img height="230" src="img/surfaces/jr_74_2017_20mcontour.jpg"> 20m
+<!--   <img height="130" src="img/surfaces/jr16/legend.png"> -->
+</section>
+
+<section >
+    <h3>Space-Time cube visualization</h3>
+<p>DEM time series is converted into space-time voxel model in TGRASS and evolution of a contour 
+is represented as isosurface: 16m and 20m </p>
+  <img height="400" src="img/surfaces/jr16/animation.gif"> 
+<!--<img src="img/jr18/animation.gif"> -->
+<img height="400" src="img/surfaces/jr20/animation.gif"> 
+</section>
+
+<section>
+    <h3>Post-hurricane Mathews ripples</h3>
+<p>Orthphoto from UAS survey, october 2016
+    <img height="500" src="img/surfaces/uas_ortho_2016small.jpg">
+<br><img width="300" src="img/surfaces/scalbar.png">
+</section>
+
+<section>
+ <h3>Annual dynamics from Planet imagery</h3>
+<p> Satellite imagery at 3m resolution, September 2017 - July 2018, captures impact of
+storm in March 2018 with large ripples similar to those observed post Mathews
+<p>
+<iframe data-autoplay width="580" height="360" src="img/surfaces/sep17_july18.mp4" frameborder="0" allowfullscreen></iframe>
+<p><small>Planet: world’s largest constellation of Earth-imaging (micro) satellites providing daily observations
+for entire Earth at 3m resolution</small>
+</section>
+
+<section>
+<h3>Jockey's Ridge evolution analysis</h3>
+<p>DEM time series: evolution quantified using TGRASS and surface analysis tools 
+<ul>
+  <li>linear trend in loss of peak elevation at 0.3m per year 
+  <li>accelerating horizontal migration from 3m/yr to 6m/yr
+  <li>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
+  <li>vegetation increased, but dune still kills trees on the leeward side
+  <li>management challenges: dynamic feature confined to static park boundaries
+</ul>
+<p>
+<!--<img height="150" src="img/surfaces/core_2017_cut6.jpg">-->
+<img height="200" src="img/surfaces/jr_74_17_cut3.jpg">
+<img height="200" src="img/surfaces/peakregression_1950_2017.png">
+</section>
+
+<section>
+<h3>Jockey's Ridge story</h3>
+<p>The 43 m high dune was a transient landform 
+<p><img height="200" src="img/surfaces/JR_photosevol_17_50_08.jpg">
+<br>
+<img height="220" src="img/surfaces/Kittytrees1900.jpg">
+<img height="220" src="img/surfaces/JR_2017_burriedtrees.jpg">
+<p><small>Dune in early 1900 and in 2008, 2016</small>
+</section>
+
+<section>
+<h2>From observations to modeling of processes</h2>
+<!--<p><img height="180" src="img/surfaces/yakima_panorama_1s.jpg">-->
+</section>
+
+
+<section>
+<h3>Water flow, soil erosion, storm surge</h3>
+<p>Land surface controls water and sediment flow across landscapes
+<p>Critical processes and impacts: surface runoff, flooding, storm surge, soil erosion
+<p><img height="220" src="img/surfaces/secrefstorm2006Alberto.jpg">
+<img height="220" src="img/surfaces/secref8-8-03ditch.jpg">
+<img height="220" src="img/surfaces/IreneRodanthe.jpg">
+</section>
+
+<section>
+<h3>Water flow</h3>
+<p>Using surface gradients to compute flow accumulation:
+Evolution of water depth over complex terrain
+under steady rainfall and uniform surface conditions
+<p>
+<img height="350" src="img/surfaces/water.gif">
+<p>Geometry-based solution
+</section>
+
+<section>
+<h3>Sediment transport</h3>
+<p>Combining flow accumulation and slope: 
+<br>Evolution of sediment transport capacity
+<p>
+<img height="350" src="img/surfaces/lsfac.gif">
+<p>Geometry-based solution
+</section>
+
+<section>
+<h3>Erosion and deposition</h3>
+<p>Net erosion and deposition computed as change in sediment transport capacity:
+<br>simple to compute in GIS, combined with parameters for landcover and soils
+<p> <img height="350" src="img/surfaces/p5ed_f.gif">
+<small>Unit Stream Power Based Erosion-Deposition, Mitasova et al. 1995, Mitas and Mitasova 1998</small>
+</section>
+
+<section>
+<h3>Path sampling of continuous fields</h3>
+<p>  Next step: robust solution of shallow water flow equations and process-based sediment transport
+<p>
+    <img width="45%" src="img/surfaces/fanimwalk.gif">
+     &nbsp; &nbsp;
+    <img width="45%" src="img/surfaces/fanimhhcolp.gif">
+<p>Solver based on duality of particles and fields works for noisy surfaces, captures ponding in depressions
+</section>
+
+<!--
+<section>
+<h3>Example application</h3>
+<p>CC middle school? Germany field?
+<p>    <img width="25%" src="img/surfaces/water01dsmall.gif">
+    <img width="25%" src="img/surfaces/wrrwater01.jpg">
+    <img width="25%" src="img/surfaces/wrrwaterdc.jpg">
+    <img width="25%" src="img/surfaces/wrrwaterdc.jpg">
+</section>
+-->
+
+<section>
+<h3>Modeling surface runoff and erosion/deposition</h3>
+<p>Impact of construction on erosion and deposition, limitations of stream buffer protection
+<p> <img width="90%" src="img/surfaces/middleschool_scen.jpg">
+</section>
+
+<section>
+<h3>High resolution water flow</h3>
+ <p> Street level modeling of surface runoff: lidar-based DEM
+and path sampling 
+<p>
+    <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
+    <img height="450" src="img/surfaces/water_stormdrains_zoom.jpg">
+</section>
+
+<section>
+<h3>Ultra-high resolution water and erosion: UAS</h3>
+ <p> Tilled fields
+<p>
+    <img height="450" src="img/surfaces/uas_03_depth.gif">
+</section>
+
+<section>
+<h3> Urban topography</h3>
+<p>
+ Multitemporal mapping of evolving landforms brings new insights into landscape dynamics
+<p>
+ Next step - evolution of urban topography
+<p>
+<p><small>2015 lidar updated with 2018 UAS data: forested are replaced by a new school</small>
+<p>
+    <img height="360" src="img/surfaces/uas_lidar_update.gif">
+<br><a href="https://geospatial.ncsu.edu/geoforall/publications.html">NCSU GeoForAll Lab</a>
+</section>
+
+<!--
+<section>
+<h2>Students are making an impact</h2>
+<ul>
+ <li> Integration of open source GIS in courses
+ <li> Project-based graduate courses since 2008
+</ul>
+</section>
+
+<section>
+<h3>Onset of bridge flooding</h3>
+<p><small>William Ross for NC disaster management</small>
+<p><img height="120" src="img/surfaces/bridges_ortho.jpg">
+<img height="120" src="img/surfaces/bridges_dry.jpg">
+<img height="120" src="img/surfaces/bridges_10yr.jpg">
+<img height="120" src="img/surfaces/bridges_500yr.jpg">
+<img height="130" src="img/surfaces/floodedI40_swinefac.jpg">
+</p>
+<small> <a href="https://www.youtube.com/watch?v=jTXa4sIxQvI">I-40 as a river in NCDOT drone video</a></small>
+</section>
+
+<section>
+<h3>County map of flooded bridges</h3>
+<p><small>William Ross for NC disaster management</small>
+<p>Flooded bridges mapped based on lidar, bridge and inundation data for 100 yr storm
+<br><img height="400" src="img/surfaces/bridgesall.jpg">
+<img height="420" src="img/surfaces/bridgesall100yr.jpg">
+</section>
+-->
+
+<section>
+<h3>Flooding scenarios on-line</h3>
+<p><small>Corey While for smart cities serious game design</small>
+<p>LINK TO MAPBOX
+</section>
+
+<section>
+<h3>Coastal flooding</h3>
+High resolution modeling is important
+<p><img height="300" src="img/surfaces/anim_storsurge.gif">
+<img height="300" src="img/surfaces/ncdot_cc_mirlo2012camp.jpg">
+</section>
+
+<section>
+<h3>Improving storm surge flooding predictions</h3>
+<p>Nelson Tull for operational storm surge prediction using ADCIRC
+<br> Hurricane Matthew Hindcast number of buildings flooded: before enhancement: 2435;
+after: 3886, a 60 percent increase.
+<p><img height="350" src="img/surfaces/stormsurge_refined.png">
+</p>
+<p class="credit">full citation</p>
+</section>
+
+<section>
+<h3>Beyond bare ground</h3>
+<ul>
+  <li>lidar and geomorphons for individual trees extraction for viewscape analysis
+  <li>lidar point clouds voxel-based analysis - vegetation structure and patch index
+</section>
+
+<section>
+<h3>Beyond bare earth surface: vegetation</h3>
+Geomorphons (Jasiewicz, Stepinski 2013) for vegetation surfaces from lidar, UAS
+<br><small>individual tree detection and trunk modeling (Tabrizian et al. 2018)</small>
+<br>
+<img height="250" src="img/surfaces/geomorphon.png">
+<img height="250" src="img/surfaces/trunk_replace.jpg">
+<!--
+<br> <small>row crop growth analysis</small>
+<br>
+<img height="170" src="img/surfaces/geomorph_cropsurface_zoom.jpg">
+-->
+</section>
+
+<section>
+<h3>Beyond bare earth surface: urban topography</h3>
+Solar irradiation during summer solstice at NCSU Centennial Campus
+<p>
+<img height="400" src="img/surfaces/summer_solstice_centennial.gif">
+</section>
+
+<section>
+<h3>Beyond bare earth surface: vegetation voxel models</h3>
+Generalized Fragmentation Index:
+slice of raw point cloud and slice of fragmentation index 3D raster
+<p>
+<img height="250" src="img/surfaces/profiles_points_and_ff.png">
+<img height="200" src="img/surfaces/profile3d.png">
+</section>
+
+<section>
+<h3>Beyond bare earth surface: vegetation voxel models</h3>
+Slicing through fragmentation index 3D raster
+<p>
+<img height="400" src="img/surfaces/voxels_vegetation_anim.gif">
+<small>Petras, V., D. J. Newcomb, and H. Mitasova. 2017. Generalized 3D fragmentation index derived from lidar point clouds. In: Open Geospatial Data, Software and Standards 2(9). DOI 10.1186/s40965-017-0021-8 </small>
+</section>
+
+
+<section>
+<h2>Tangible interface for surface analysis and process modeling</h2>
+</section>
+
+<section>
+<h3>Tangible Landscape</h3>
+<p> Bringing people together around GIS: Tangible user interface for GRASS GIS
+<p>Designed to make working with geospatial data and simulations engaging, and fun</p>
+<p>
+    <img height="180" src="img/surfaces/tangible_landscape_compcrop.jpg">
+<p>
+Petrasova, A. et al. (2018). Tangible Modeling with Open Source GIS. Second edition. Springer International Publishing.
+<a href="https://doi.org/10.1007/978-3-319-89303-7">https://doi.org/10.1007/978-3-319-89303-7</a>
+</section>
+
+<section>
+<h3>How does it work?</h3>
+<iframe data-autoplay width="50%" height="330" src="https://www.youtube.com/embed/Cd3cCQTGer4?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Cd3cCQTGer4" frameborder="0" allowfullscreen></iframe>
+&nbsp; &nbsp;<img height=380 src="img/surfaces/rendered_diagram_2.png">
+<p>Tangible Landscape couples a digital and a physical model through a continuous cycle of 3D scanning, geospatial modeling, and projection</p>
+</section>
+
+<section>
+<h3>Interactions</h3>
+<p><img height="450" src="img/surfaces/tl_interactions_all.jpg">
+</section>
+
+<section>
+    <h3>Coupling with 3D rendering</h3>
+<p><img height="450" src="img/surfaces/process4.png">
+</section>
+
+<section>
+    <h3>Design scenario analysis</h3>
+<p><img height="480" src="img/surfaces/process7.png">
+</section>
+
+<section>
+<h3>Tangible Landscape for designers and researchers</h3>
+<p>
+<img height="300px" src="img/surfaces/tl_planting_3.jpg">
+<img height="300px" src="img/surfaces/TL_scientists.jpg">
+</section>
+
+<section>
+<h3>Tangible Landscape for education</h3>
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jX6FurEeW28?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<img height="260" src="img/surfaces/collaboration2.JPG">
+</section>
+
+<section>
+<h3>Tangible Landscape for communities</h3>
+Platform for decision-making and science communication
+    where people of different backgrounds can interact.
+<p>
+<img height="220px" src="img/surfaces/bhigames_composite.jpg">
+<br>Tangible Landscape website: 
+<a href="tangible-landscape.github.io">tangible-landscape.github.io</a>
+<br>TL wiki: github.com/tangible-landscape/grass-tangible-landscape/wiki
+</section>
+
+
+<section>
+<h3>Open Science</h3>
+<p>Developing open source software and contributing to OSGeo projects:
+<p>GRASS GIS <a href="https://grass.osgeo.org/">https://grass.osgeo.org/</a>
+<p>Tangible Landscape  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a>
+<p>Open access educational material:
+<p>NCSU GeoForAll Lab Courses and Workshops
+<a href="https://geospatial.ncsu.edu/geoforall/courses.html">https://geospatial.ncsu.edu/geoforall/courses.html</a>
+<p><img height="280" src="img/surfaces/geovizlab_people2018.jpg">
+</section>
+
+<section>
+<h3>Thank You!</h3>
+<p>Thank you all for your contributions to the field - data, methods, algorithms and tools,
+that helped to bring the discipline to its current thriving state </p>
+<p>
+<iframe data-autoplay width="700" height="350" src="https://www.youtube.com/embed/Uje8ORyhBaQ?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Uje8ORyhBaQ" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section>
+    <h3>Appendix</h3>
+Links to related talks:
+TL webinar, GRASS7, Lidar, ICC talk etc.
+</section>
+
+<!-- 
+<section>
+    <h3>Visualization: Blend4Web</h3>
+<iframe class="stretch" src="./blend4web.html?autorotate"></iframe>
+</section>
+
+for I in `ls *9706*`
+do
+scp $I akratoc@fatra.cnr.ncsu.edu:/var/www/html/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/
+done
+
+for I in `ls *10823*`
+do
+scp $I akratoc@fatra.cnr.ncsu.edu:/var/www/html/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/
+done
+-->
+
+
+
+<!-- This is a generated file. Do not edit. -->
+        </div>  <!-- slides -->
+
+    </div>  <!-- reveal -->
+    <!--
+        Home button or link to a parent page
+        If you want this to be unique for every page (slide deck),
+        then remove it from here and put it at the end of each
+        file (or series of files) creating one page
+        (the position will be little different)
+        TODO: some JS is needed to move it to the right position
+    -->
+    <div class="parent-page">
+        <!-- alternative symbol: &#x1f3e0; -->
+        <!--<a href="https://github.com/petrasovaa/amos-STC-presentation" title="Go to the repository">-->
+        <a href="https://github.com/ncsu-geoforall-lab/dynamic-surfaces-talk" title="Go to the repository">
+        <img width="15px" src="img/home.svg"></a>
+    </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+                
+                center: true,
+                showNotes: false,
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                // width: 960,
+                // height: 700,
+                
+                // Factor of the display size that should remain empty around the content
+                margin: 0.05,  // increase?
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.5,
+                maxScale: 5.0,
+
+                theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true }
+                ]
+            });
+
+        </script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script>
+Reveal.addEventListener( 'ready', function( event ) {
+	var nSlides = Reveal.getTotalSlides();
+
+    for (i = 0; i < nSlides; i++) {
+        createSlidersWebcam(Reveal.getSlide(i))
+        createSlidersAnim(Reveal.getSlide(i))
+    }
+    
+} );
+
+function createSlidersWebcam(slide) {
+    if (!$(slide).attr('data-camera')) {
+        return;
+    }
+    var cam_number = $(slide).data('camera').split("_")[0]
+    var slidenum = $(slide).data('slidenum')
+    var slidenums = slidenum.split(",")
+    slhtml = `<div  style="float:left; max-width:80%">
+    <img id="animimage" width="100%" style="margin:auto"></div>
+    <div style="float:right; max-width:20%">
+    <img src="img/legend.png" width="200px">`
+    if (slidenums[0] != -1) {
+        slhtml += `<div style="font-size:70%">Isosurface <span style="font-size:50%">(people per 100 m<sup><span style="font-size:70%">2</span></sup>h)</span></div>
+                   <div class="slider" id="slider1" style="background: #d2d2d2;width: 200px;margin: auto;margin-bottom: 15px"></div>`
+    }
+    if (slidenums[1] != -1) {
+        slhtml += `<div style="font-size:70%">Rotate</div>
+                   <div class="slider" id="slider2" style="background: #d2d2d2;width: 200px;margin: auto;margin-bottom: 15px"></div>`
+    }
+    slhtml += '</div>'
+    slide.innerHTML += slhtml
+    if (slidenums[0] != -1) {
+        var slider1 = slide.querySelector('#slider1');
+        noUiSlider.create(slider1, {
+        	start: [12],
+            step: 1,
+        	connect: true,
+        	range: {
+        		'min': 0,
+        		'max': 19
+        	}
+        });
+        slider1.noUiSlider.on('slide', setImage);
+        slider1.noUiSlider.set(slidenums[0])
+    }
+    if (slidenums[1] != -1) {
+        var slider2 = slide.querySelector('#slider2');
+        noUiSlider.create(slider2, {
+            start: [0],
+            step: 1,
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 19
+            }
+        });
+        slider2.noUiSlider.on('slide', setImage);
+        slider2.noUiSlider.set(slidenums[1])
+    }
+    var animimage = slide.querySelector('#animimage')
+
+
+    setImage()
+    
+    function setImage(){
+        var value1 = 0
+        var value2 = 0
+        if (slidenums[0] != -1) {
+            value1 = parseInt(slider1.noUiSlider.get());
+        }
+        if (slidenums[1] != -1) {
+            value2 = parseInt(slider2.noUiSlider.get());
+        }
+        //var path = "/media/anna/Data/Projects/webcams/renderings/"
+        var path = "http://fatra.cnr.ncsu.edu/cJw9c0/nJ0qKyeeuAXuWFouqfJx0GRMVU7OZhcPfNzy9/amos/rendering/"
+        var camera = $(slide).data('camera')
+        $("#animimage", slide).attr("src", path + "map_points_points_" + camera + "." + pad(value1, 4) + "." + pad(value2, 4) +".jpg");
+    }
+    function pad(n, width) {
+        z = '0';
+        n = n + '';
+        return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+    }
+}
+
+function createSlidersAnim(slide) {
+
+    if (!$(slide).attr('data-animate')) {
+        return;
+    }
+    var slidenum = $(slide).data('animate')
+    var slidenums = slidenum.split(",")
+    slhtml = `<div class="slider" id="slider" style="background: #d2d2d2;width: 400px;margin: auto;margin-bottom: 15px"></div>`
+    slhtml += `<img id="animimage" width="100%" style="margin:auto">`
+
+    slide.innerHTML += slhtml
+        var slider = slide.querySelector('#slider');
+        noUiSlider.create(slider, {
+            start: [0],
+            step: 1,
+            connect: true,
+            range: {
+                'min': parseInt(slidenums[0]),
+                'max': parseInt(slidenums[1])
+            }
+        });
+        slider.noUiSlider.on('slide', setImage);
+        slider.noUiSlider.set(0)
+    var animimage = slide.querySelector('#animimage')
+
+    setImage()
+
+    function setImage(){
+        var value = 0
+        value = parseInt(slider.noUiSlider.get());
+
+        var path = $(slide).data('path')
+        $("#animimage", slide).attr("src", path + "_" + value + ".png");
+    }
+}
+</script>
+    </body>
+</html>
