@@ -76,12 +76,14 @@ to improve disaster response, water and food security, everyday life and well be
 </ul>
 <p class="fragment">
 We will take an incomplete tour through evolution of surface modeling from its beginnings to current state/applications
+<!--
 <p class="fragment"><small><a href="https://earth.nullschool.net">Ocean Currents</a>2018 Cameron Beccario </small></p>
 <aside class="notes">
 https://www.nasa.gov/topics/earth/features/perpetual-ocean.html
 https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=3827 - high res
 http://hint.fm/wind/ realtime wind add to mea582 or gis714
 </aside>
+-->
 </section>
 
 <section>
@@ -204,7 +206,7 @@ ADD GRAPHS linear loss of elevation since 1953, accelerating migration 3-6 m/yr,
 </section>
 -->
 <section>
-<h3>GRASS temporal framework for DEM time series</h3>
+<h3>DEM time series in GRASS temporal framework</h3>
 <ul>
 <li>DEM time series for Jockey's Ridge dunes derived from data acquired by 
 <ul>
@@ -229,27 +231,9 @@ from crescentic dune to sand starved, fast moving parabolic dune
     <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
 </section>
 
-
 <section data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
 <h3>DEM time series visualization</h3>
 
-</section>
-
-<section>
-    <h3>Contours time series</h3>
-Contours capture the landform change but they are hard to read
-<br>   <img height="260" src="img/surfaces/jr_74_2017_16mcontour.png"> 16m
-<br>   <img height="230" src="img/surfaces/jr_74_2017_20mcontour.jpg"> 20m
-<!--   <img height="130" src="img/surfaces/jr16/legend.png"> -->
-</section>
-
-<section >
-    <h3>Space-Time cube visualization</h3>
-<p>DEM time series is converted into space-time voxel model in TGRASS and evolution of a contour 
-is represented as isosurface: 16m and 20m </p>
-  <img height="400" src="img/surfaces/jr16/animation.gif"> 
-<!--<img src="img/jr18/animation.gif"> -->
-<img height="400" src="img/surfaces/jr20/animation.gif"> 
 </section>
 
 <section>
@@ -267,6 +251,23 @@ storm in March 2018 with large ripples similar to those observed post Mathews
 <iframe data-autoplay width="580" height="360" src="img/surfaces/sep17_july18.mp4" frameborder="0" allowfullscreen></iframe>
 <p><small>Planet: world’s largest constellation of Earth-imaging (micro) satellites providing daily observations
 for entire Earth at 3m resolution</small>
+</section>
+
+<section>
+    <h3>Contours time series</h3>
+Contours capture the landform change but they are hard to read
+<br>   <img height="260" src="img/surfaces/jr_74_2017_16mcontour.png"> 16m
+<br>   <img height="230" src="img/surfaces/jr_74_2017_20mcontour.jpg"> 20m
+<!--   <img height="130" src="img/surfaces/jr16/legend.png"> -->
+</section>
+
+<section >
+    <h3>Space-Time cube visualization</h3>
+<p>DEM time series is converted into space-time voxel model in TGRASS and evolution of a contour
+is represented as isosurface: 16m and 20m </p>
+  <img height="400" src="img/surfaces/jr16/animation.gif">
+<!--<img src="img/jr18/animation.gif"> -->
+<img height="400" src="img/surfaces/jr20/animation.gif">
 </section>
 
 <section>
@@ -297,9 +298,10 @@ for entire Earth at 3m resolution</small>
 
 <section>
 <h2>From observations to modeling of processes</h2>
-<!--<p><img height="180" src="img/surfaces/yakima_panorama_1s.jpg">-->
+<p>
+<br>
+<img height="140" src="img/surfaces/yakima_panorama_1s.jpg">
 </section>
-
 
 <section>
 <h3>Water flow, soil erosion, storm surge</h3>
@@ -316,7 +318,8 @@ for entire Earth at 3m resolution</small>
 Evolution of water depth over complex terrain
 under steady rainfall and uniform surface conditions
 <p>
-<img height="350" src="img/surfaces/water.gif">
+<!--<img height="180" src="img/surfaces/elevationnc1_f.gif"> it is more confusing than helpful-->
+<img height="370" src="img/surfaces/water.gif">
 <p>Geometry-based solution
 </section>
 
@@ -325,7 +328,7 @@ under steady rainfall and uniform surface conditions
 <p>Combining flow accumulation and slope: 
 <br>Evolution of sediment transport capacity
 <p>
-<img height="350" src="img/surfaces/lsfac.gif">
+<img height="370" src="img/surfaces/lsfac.gif">
 <p>Geometry-based solution
 </section>
 
@@ -334,7 +337,8 @@ under steady rainfall and uniform surface conditions
 <p>Net erosion and deposition computed as change in sediment transport capacity:
 <br>simple to compute in GIS, combined with parameters for landcover and soils
 <p> <img height="350" src="img/surfaces/p5ed_f.gif">
-<small>Unit Stream Power Based Erosion-Deposition, Mitasova et al. 1995, Mitas and Mitasova 1998</small>
+<small>Unit Stream Power Based Erosion-Deposition, 
+Mitasova, H., J. Hofierka, M. Zlocha, L.R. Iverson, 1996</small>
 </section>
 
 <section>
@@ -344,7 +348,8 @@ under steady rainfall and uniform surface conditions
     <img width="45%" src="img/surfaces/fanimwalk.gif">
      &nbsp; &nbsp;
     <img width="45%" src="img/surfaces/fanimhhcolp.gif">
-<p>Solver based on duality of particles and fields works for noisy surfaces, captures ponding in depressions
+<p>Solver based on duality of particles and fields works for noisy surfaces, captures ponding in depressions.
+<p><small>Mitas and Mitasova, 1998; Mitasova, Thaxton, Hofierka, McLaughlin, Moore, Mitas, 2005</small>
 </section>
 
 <!--
@@ -374,23 +379,30 @@ and path sampling
 </section>
 
 <section>
-<h3>Ultra-high resolution water and erosion: UAS</h3>
- <p> Tilled fields
+<h3>Ultra-high resolution water flow modeling</h3>
+ <p> UAS-based surveys: cm-resolution DEMs
+<br>Path sampling simulations capture impact of microtopography: tillage
 <p>
     <img height="450" src="img/surfaces/uas_03_depth.gif">
 </section>
 
 <section>
-<h3> Urban topography</h3>
+<h3>Changes in urban topography</h3>
 <p>
- Multitemporal mapping of evolving landforms brings new insights into landscape dynamics
-<p>
- Next step - evolution of urban topography
+UAS-based surveys: efficient updates of urban topography
 <p>
 <p><small>2015 lidar updated with 2018 UAS data: forested are replaced by a new school</small>
 <p>
     <img height="360" src="img/surfaces/uas_lidar_update.gif">
-<br><a href="https://geospatial.ncsu.edu/geoforall/publications.html">NCSU GeoForAll Lab</a>
+</section>
+
+<section>
+<h3>Updating lidar DSM using UAS based SfM</h3>
+<p>2015 lidar updated with 2018 UAS data for area on Centennial Campus where two new buildings were built,
+trees cut and stormwater control is being updated
+<p>
+    <img height="350" src="img/surfaces/centennial_uasupdate.gif">
+<p>2015 lidar, UAS-based DSM is inserted, tilt identified and corrected
 </section>
 
 <!--
@@ -421,7 +433,6 @@ and path sampling
 <br><img height="400" src="img/surfaces/bridgesall.jpg">
 <img height="420" src="img/surfaces/bridgesall100yr.jpg">
 </section>
--->
 
 <section>
 <h3>Flooding scenarios on-line</h3>
@@ -445,6 +456,7 @@ after: 3886, a 60 percent increase.
 </p>
 <p class="credit">full citation</p>
 </section>
+-->
 
 <section>
 <h3>Beyond bare ground</h3>
@@ -564,6 +576,7 @@ Platform for decision-making and science communication
 <p>NCSU GeoForAll Lab Courses and Workshops
 <a href="https://geospatial.ncsu.edu/geoforall/courses.html">https://geospatial.ncsu.edu/geoforall/courses.html</a>
 <p><img height="280" src="img/surfaces/geovizlab_people2018.jpg">
+<br><a href="https://geospatial.ncsu.edu/geoforall/publications.html">NCSU GeoForAll publications</a>
 </section>
 
 <section>
@@ -578,6 +591,9 @@ that helped to bring the discipline to its current thriving state </p>
     <h3>Appendix</h3>
 Links to related talks:
 TL webinar, GRASS7, Lidar, ICC talk etc.
+<p>
+discuss future: data for erosion to captiure the dynamics like for JR to improve the models, high accuracy is needed
+higher intensity rainfalls lead to increased erosion renewing interest in erosion and sediment contriol 
 </section>
 
 <!-- 
