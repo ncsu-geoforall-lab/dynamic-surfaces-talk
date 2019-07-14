@@ -74,22 +74,13 @@ Earth is mapped at many spatial and temporal scales from global by satellites to
 to improve disaster response, water and food security, everyday life and well being
 <li class="fragment">Geospatial surface modeling  - foundation for many methods and tools
 </ul>
-<p class="fragment">
-We will take an incomplete tour through evolution of surface modeling from its beginnings to current state/applications
-<!--
-<p class="fragment"><small><a href="https://earth.nullschool.net">Ocean Currents</a>2018 Cameron Beccario </small></p>
-<aside class="notes">
-https://www.nasa.gov/topics/earth/features/perpetual-ocean.html
-https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=3827 - high res
-http://hint.fm/wind/ realtime wind add to mea582 or gis714
-</aside>
--->
 </section>
 
 <section>
 <h2>The beginnings</h2>
 </section>
 
+<!--
 <section>
 <h3>Pioneering concept of dynamic spatial surfaces</h3>
 <p>Waldo Tobler:
@@ -99,6 +90,7 @@ http://hint.fm/wind/ realtime wind add to mea582 or gis714
     <img height="330" src="img/surfaces/Tobler_pressuretomodesurface.jpg">
 <p><small>Images from Professor Tobler's slides</small></p>
 </section>
+-->
 
 <section>
 <h3>Theoretical foundations: terrain analysis</h3>
@@ -387,11 +379,19 @@ and path sampling
 </section>
 
 <section>
+<h3>Beyond bare ground</h3>
+<ul>
+  <li>updating urban topography
+  <li>lidar and geomorphons for individual trees extraction for viewscape analysis
+  <li>lidar point clouds voxel-based analysis - vegetation structure and patch index
+</section>
+
+<section>
 <h3>Changes in urban topography</h3>
 <p>
 UAS-based surveys: efficient updates of urban topography
 <p>
-<p><small>2015 lidar updated with 2018 UAS data: forested are replaced by a new school</small>
+<p><small>2015 lidar updated with 2018 UAS data: forested area replaced by a new school</small>
 <p>
     <img height="360" src="img/surfaces/uas_lidar_update.gif">
 </section>
@@ -405,66 +405,15 @@ trees cut and stormwater control is being updated
 <p>2015 lidar, UAS-based DSM is inserted, tilt identified and corrected
 </section>
 
+<section>
+<h3>Urban topography: UAS updates</h3>
+<p>3D model of area with new buildings and removed trees
+<p>
+    <img height="450" src="img/surfaces/CC_uas2018_full3D.jpg">
+</section>
+
+
 <!--
-<section>
-<h2>Students are making an impact</h2>
-<ul>
- <li> Integration of open source GIS in courses
- <li> Project-based graduate courses since 2008
-</ul>
-</section>
-
-<section>
-<h3>Onset of bridge flooding</h3>
-<p><small>William Ross for NC disaster management</small>
-<p><img height="120" src="img/surfaces/bridges_ortho.jpg">
-<img height="120" src="img/surfaces/bridges_dry.jpg">
-<img height="120" src="img/surfaces/bridges_10yr.jpg">
-<img height="120" src="img/surfaces/bridges_500yr.jpg">
-<img height="130" src="img/surfaces/floodedI40_swinefac.jpg">
-</p>
-<small> <a href="https://www.youtube.com/watch?v=jTXa4sIxQvI">I-40 as a river in NCDOT drone video</a></small>
-</section>
-
-<section>
-<h3>County map of flooded bridges</h3>
-<p><small>William Ross for NC disaster management</small>
-<p>Flooded bridges mapped based on lidar, bridge and inundation data for 100 yr storm
-<br><img height="400" src="img/surfaces/bridgesall.jpg">
-<img height="420" src="img/surfaces/bridgesall100yr.jpg">
-</section>
-
-<section>
-<h3>Flooding scenarios on-line</h3>
-<p><small>Corey While for smart cities serious game design</small>
-<p>LINK TO MAPBOX
-</section>
-
-<section>
-<h3>Coastal flooding</h3>
-High resolution modeling is important
-<p><img height="300" src="img/surfaces/anim_storsurge.gif">
-<img height="300" src="img/surfaces/ncdot_cc_mirlo2012camp.jpg">
-</section>
-
-<section>
-<h3>Improving storm surge flooding predictions</h3>
-<p>Nelson Tull for operational storm surge prediction using ADCIRC
-<br> Hurricane Matthew Hindcast number of buildings flooded: before enhancement: 2435;
-after: 3886, a 60 percent increase.
-<p><img height="350" src="img/surfaces/stormsurge_refined.png">
-</p>
-<p class="credit">full citation</p>
-</section>
--->
-
-<section>
-<h3>Beyond bare ground</h3>
-<ul>
-  <li>lidar and geomorphons for individual trees extraction for viewscape analysis
-  <li>lidar point clouds voxel-based analysis - vegetation structure and patch index
-</section>
-
 <section>
 <h3>Beyond bare earth surface: vegetation</h3>
 Geomorphons (Jasiewicz, Stepinski 2013) for vegetation surfaces from lidar, UAS
@@ -472,18 +421,43 @@ Geomorphons (Jasiewicz, Stepinski 2013) for vegetation surfaces from lidar, UAS
 <br>
 <img height="250" src="img/surfaces/geomorphon.png">
 <img height="250" src="img/surfaces/trunk_replace.jpg">
-<!--
 <br> <small>row crop growth analysis</small>
 <br>
 <img height="170" src="img/surfaces/geomorph_cropsurface_zoom.jpg">
--->
 </section>
+-->
+
+<section>
+<h3>Individual tree detection from lidar</h3>
+<p><small>Payam Tabrizian PhD research project</small>
+<ul>
+<li>Geomorphons (Jasiewicz, Stepinski 2013) applied to vegetation surface:
+summits represent individual trees.
+<li>Detected deciduous trees are replaced by modeled trunks to improve accuracy of viewscape analysis
+</ul>
+<p>
+<img height="260" src="img/surfaces/geomorphon.png">
+<img height="260" src="img/surfaces/trunk_replace.jpg">
+</section>
+
+<section>
+<h3>Improved viewshed extent</h3>
+<p><small>Payam Tabrizian PhD research project</small>
+<p>Viewshed based on bare ground DEM, lidar DSM, and modeled trunks
+<p>
+<!--<img height="160" src="img/surfaces/viewscape_DSM.jpg">-->
+<img height="180" src="img/surfaces/viewscape_DEM.jpg">
+<img height="180" src="img/surfaces/thick_view.jpg">
+<img height="180" src="img/surfaces/thin_view.jpg">
+<img height="180" src="img/surfaces/view_photos.png">
+</section>
+
 
 <section>
 <h3>Beyond bare earth surface: urban topography</h3>
 Solar irradiation during summer solstice at NCSU Centennial Campus
 <p>
-<img height="400" src="img/surfaces/summer_solstice_centennial.gif">
+<img height="430" src="img/surfaces/summer_solstice_centennial.gif">
 </section>
 
 <section>
