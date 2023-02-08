@@ -48,21 +48,13 @@
 <!--<h4 style="color: #707070">AAS 2018</h4>-->
 <h2 style="margin-top: 0.0em;color: #000"> Dynamic Surfaces and Geospatial Processes </h2>
 <p>
-<h4 style="color: #707070">Helena Mitasova</h4>
-<p>
-    <img src="img/petrasova.jpg" height="120">
-    <img src="img/vpetras.jpg" height="120">
-    <img src="img/baharmon.jpg" height="120">
-    <img src="img/payam.jpg" height="120">
-    <img src="img/Justyna_Jeziorska.jpg" height="120">
-    <img src="img/cwhite.jpg" height="120">
-</p>
-<p><small>A.Petrasova, V. Petras, B.Harmon, P.Tabrizian, J.Jeziorska, C. White</small>
+<h4 style="color: #707070">Helena Mitasova and Geoforall Lab team:</h4>
+<p><small>A.Petrasova, V. Petras, B.Harmon, P.Tabrizian, J. Jeziorska</small>
 <p><img src="img/cgaBlack.png" height="40"> <img src="img/4x1white.jpg" height="25">
 </section>
 
 <section>
-<h3>From observations to tangible interaction </h3>
+<h2>From observations to tangible interaction </h2>
 <ul>
 <li class="fragment">multitemporal elevation observations
 <li class="fragment">modeling surface processes 
@@ -115,28 +107,26 @@ Lidar technology transformed topography mapping in 21st century
 <img height="145" src="img/surfaces/points_2015.png">
 <br>2001 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     2009 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2015
-<br><small>vertical / horiz. accuracy: 0.7 / 0.4 m photogrammetry, 0.15 / 0.2 - 0.8 m lidar</small>
+<br><small> <a href="https://www.mdpi.com/1424-8220/23/3/1593"> 
+Petras et al., 2023, Point density variations in airborne lidar point clouds, Sensors 23(3), 1593.</a> </small></p>
 </section>
 
 <section>
 <h3>Point cloud to DEM: binning</h3>
 Jockey's Ridge dunes 1999 point cloud, binned at 1m resolution
 <p><img height="440" src="img/surfaces/lidstorast1m.jpg">
-<p><small> <a href="https://www.mdpi.com/1424-8220/23/3/1593"> Petras et al., 2023, Point density variations in airborne lidar point clouds</a> </small></p>
 </section>
 
 <section>
 <h3>Point cloud to DEM: binning</h3>
 Jockey's Ridge dunes 1999 point cloud, binned at 3m resolution
 <p><img height="440" src="img/surfaces/lidstorast.jpg">
-<p><small> <a href="https://www.mdpi.com/1424-8220/23/3/1593"> Petras et al., 2023, Point density variations in airborne lidar point clouds</a> </small></p>
 </section>
 
 <section>
 <h3>Point cloud to DEM: interpolation</h3>
 1999 point cloud interpolated at 1m resolution using reg. spline with tension 
 <p><img height="450" src="img/surfaces/liddfdm1e.jpg">
-<p><small> <a href="https://www.mdpi.com/1424-8220/23/3/1593"> Petras et al., 2023, Point density variations in airborne lidar point clouds</a> </small></p>
 </section>
 
 <section>
@@ -144,9 +134,8 @@ Jockey's Ridge dunes 1999 point cloud, binned at 3m resolution
 By tuning the tension coupled with smoothing, noise is reduced and, simultaneously, 
 topographic parameters are derived at a desired level of detail:
 <br>profile curvature and slope draped over surface with changing tension
-<p><img class="stretch" src="img/surfaces/lidar_tension_curv.gif">
-<p><img height="350" src="img/surfaces/jrseries.png"> 
-<p><small> <a href="https://ieeexplore.ieee.org/abstract/document/1522204">
+<br><img class="stretch" src="img/surfaces/lidar_tension_curv.gif">
+<br><small> <a href="https://ieeexplore.ieee.org/abstract/document/1522204">
 Mitasova, H. et al. 2005, Simultaneous spline interpolation and topographic analysis for lidar elevation data: methods for Open source GIS, IEEE GRSL 2(4), pp. 375- 379.</a>
 </small>
 </section>
@@ -157,7 +146,7 @@ Managed using GRASS temporal framework
 <a href="https://grass.osgeo.org/grass82/manuals/temporalintro.html">TGRASS</a>
 <p>
   <img height="100" src="img/surfaces/timeline.png">
-  <img height="150" src="img/surfaces/jr_timeline3D.png">
+  <img height="150" src="img/surfaces/jr_timeline3D.jpg">
 <br>
    <img height="130" src="img/surfaces/temp_plot_leeward_pt.png">
    <img height="130" src="img/surfaces/temp_plot_windward_pt.png">
@@ -168,20 +157,20 @@ environmental modeling. Environmental Modelling and Software 53, 1-12.</small>
 </section>
 
 <section>
-    <h3>DEM time series visualization</h3>
+    <h3>Multitemporal DEM visualization</h3>
 <p>Jockey's Ridge 1974 - 2017: southward migration, landform transformation
 from crescentic dune to sand starved, fast moving parabolic dune
     <img class="stretch" src="img/surfaces/jr_74_17_anim3dlgfix.gif">
 </section>
 
 <section data-animate="1,13" data-path="img/surfaces/JR_anim/JR_anim">
-<h3>DEM time series visualization</h3>
+<h3>Multitemporal DEM visualization</h3>
 </section>
 
 <section>
 <h3>Complex pattern of changes</h3>
 <ul>
-<li>DEM differences show both loss and increase in elevation
+<li>DEM differences show both elevation loss (red) and increase (blue)
 <li>total sand volume has been stable (~3.5 mil cubic m)
 <li>volume of core (sand not moved between 1974-2017) is only 30% of total volume
 </ul>
@@ -194,7 +183,7 @@ from crescentic dune to sand starved, fast moving parabolic dune
 </section>
 
 <section>
-    <h3>Contours time series</h3>
+    <h3>Multitemporal Contours</h3>
 Contours capture the landform change but they are hard to read
 <br>   <img height="260" src="img/surfaces/jr_74_2017_16mcontour.png"> 16m
 <br>   <img height="230" src="img/surfaces/jr_74_2017_20mcontour.jpg"> 20m
@@ -253,21 +242,27 @@ is represented as isosurface: 16m and 20m </p>
 <h3>Jockey's Ridge management</h3>
 Management focus is on preserving processes rather than features: 
 <p><strong>living landscape</strong>
-<p>Up to date, 3D mapping is essential for sand relocation planning, 
+<p>Up to date, 3D mapping is essential for sand relocation planning (done in 2003, 2019), 
 sand volume estimates, assessment of effectivenes, and for vegetation management.
 <p>
-<img height="220" src="img/surfaces/sandrelocation.jpg">
-<img height="220" src="img/surfaces/pairondune.jpg">
+<img height="220" src="img/surfaces/buldoz1_s.jpg">
+<img height="220" src="img/surfaces/JR2005-1.jpg">
+<p><a href="https://doi.org/10.3727/154427313X13818453739477">Mitas, O. et al., 2013, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.</a>
+dd
 </section>
 
 <section>
 <h3>Multitemporal DEMs</h3>
-Learn more about multitemporal DEM analytics for coastal applications
+Learn more about multitemporal DEM analytics:
 <ul>
-<li>Hardin et al.
-<li>Mitasova et al.
-<li>Starek et al. 
+<li><a href="https://www.springer.com/us/book/9781493918348">
+Hardin et al. 2014, GIS-based Analysis of Coastal Lidar Time-Series, Springer Brief</a>
+<li><a href="https://doi.org/10.1130/GES00699.1">Starek MJ, et al., 2011, Modeling and analysis of landscape evolution using airborne, terrestrial, and laboratory laser scanning, Geosphere, 7(6), p. 1340-1356</a>
+<li><a href="https://doi.org/10.1109/LGRS.2013.2241730">Starek, M.J., et al. 2013, Space-Time Cube Representation of Stream Bank Evolution Mapped by Terrestrial Laser Scanning, IEEE Geoscience and Remote Sensing Letters 10(6), p. 1369-1373</a>
 </ul>
+<p><img height="200" src="img/surfaces/inundationArea.jpg">
+<img height="200" src="img/surfaces/anim_storsurge.gif">
+<img height="200" src="img/surfaces/umstead_stc.jpg">
 </section>
 
 <section>
@@ -275,35 +270,34 @@ Learn more about multitemporal DEM analytics for coastal applications
 </section>
 
 <section>
-<h3>Water flow, soil erosion, storm surge</h3>
+<h3>Water and sediment flow</h3>
 <p>Land surface controls water and sediment flow across landscapes
-<p>Critical processes and impacts: surface runoff, flooding, storm surge, soil erosion
-<p><img height="220" src="img/surfaces/secrefstorm2006Alberto.jpg">
-<img height="220" src="img/surfaces/secref8-8-03ditch.jpg">
-<img height="220" src="img/surfaces/IreneRodanthe.jpg">
+<p>Critical processes and impacts: surface runoff, flooding, soil erosion
+<p><img height="280" src="img/surfaces/secrefstorm2006Alberto.jpg">
+<img height="280" src="img/surfaces/secref8-8-03ditch.jpg">
 </section>
 
 <section>
 <h3>Surface flow modeling methods</h3>
-From geometry-based routing to continuity equation
+Methods for modeling water flow depth 
 <p>
-<div class="left" style="max-width: 55%% !important">
+<div class="left" style="max-width: 45% !important">
 <ul>
-<li class="fragment">a) DEM with depression</li>
-<li class="fragment">b) least cost path</li>
-<li class="fragment">c) depression as sink</li>
-<li class="fragment">d) water accumulates is depression: kinematic wave</li>
-<li class="fragment">e) water fills depression and flows out: diffusive wave</li>
-<li class="fragment">f) predefined channel through depression</li>
+<li class="fragment">input: DEM with depression</li>
+<li class="fragment">least cost path</li>
+<li class="fragment">D-inf with depression as sink</li>
+<li class="fragment">water accumulates is depression: kinematic wave</li>
+<li class="fragment">water fills depression and flows out: diffusive wave</li>
+<li class="fragment">predefined channel through depression</li>
 </ul>
 </div>
 
-<img class="right" style="max-width: 43% !important" height="450" src="img/surfaces/gisemflow1hh.gif">
+<img class="right" style="max-width: 50% !important" height="450" src="img/surfaces/gisemflow1hh.gif">
 </section>
 
 <section>
    <h3>Dynamic Hydrologic Models</h3>
-Flow modeling with diffusion term: process-bsed simulation of flow through depression
+Flow modeling with diffusion term: process-based simulation 
 <p><img height="360" src="img/surfaces/gisemhhdifu.gif">
 <p><small>Instead of filling the DEM, we fill the depression with water</small>
 </section>
@@ -313,7 +307,7 @@ Flow modeling with diffusion term: process-bsed simulation of flow through depre
 <ul>
   <li>duality between particle and field representation
   <li>path sampling: water evolving according to the shallow
-      water bivariate continuity equation - drift and diffusion
+      water bivariate continuity equation - drift and diffusion with stochastic component
 </ul>
 <p class="fragment"> <img height="380" src="img/surfaces/fanimwalk.gif">
 <img class="fragment" height="380" src="img/surfaces/fanimhhcolp.gif">
@@ -324,7 +318,7 @@ Flow modeling with diffusion term: process-bsed simulation of flow through depre
 <p>Path sampling based simulation of water flow within a small agricultural watershed
 <p> <img height="340" src="img/surfaces/lw_storm2006Alberto.jpg">
 <img height="390" src="img/surfaces/elev_dischtest.gif">
-<p><small>Note simulation of ponding and dispersed flow over the road</small>
+<p><small>Photo: Flooding during Hurricane Alberto in 2006; Model: simulation of ponding and dispersed flow over the road</small>
 </section>
 
 <section>
@@ -338,50 +332,29 @@ protected by stream buffers
 </section>
 
 <section>
-<h3>Ultra-high resolution water flow</h3>
- <p> Sub-meter resolution DEM captures tillage microtopography 
+<h3>High resolution water flow</h3>
+ <p> Modeling spatial pattern of standing water after storm has passed
 <p>
-    <img height="450" src="img/surfaces/agisoft_jan.gif">
-</section>
-
-<section>
-<h3>Capturing impact of development</h3>
- <p>Using UAS to update a DEM and simulate water flow distribution during construction
-<p>
-    <img height="450" src="img/surfaces/agisoft_jan.gif">
-<p><small>White et al., 2022, 
-<a href="https://doi.org/10.3390/rs14071718">White, C.T.; et al. 2022, Rapid-DEM: Rapid Topographic Updates through Satellite Change Detection and UAS Data Fusion. Remote Sens. 2022, 14, 1718. </a></small>
-</section>
-
-<section>
-<h3>Capturing impact of development</h3>
- <p>Using UAS to update a DEM and simulate water flow distribution during construction 
-<p>
-    <img height="450" src="img/surfaces/agisoft_jan.gif">
-<p><small>White et al., 2022, 
-<a href="https://doi.org/10.3390/rs14071718">White, C.T.; et al. 2022, Rapid-DEM: Rapid Topographic Updates through Satellite Change Detection and UAS Data Fusion. Remote Sens. 2022, 14, 1718. </a></small>
-</section>
-
-<section>
-<h3>Water flow drives sediment transport</h3>
-Evolution of water depth and sediment flow over complex terrain under steady rainfall and uniform surface conditions
-<p>
-<img class="fragment" height="350" src="img/surfaces/water.gif">
-<img class="fragment" height="350" src="img/surfaces/lsfac.gif">
-</section>
-
-<section>
-<h3>Erosion and deposition</h3>
-<p>Net erosion and deposition computed as change in sediment transport capacity:
-<br>simple to compute in GIS, combined with parameters for landcover and soils
-<p> <img height="350" src="img/surfaces/p5ed_f.gif">
-<small>Unit Stream Power Based Erosion-Deposition, Mitasova et al. 1995, Mitas and Mitasova 1998</small>
+    <img height="380" src="img/surfaces/carysimwe_eeidstorm.jpg">
+    <img height="380" src="img/surfaces/carysimwe_eeidpoststorm.jpg">
 </section>
 
 <section>
 <h3>Modeling surface runoff and erosion/deposition</h3>
-<p>Impact of construction on erosion and deposition, limitations of stream buffer protection
+<p>Impact of variable land cover and construction on runoff and erosion and deposition, limitations of stream buffer protection
 <p> <img width="90%" src="img/surfaces/middleschool_scen.jpg">
+</section>
+
+<section>
+<h3>Water flow and erosion modeling</h3>
+Learn more about surface water flow and erosion, sediment transport and deposition modeling:
+<ul>
+<li><a href="https://doi.org/10.5194/gmd-12-2837-2019">Harmon B. et al., 2019. r.sim.terrain 1.0: a landscape evolution model with dynamic hydrology. In: Geoscientific Model Development, 12(7).
+<li><a href="https://www-sciencedirect-com.prox.lib.ncsu.edu/science/article/pii/B978012374739600052X">Mitasova et al., 2013, GIS-based soil erosion modeling, In: Treatise on Geomorphology. Academic Press, San Diego, CA, vol. 3, Remote Sensing and GIScience in Geomorphology, pp. 228–258</a>
+<li><a href="http://fatra.cnr.ncsu.edu/~hmitaso/gmslab/papers/II.6.8_Mitasova_044.pdf">
+Mitasova, H., et al., 2005, Path sampling method for modeling overland water flow, sediment transport and short term terrain evolution in Open Source GIS. In: C.T. Miller,  et al. eds., Proc. CMWR XV, 13-17 June 2004, Chapel Hill, NC, USA, Elsevier, pp. 1479-1490.</a>
+</ul>
+    <img height="150" src="img/surfaces/yakima_panorama_1s.jpg">
 </section>
 
 <section>
@@ -393,32 +366,30 @@ Modeling and analyzing surfaces with vegetation and structures
 <section>
 <h3>Beyond bare earth surface: vegetation</h3>
 Geomorphons (Jasiewicz, Stepinski 2013) for vegetation surfaces from lidar, UAS
-<br><small>individual tree detection and trunk modeling (Tabrizian et al. 2018)</small>
+<br>individual tree detection and trunk modeling (Tabrizian et al. 2018)
 <br>
 <img height="250" src="img/surfaces/geomorphon.png">
 <img height="250" src="img/surfaces/trunk_replace.jpg">
-<!--
-<br> <small>row crop growth analysis</small>
-<br>
-<img height="170" src="img/surfaces/geomorph_cropsurface_zoom.jpg">
--->
+<p><small><a href="https://doi.org/10.3390/ijgi9070445">Tabrizian, P. et al., 2020, High Resolution Viewscape Modeling Evaluated Through Immersive Virtual Environments. ISPRS Int. J. Geo-Inf. 9, 445. </a>
+</small>
 </section>
+
+<section>
+<h3>Viewshed from DSM</h3>
+Deriving viewshed from DSM with enhanced tree representation using
+<br>individual tree detection and trunk modeling (Tabrizian et al. 2018)
+<br>
+<img height="250" src="img/surfaces/thick_view.jpg">
+<img height="250" src="img/surfaces/thin_view.jpg">
+<br>
+<img height="150" src="img/surfaces/view_photos.png">
+</section>
+
 
 <section>
 <h3>Urban topography and solar irradiation</h3>
-Solar irradiation during summer solstice at NCSU Centennial Campus
-<p>
-<img height="400" src="img/surfaces/summer_solstice_centennial.gif">
-</section>
-
-<section>
-<h3>Urban topography and viewsheds</h3>
-<p>
-<img height="400" src="img/surfaces/summer_solstice_centennial.gif">
-</section>
-
-<section>
-<h3>Urban topography and viewsheds</h3>
+Modeling the dynamics of solar irradiation and cast shadows in urban environment:
+summer solstice day at NCSU Centennial Campus
 <p>
 <img height="400" src="img/surfaces/summer_solstice_centennial.gif">
 </section>
@@ -510,6 +481,8 @@ Platform for decision-making and science communication
     where people of different backgrounds can interact.
 <p>
 <img height="220px" src="img/surfaces/bhigames_composite.jpg">
+<br><a href="https://ncsu-geoforall-lab.github.io/geospatial-simulations-course/topics/tangible_landscape.html">
+Learn more about Tangible Landscape</a>
 <br>Tangible Landscape website: 
 <a href="tangible-landscape.github.io">tangible-landscape.github.io</a>
 <br>TL wiki: github.com/tangible-landscape/grass-tangible-landscape/wiki
@@ -518,12 +491,13 @@ Platform for decision-making and science communication
 <section>
 <h3>Open Science</h3>
 <p>Developing open source software and contributing to OSGeo projects:
-<p>GRASS GIS <a href="https://grass.osgeo.org/">https://grass.osgeo.org/</a>
-<p>Tangible Landscape  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a>
+<br>GRASS GIS <a href="https://grass.osgeo.org/">https://grass.osgeo.org/</a>
+<br>Tangible Landscape  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a>
 <p>Open access educational material:
-<p>NCSU GeoForAll Lab Courses and Workshops
+<br>NCSU GeoForAll Lab Courses and Workshops
 <a href="https://geospatial.ncsu.edu/geoforall/courses.html">https://geospatial.ncsu.edu/geoforall/courses.html</a>
-<p><img height="280" src="img/surfaces/geovizlab_people2018.jpg">
+<p><a href="https://go.ncsu.edu/geoviz-scan">Geovisualization lab virtual tour: https://go.ncsu.edu/geoviz-scan</a>
+<br><img height="280" src="img/surfaces/geovizlab_people2018.jpg">
 </section>
 
 <section>
