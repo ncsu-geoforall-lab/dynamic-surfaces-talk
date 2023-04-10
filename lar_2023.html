@@ -188,7 +188,7 @@ from crescentic dune to sand starved, fast moving parabolic dune
 <section>
 <h3>Peak elevation change </h3>
 <ul>
-  <li>linear trend in loss of peak elevation at 0.3 m/yr, from 43 m to 20 m
+  <li>linear trend in loss of peak elevation at 0.3 m/yr, from 42 m to 20 m
   <li>loss of elevation leads to accelerated horizontal migration
 </ul>
 <p>
@@ -211,7 +211,7 @@ from crescentic dune to sand starved, fast moving parabolic dune
 
 <section>
 <h3>Jockey's Ridge story</h3>
-<p>The 43 m high dune was a transient landform
+<p>The 42 m high dune was a transient landform
 <p><img height="200" src="img/surfaces/JR_photosevol_17_50_08.jpg">
 <br>
 <img height="200" src="img/surfaces/Kittytrees1900.jpg">
@@ -222,16 +222,15 @@ from crescentic dune to sand starved, fast moving parabolic dune
 
 <section>
 <h3>Jockey's Ridge evolution analysis</h3>
-<p>DEM time series: evolution quantified using TGRASS and surface analysis tools 
 <ul>
-  <li>linear trend in loss of peak elevation at 0.3m per year 
-  <li>accelerating horizontal migration from 3m/yr to 6m/yr
-  <li>total sand volume is stable, but the <strong>core</strong> (sand that has not moved) is shrinking
+  <li>steady loss of peak elevation (0.3m/yr), horizontal migration 3-6m/yr
+  <li>total sand volume is stable, but the <strong>core</strong> (stable sand) is shrinking
   <li>vegetation increased, but has not stabilized the dune 
-  <li>management challenges: dynamic feature confined to static park boundaries
+  <li>management challenge: dynamic feature confined to static park boundaries
 </ul>
 <p>
-<img height="200" src="img/surfaces/jr_74_17_cut3.jpg">
+<img height="220" src="img/surfaces/jr_74_17_cut3.jpg">
+<img height="260" src="img/surfaces/jr_vegetation45_09.jpg">
 <!--<img height="150" src="img/surfaces/core_2017_cut6.jpg">-->
 </section>
 
@@ -250,14 +249,16 @@ from crescentic dune to sand starved, fast moving parabolic dune
 <section>
 <h3>Jockey's Ridge management</h3>
 Management focus is on preserving processes rather than features: 
-<p><strong>living landscape</strong>
-<p>Up to date, 3D mapping is essential for sand relocation planning (done in 2003, 2019), 
-sand volume estimates, assessment of effectivenes, and for vegetation management.
+<br><strong>living landscape</strong>
 <p>
+<img height="320" src="img/surfaces/jr_management.jpg">
+<!--
 <img height="220" src="img/surfaces/buldoz1_s.jpg">
 <img height="220" src="img/surfaces/JR2005-1.jpg">
-<p><a href="https://doi.org/10.3727/154427313X13818453739477">Mitas, O. et al., 2013, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.</a>
-dd
+-->
+<p><small>Up to date, 3D mapping is essential for sand relocation planning (done in 2003, 2019), sand volume estimates, assessment of effectivenes, and for vegetation management.
+<br><a href="https://doi.org/10.3727/154427313X13818453739477">Mitas, O. et al., 2013, Managing Dune Landscape Changes at Jockey's Ridge State Park, North Carolina, Tourism in Marine Environments 9(3-4), pp. 155-167.</a>
+</small>
 </section>
 
 <section>
@@ -332,8 +333,8 @@ Flow modeling with diffusion term: process-based simulation
 
 <section>
 <h3>High resolution water flow</h3>
- <p> Street level modeling of surface runoff: sub-meter resolution, lidar-based DEM
-and path sampling method reproduce flow over streets and ponding in riparian area
+ <p> Street level modeling of surface runoff: 2 ft resolution, lidar-based DEM
+and path sampling method reproduce flow over streets, into storm drains and ponding in riparian area
 protected by stream buffers 
 <p>
     <img height="450" src="img/surfaces/carywater_ortho_lg.jpg">
@@ -341,11 +342,27 @@ protected by stream buffers
 </section>
 
 <section>
-<h3>High resolution water flow</h3>
- <p> Modeling spatial pattern of standing water after storm has passed
+<h3>Water depth during and after storm</h3>
+ <p> Simulation of Water depth during a storm (60mm/hr)
+and a day after
 <p>
     <img height="380" src="img/surfaces/carysimwe_eeidstorm.jpg">
     <img height="380" src="img/surfaces/carysimwe_eeidpoststorm.jpg">
+</section>
+
+<section>
+<h3>Water depth during and after storm</h3>
+ <p> Planned location of future greenway 
+<p>
+    <img height="380" src="img/surfaces/simwe_storm_greenw.jpg"> 
+    <img height="380" src="img/surfaces/simwe_poststorm_greenw.jpg">
+</section>
+
+<section>
+<h3>Water depth during and after storm</h3>
+ <p> Planned location of future greenway
+<p>
+    <img height="420" src="img/surfaces/simwe_poststorm_greenw3D.jpg">
 </section>
 
 <section>
@@ -375,10 +392,13 @@ Modeling and analyzing surfaces with vegetation and structures
 <section>
 <h3>Vegetation voxel model</h3>
 Generalized Fragmentation Index:
-slice of raw point cloud and slice of fragmentation index 3D raster
+<br> vertical slice of raw point cloud and slice of fragmentation index 3D raster
 <p>
-<img height="250" src="img/surfaces/profiles_points_and_ff.png">
-<img height="200" src="img/surfaces/profile3d.png">
+<img height="350" src="img/surfaces/profiles_points_and_ff.png">
+<p><small><a href="https://doi.org/10.1186/s40965-017-0021-8">
+Petras, V. et al. 2017. Generalized 3D fragmentation index derived from lidar point clouds. 
+Open Geospatial Data, Software and Standards 2(9).</a> </small>
+<!--<img height="200" src="img/surfaces/profile3d.png">-->
 </section>
 
 <section>
@@ -389,18 +409,6 @@ Slicing through fragmentation index 3D raster
 <small><a href="https://doi.org/10.1186/s40965-017-0021-8">
 Petras, V. et al. 2017. Generalized 3D fragmentation index derived from lidar point clouds. 
 Open Geospatial Data, Software and Standards 2(9).</a> </small>
-</section>
-
-
-<section>
-<h3>Beyond bare earth surface: vegetation</h3>
-Geomorphons (Jasiewicz, Stepinski 2013) for vegetation surfaces from lidar, UAS
-<br>individual tree detection and trunk modeling (Tabrizian et al. 2018)
-<br>
-<img height="250" src="img/surfaces/geomorphon.png">
-<img height="250" src="img/surfaces/trunk_replace.jpg">
-<p><small><a href="https://doi.org/10.3390/ijgi9070445">Tabrizian, P. et al., 2020, High Resolution Viewscape Modeling Evaluated Through Immersive Virtual Environments. ISPRS Int. J. Geo-Inf. 9, 445. </a>
-</small>
 </section>
 
 <section>
@@ -414,6 +422,17 @@ Deriving viewshed from DSM with enhanced tree representation using
 <img height="150" src="img/surfaces/view_photos.png">
 </section>
 
+<section>
+<h3>Tree detection using geomorphons</h3>
+Geomorphons (Jasiewicz, Stepinski 2013) are designed to detect basic landforms,
+peaks can be used to detect individual trees from vegetation surfaces derived from lidar, UAS point clouds.
+<br>Individual tree detection and trunk modeling (Tabrizian et al. 2018)
+<p>
+<img height="250" src="img/surfaces/geomorphon.png">
+<img height="250" src="img/surfaces/trunk_replace.jpg">
+<p><small><a href="https://doi.org/10.3390/ijgi9070445">Tabrizian, P. et al., 2020, High Resolution Viewscape Modeling Evaluated Through Immersive Virtual Environments. ISPRS Int. J. Geo-Inf. 9, 445. </a>
+</small>
+</section>
 
 <section>
 <h3>Urban topography and solar irradiation</h3>
@@ -421,6 +440,20 @@ Modeling the dynamics of solar irradiation and cast shadows in urban environment
 summer solstice day at NCSU Centennial Campus
 <p>
 <img height="400" src="img/surfaces/summer_solstice_centennial.gif">
+</section>
+
+<section>
+<h3>Updating urban topography with UAS</h3>
+UAS can be used to update lidar-based DSM in rapidly developing regions: 2015 lidar updated with 2022 UAS data
+<p>
+<img height="380" src="img/surfaces/uas_lidar_update.gif">
+<br> <small>
+<a href="https://doi.org/10.3390/rs14071718">
+White, C.T.; et al.  Rapid-DEM: Rapid Topographic Updates through Satellite Change Detection and UAS Data Fusion. Remote Sens. 2022, 14, 1718. https://doi.org/10.3390/rs14071718</a>
+<br>
+<a href="https://opengeospatialdata.springeropen.com/articles/10.1186/s40965-017-0019-2">
+Petrasova et al. 2017, Fusion of high-resolution DEMs for water flow modeling, Open Geospatial Data, Software and Standards 2(6), 10.1186/s40965-017-0019-2</a>
+</small>
 </section>
 
 <section>
@@ -441,7 +474,7 @@ Petrasova, A. et al. (2018). Tangible Modeling with Open Source GIS. Second edit
 <section>
 <h3>How does it work?</h3>
 <iframe data-autoplay width="50%" height="330" src="https://www.youtube.com/embed/Cd3cCQTGer4?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Cd3cCQTGer4" frameborder="0" allowfullscreen></iframe>
-&nbsp; &nbsp;<img height=380 src="img/surfaces/rendered_diagram_2.png">
+&nbsp; &nbsp;<img height=400 src="img/surfaces/rendered_diagram_2.png">
 <p>Tangible Landscape couples a digital and a physical model through a continuous cycle of 3D scanning, geospatial modeling, and projection</p>
 </section>
 
@@ -457,7 +490,7 @@ Petrasova, A. et al. (2018). Tangible Modeling with Open Source GIS. Second edit
 
 <section>
     <h3>Design scenario analysis</h3>
-<p><img height="480" src="img/surfaces/process7.png">
+<p><img height="500" src="img/surfaces/process7.png">
 </section>
 
 <!--
@@ -481,6 +514,7 @@ dia" allowfullscreen></iframe>
 <section>
 <h3>Tangible Landscape for education</h3>
 <p>
+<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jX6FurEeW28?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <img height="260" src="img/surfaces/collaboration2.JPG">
 </section>
